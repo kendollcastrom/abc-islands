@@ -1,0 +1,23 @@
+.horses {
+	margin-top: 60px;
+}
+
+.horses__content {
+	align-items: baseline;
+	margin-bottom: 32px;
+	color: $fourth-color;
+
+	&__content {
+		color: $fourth-color;
+	}
+}
+
+.horses__img {
+	grid-row: 1;
+	margin-bottom: 24px;
+
+	@include from(m) {
+		grid-row: unset;
+		margin-bottom: 0;
+	}
+}

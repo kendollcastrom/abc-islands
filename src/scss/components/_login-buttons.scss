@@ -1,0 +1,72 @@
+.login {
+	display: flex;
+	align-items: center;
+	height: auto;
+	margin-right: 15px;
+
+	@include from(l) {
+		margin-right: 0;
+	}
+
+	&__in {
+		background-color: red;
+		border: 1px solid $third-color;
+		border-radius: 6px;
+		padding: 4px 8px;
+		color: $fourth-color;
+		margin-right: 8px;
+		width: 100px;
+		text-align: center;
+
+		&:hover {
+			background-color: $third-color;
+		}
+	}
+	&__up {
+		background-color: $second-color;
+		border: 1px solid $third-color;
+		border-radius: 7px;
+		padding: 4px 4px;
+		width: 100px;
+		color: $fourth-color;
+		text-decoration: none;
+		text-align: center;
+	}
+}
+
+.login-btn {
+	background-color: $fourth-color;
+	border: none;
+	padding: 4px 12px;
+	border-radius: 19px;
+	color: #F8F9FA;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-right: 8px;
+	font-size: 13px;
+
+	@include from(l) {
+		margin-right: 8px;
+	}
+
+	&:hover {
+		background-color: #8D99AE;
+		transition: linear 0.1s;
+	}
+}
+
+.sign-btn {
+	background-color: #739F24;
+	border: none;
+	padding: 4px 17px;
+	border-radius: 19px;
+	color: #F8F9FA;
+	font-weight: 400;
+	font-size: 13px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #8D99AE;
+		transition: linear 0.1s;
+	}
+}

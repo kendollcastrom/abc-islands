@@ -1,0 +1,49 @@
+.about-us {
+    margin-bottom: 0;
+
+    &__heading {
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+}
+
+.about-us__content {
+    margin-bottom: 0;
+
+    &__item {
+
+        @include from(l) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+.about-us__content__section {
+
+    &--text {
+        color: $first-color;
+        font-size: 18px;
+        font-weight: medium;
+        font-family: $secondary-font-noto;
+        max-width: 650px;
+        margin-bottom: 30px;
+    }
+
+    &--img {
+        width: 300px;
+        max-width: 100%;
+
+        @include from(l) {
+            width: 400px;
+        }
+    }
+
+}

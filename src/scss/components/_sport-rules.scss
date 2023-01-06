@@ -1,0 +1,74 @@
+.sport-rules {
+
+	&__heading {
+		margin-bottom: 26px;
+		text-transform: uppercase
+	}
+}
+
+.sport-rules {
+	color: $first-color;
+	font-family: $secondary-font-noto;
+
+	&__related {
+		padding: 20px;
+		background-color: $seventh-color;
+		margin-bottom: 25px;
+		border-radius: 8px;
+
+		&__heading {
+			font-size: 16px;
+			color: $ninth-color;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		&__list {
+			padding: 0 16px;
+		}
+	}
+
+	&__events {
+		background-color: $seventh-color;
+		padding: 20px;
+		border-radius: 8px;
+		margin-bottom: 48px;
+
+		&__heading {
+			font-size: 16px;
+			color: $ninth-color;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		&__list {
+			padding: 0 16px;
+		}
+	}
+}
+
+table.GeneratedTable {
+	width: 100%;
+	background-color: $second-color;
+	border-collapse: collapse;
+	border: 1px solid $ninth-color;
+	color: $first-color;
+	font-family: $secondary-font-noto;
+	font-size: 16px;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+	border: 1px solid $ninth-color;
+	padding: 12px;
+}
+
+table.GeneratedTable td:first-child {
+	background-color: $fourth-color;
+	width: 15%;
+	text-align: center;
+}
+
+table.GeneratedTable thead {
+	background-color: transparent;
+	display: none;
+}

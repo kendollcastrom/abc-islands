@@ -1,0 +1,58 @@
+.horses-rebate {
+    color: $first-color;
+
+    &__heading {
+        text-transform  : uppercase;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-family: $secondary-font-noto;
+        text-align: center;
+
+        @include from(l) {
+            text-align: start;
+        }
+    }
+
+    &__list {
+        padding-left: 16px;
+        font-size: 16px;
+    }
+}
+
+.horses-rebate__table {
+    border              :1px solid $ninth-color;
+    border-collapse     :collapse;
+    padding             :5px;
+    color               : $first-color;
+    font-family         : $secondary-font-noto;
+    font-weight         : bold;
+
+    caption {
+        background-color: $fourth-color;
+        padding         : 0;
+        border          :1px solid $ninth-color;
+        text-transform  : uppercase;
+    }
+}
+
+.horses-rebate__table th {
+    border      : 1px solid $ninth-color;
+    padding     : 5px;
+    background  : $fourth-color;
+    word-break  : break-word;
+    font-size   : 10px;
+
+    @include from(m) {
+        font-size: 16px;
+    }
+}
+
+.horses-rebate__table td {
+    border      : 1px solid $ninth-color;
+    padding     : 5px;
+    background  : $sixth-color;
+    text-align  : center;
+}
+

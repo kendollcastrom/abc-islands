@@ -1,0 +1,85 @@
+.slider-games__container {
+    background-color: $seventh-color;
+    padding-top: 16px;
+}
+
+.slider-games {
+    overflow: hidden;
+
+    &__title {
+        margin-left: auto;
+        margin-right: auto;
+
+        @include from(l) {
+            margin-left: unset;
+            margin-right: unset;
+        }
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.slider-games__card {
+    position: relative;
+    width: 135px;
+    height: 135px;
+    margin-right: 10px;
+
+    @include from(l) {
+        width: 425px;
+        height: 195px;
+    }
+
+    img {
+        position: absolute;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        position: absolute;
+        color: $first-color;
+        margin-bottom: 0;
+        font-size: 24px;
+        font-family: $primary-font-motion;
+        font-weight: bold;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        padding: 0 8px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+        @include from(l) {
+            font-size: 64px;
+            line-height: 60px;
+            bottom: 60px;
+            text-align: start;
+        }
+    }
+}
+
+.demo {
+    border:1px solid #8D99AE;
+    border-collapse:collapse;
+    padding:5px;
+    width: 100%;
+}
+
+.demo th {
+    border:1px solid #8D99AE;
+    padding:5px;
+    background:#B61827;
+    color: $first-color;
+}
+
+.demo td {
+    border:1px solid #8D99AE;
+    padding:5px;
+    background:#212428;
+    color: $first-color;
+}

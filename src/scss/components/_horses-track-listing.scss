@@ -1,0 +1,56 @@
+.track-listing {
+    font-family: $secondary-font-noto;
+    margin-bottom: 14px;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    &__table {
+        border: 1px solid $ninth-color;
+        border-collapse: collapse;
+        padding: 5px;
+        color: $first-color;
+        font-weight: bold;
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        max-width: 924px;
+
+        @include from(m) {
+            font-size: 16px;
+        }
+    }
+}
+
+.track-listing__table {
+
+    th {
+        border: 1px solid $ninth-color;
+        padding: 5px;
+        background: $fourth-color;
+        text-transform: uppercase;
+
+        &:nth-child(1){
+            background-color: unset;
+            border-top: 1px solid $second-color;
+            border-left: 1px solid $second-color;
+        }
+    }
+
+    td {
+        border:1px solid $ninth-color;
+        padding:5px;
+        background: $second-color;
+        text-transform: uppercase;
+
+        &:nth-child(1) {
+            background-color: $fourth-color;
+            text-align: center;
+        }
+    }
+}

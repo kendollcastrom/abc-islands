@@ -1,0 +1,50 @@
+.casino-banner {
+    background-color: $seventh-color;
+    padding: 24px 0;
+}
+
+.casino-banner__content {
+    position: relative;
+
+    &__img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.casino-banner__info {
+    gap: 1;
+
+    &__heading {
+
+        z-index: 2;
+        padding: 16px 0 24px 18px;
+        width: 150%;
+
+        &--title {
+            font-size: 48px;
+            margin: 0;
+            text-transform: uppercase;
+            color: $first-color;
+            line-height: 45px;
+
+            @include from(l) {
+                font-size: 64px;
+                line-height: 60px;
+            }
+        }  
+    }
+
+    &__img {
+        z-index: 3;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        border-radius: 30px;
+    }
+}

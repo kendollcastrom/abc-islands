@@ -1,0 +1,79 @@
+//layout
+:root {
+	--header-height 		: 5rem;
+	@include from(l) {
+	  --header-height 	: 6rem;
+	}
+	//native color vars
+	--first     	: #FFFFFF;
+	--second			: #1B1D29;
+	--third			 	: #FDFDFD;
+	--fourth			: #B61827;
+	--fifth				: #707070;
+	--sixth				: #202020;
+	--seventh			: #2B2D42;
+	--eighth			: #EDF2F4;
+	--ninth				: #8D99AE;
+	--tenth				: #00000029;
+	--eleventh		: #18191E;
+	--twelfth			: #F7F7F7;
+	--thirteenth	: #9B9B9B;
+	--fourteenth	: #BBBBBB;
+	--fifteenth		: #DB4911B8;
+	--sixteenth		: #739F24;
+	--seventeenth	: #F8F9FA;
+	--eighteenth	: #748295;
+	--nineteenth	: #515666;
+
+	//native box Shadow
+	--principal-box-shadow	: 0px 4px 8px rgba(0, 0, 0, 0.25);
+
+	// Font Family
+	--primary-font-motion: 'Motion Control Neue Lite', sans-serif;
+	--secondary-font-noto: 'Noto Sans', sans-serif;
+  }
+  // Sass Color Vars
+  $first-color 			: var(--first);
+  $second-color			: var(--second);
+  $third-color			: var(--third);
+  $fourth-color			: var(--fourth);	
+  $fifth-color			: var(--fifth);
+  $sixth-color			: var(--sixth);
+  $seventh-color		: var(--seventh);
+  $eighth-color			: var(--eighth);
+  $ninth-color			: var(--ninth);
+  $tenth-color			: var(--tenth);
+  $eleventh-color		: var(--eleventh);
+  $twelfth-color		: var(--twelfth);
+  $thirteenth-color		: var(--thirteenth);
+  $fourteenth-color		: var(--fourteenth);
+  $fifteenth-color		: var(--fifteenth);
+  $sixteenth-color		: var(--sixteenth);
+  $seventeenth-color	: var(--seventeenth);
+  $eighteenth-color		: var(--eighteenth);
+	$nineteenth-color		: var(--nineteenth);
+
+  $bg-linear-one		: var(--seventh);
+  $bg-dark-color		: var(--eighth);
+  $principal-box-shadow	: var(--principal-box-shadow);
+  
+  // Fonts SCSS Variables
+  $primary-font-motion	: var(--primary-font-motion);
+  $secondary-font-noto	: var(--secondary-font-noto);  
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+::selection {
+	color: white;
+	background: #00CBFF;
+}
+
+strong {
+	font-weight 	: 700;
+}
+
+

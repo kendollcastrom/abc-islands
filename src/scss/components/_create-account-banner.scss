@@ -1,0 +1,88 @@
+.account-banner {
+    background-image: url(/assets/img/account-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+    &__img {
+        object-fit: cover;
+        height: 685px;
+        z-index: 1;
+    }
+
+    &__content {
+        padding: 16px 0;
+        height: 100%;
+    }
+
+    &__button {
+        text-align: center;
+    }
+}
+
+.account-banner__info {
+
+    width: 100%;
+    height: auto;
+
+    @include from(l){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__img {
+        margin-bottom: 12px;
+        width: 330px;
+
+        @include from(l){
+            width: 1015px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__text {
+        color: $first-color;
+        font-size: 16px;
+        font-family: $secondary-font-noto;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+}
+
+
+.account-banner__steps {
+
+    &__item {
+        display: flex;
+        background-color: $seventh-color;
+        height: 75px;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 13px;
+        margin-bottom: 16px;
+
+        @include from(l) {
+            width: 535px;
+        }
+
+        &--number {
+            color: $first-color;
+            font-family: $primary-font-motion;
+            font-size: 48px;
+            margin-right: 16px;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        &--text {
+            color: $first-color;
+            font-family: $secondary-font-noto;
+            font-size: 16px;
+            margin: 0;
+            height: 50px;
+        }
+    }
+}

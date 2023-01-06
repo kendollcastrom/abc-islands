@@ -1,0 +1,171 @@
+.tabs-container {
+	width: 100%;
+	position: relative;
+
+	p {
+		text-align: center;
+	}
+
+	&__tabs {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+		
+		@include from(l) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&__tab {
+		background: $second-color;
+		color: $first-color;
+		line-height: 2;
+		padding: 0.75em 1em;
+		border: 1px solid $ninth-color;
+		position: relative;
+		top: 1px;
+		cursor: pointer;
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 800;
+
+		@include from(l) {
+			width: 48%;
+		}
+		
+		&.is-active {
+			background: $fourth-color;
+			color: $first-color;
+			position: relative;
+		}
+	}
+
+	&__panels {
+		position: relative;
+		background-color: transparent;
+		padding: 1em 0;
+    border: none;
+	}
+
+	&__panel {
+		position: absolute;
+		left: -1000%;
+		display: none;
+
+		&.is-active {
+			position: relative;
+			left: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+	}
+}
+
+.caballos-layout {
+
+	&__tabs--ul {
+		flex-wrap: nowrap;
+	}
+
+	&__racebook--table2 {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+    color: $first-color;
+    border: 1px solid $fourth-color;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: $secondary-font-noto;
+	}
+}
+
+
+.caballos-layout {
+	padding-top: 0.625rem;
+
+	&__container {
+		max-width: 1320px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 1.25rem;
+	}
+
+  &__racebook--container-table {
+    width: 100%;
+    max-width: 990px;
+  }
+	
+	&__racebook-table-col {
+		border-right: 0.96px solid $fourth-color;
+	}
+	
+	&__racebook-table--th {
+		font-weight: 500;
+		border-bottom: 0.96px solid $fourth-color;
+		padding: 4px 1rem;
+		width: 220px;
+	}
+	
+	&__racebook-table--th-bold {
+		border-bottom: 0.96px solid $fourth-color;
+		font-weight: 800;
+		text-align: center;
+		text-transform: capitalize;
+    background-color: $ninth-color;
+	}
+	
+	&__racebook-table--td {
+		padding: 4px 1rem;
+		border-bottom: 0.96px solid $fourth-color;
+		text-align: center;
+		width: 220px;
+		text-transform: capitalize;
+	}
+
+	&__racebook--warning {
+		display: flex;
+		flex-direction: column;
+		font-size: 18px;
+		max-width: 920px;
+		padding-top: 0.5rem;
+		width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+		
+		p {
+			font-weight: 900;
+      color: $first-color;
+      max-width: 500px;
+		}
+		
+		a {
+			text-align: center;
+		}
+
+		@include from(m) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			a {		
+				width: auto;
+			}
+		}
+	}
+}
+
+.open {
+	display: none;
+}

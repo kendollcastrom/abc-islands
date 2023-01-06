@@ -1,0 +1,52 @@
+.casino-games {
+    padding: 48px 0;
+
+    &__cards {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+.casino-games__cards__card {
+
+    position: relative;
+    width: 135px;
+    height: 135px;
+
+    @include from(l) {
+        width: 295px;
+        height: 295px;
+    }
+
+    &--img {
+        position: absolute;
+    }
+
+    &--title {
+        position: absolute;
+        color: $first-color;
+        font-size: 32px;
+        margin: 0;
+        top: 45%;
+        width: 100%;
+        padding: 0 8px;
+        bottom: 0;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-family: $primary-font-motion;
+        text-transform: uppercase;
+
+        @include from(l) {
+            line-height: 50px;
+            font-size: 64px;
+            top: 60%;
+        }
+    }
+}

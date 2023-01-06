@@ -1,0 +1,146 @@
+
+
+/* Modal CSS */
+
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+	color: green;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+    width: 100%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in; 
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(21px);
+	-webkit-backdrop-filter: blur(21px);
+
+	@include from(m) {
+		width: 350px;
+	}
+}
+
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+
+/*Boton de cerrar*/
+.close {
+    color: #FFFFFF;
+    position: absolute;
+    right: 8px;
+    text-align: center;
+    top: 8px;
+    text-decoration: none;
+	
+	span {
+		font-size: 30px;
+	}
+}
+
+.sign-in {
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+	}
+
+	&__img {
+		width: 152px;
+	}
+
+	&__title {
+		color: #FFFFFF;
+		background-color: #B61827;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		top: 70px;
+		height: 64px;
+		width: 100%;
+		font-size: 24px;
+		text-align: center;
+		align-items: center;
+	}
+
+	&__form {
+		margin-top: 120px;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		color: #FFFFFF;
+	
+		input {
+			height: 32px;
+			border-radius: 8px;
+			border: none;
+			margin-top: 6px;
+			color: #C4C4C4;
+		}
+	}
+
+	&__email {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 11px;	
+	}
+
+	&__password {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		padding: 8px 16px;
+		background-color: #739F24;
+		color: #FFFFFF;
+		font-weight: 400;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+	
+		&:hover {
+			background-color: $fifth-color;
+		}
+	}
+
+	&__form-register {
+		margin-bottom: 0;
+	
+		a {
+			text-decoration: underline;
+		}
+		
+	}
+}

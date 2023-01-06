@@ -1,0 +1,328 @@
+<!-- section(class='sport-rules info-politics ed-grid l-grid-1')
+	div(class='info-politics__content')
+		//- include:markdown-it(html) ../md/responsible-games.md
+		mixin bets(td1, td2)
+			tr(class="sport-rules__table--tr") 
+				td(class="sport-rules__table--td1")= td1
+				td(class="sport-rules__table--td2")= td2
+
+		div(class='sport-rules-container')
+			h1(class='s-cols-3') Reglas de Deportes
+			h2(class='') La siguiente tabla le indica cuando un juego se considera oficial para efectos de apuestas:
+			table(class='sport-rules__table')
+				colgroup(class='sport-rules--colgroup')
+					col(class='sport-rules__table--col1')
+					col(class='sport-rules__table--col2')
+				tbody(class="sport-rules__table--tbody")
+					-for(var i = 0; i < bets.length ; i++)
+						-var bet = bets[i]
+						+bets(bet.td1, bet.td2)
+
+
+		div(class='accordion-container ed-grid')
+			//- include:markdown-it(html) ../md/sport-rules.md
+			div(class='accordion v1')
+				div(class="a-container")
+					p(class="a-btn") Futbol Americano <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/futbol-americano.md
+						div(class='accordion v1')
+				div(class="a-container")
+					p(class="a-btn") Basketball <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/basketball.md
+						div(class='accordion v1')
+				div(class="a-container")
+					p(class="a-btn") Baseball <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/baseball.md
+				div(class="a-container")
+					p(class="a-btn") Hockey <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/hockey.md
+				div(class="a-container")
+					p(class="a-btn") Fútbol Soccer <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/soccer.md
+				div(class="a-container")
+					p(class="a-btn") Golf <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/golf.md
+				div(class="a-container")
+					p(class="a-btn") Boxeo - Mixed Martial Arts (MMA) - UFC <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/boxeo.md
+				div(class="a-container")
+					p(class="a-btn") Tennis <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/tennis.md
+				div(class="a-container")
+					p(class="a-btn") Autoracing <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/autoracing.md
+				div(class="a-container")
+					p(class="a-btn") Reglas Generales de Props <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/prop-rules.md
+				div(class="a-container")
+					p(class="a-btn") Apuestas Live In-Game Lines <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/live-games.md
+				div(class="a-container")
+					p(class="a-btn") Tarjetas Parlay <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/parlay-cards.md
+				div(class="a-container")
+					p(class="a-btn") Rugby <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/rugby.md
+				div(class="a-container")
+					p(class="a-btn") Cricket <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/cricket.md
+				div(class="a-container")
+					p(class="a-btn") Esports <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/esports.md
+				div(class="a-container")
+					p(class="a-btn") Volleyball <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/volleyball.md
+				div(class="a-container")
+					p(class="a-btn") Water Polo <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/water-polo.md
+				div(class="a-container")
+					p(class="a-btn") Handball <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/sports/handball.md -->
+
+<div class="sport-rules ed-grid">
+	<div class="sport-rules__content">
+		<h2 class="sport-rules__heading underline-title">Sport rules</h2>
+		<div class="sport-rules__related">
+			<h3 class="sport-rules__related__heading">Related to sporting events</h3>
+			<ul class="sport-rules__related__list">
+				<li class="sport-rules__related__list--item">All sporting events must be played on date and site scheduled unless otherwise specified. Exceptions: Auto Racing, Golf, Tennis, MMA, UFC and Boxing.</li>
+				<li class="sport-rules__related__list--item">Auto Racing, Golf,Tennis, MMA, UFC and Boxing are not subject to this rule. The wagers will remain valid subject to the Ruling Body of each sport cancelling the event.</li>
+				<li class="sport-rules__related__list--item">If any event is postponed and/or rescheduled, the event will automatically constitute "no action".</li>
+				<li class="sport-rules__related__list--item">We do not recognize suspended games, protests or overturned decisions for wagering purposes.</li>
+				<li class="sport-rules__related__list--item">Las Vegas rules apply to any wager not covered by rules and regulations in here.</li>
+				<li class="sport-rules__related__list--item">For Cycling events riders might be issued the same time but they will be issued an order of finish that is decided by photo finish. Results will be taken from the official finishing position in the events main web site.</li>
+				<li class="sport-rules__related__list--item">For all props on players or teams we will use the official website of the sporting event to declare the winner. Examples: WWW.NFL.COM, WWW.NBA.COM etc. For events that do not have an associated website we will use WWW.ESPN.COM for results.</li>
+			</ul>
+		</div>
+		<div class="sport-rules__events">
+			<h3 class="sport-rules__events__heading">For all sports and events</h3>
+			<ul class="sport-rules__events__list">
+				<li class="sport-rules__events__list--item">We reserve the right to cancel any wager accepted when the line was obviously posted incorrectly. (BAD LINE RULE).</li>
+				<li class="sport-rules__events__list--item">Wagers will also be cancelled when there is proof of cheating, attempted hacking or knowledgeable deceit. (CHEATING RULE).</li>
+				<li class="sport-rules__events__list--item">We also reserve the right to cancel wagers placed after a game is final or an outcome can be deduced from the score. (BAD TIME RULE).</li>
+				<li class="sport-rules__events__list--item">Matchups that are posted incorrectly will be automatically cancelled. These include wrong participants and matchup incorrectly entered into the system. (WRONG MATCHUP RULE).</li>
+			</ul>
+			<table class="GeneratedTable">
+				<thead>
+					<tr>
+						<th>sport</th>
+						<th>rules</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Pro Football</td>
+						<td>55 minutes of play</td>
+					</tr>
+					<tr>
+						<td>College Football</td>
+						<td>55 minutes of play</td>
+					</tr>
+					<tr>
+						<td>Basketball</td>
+						<td>All competitions/leagues except the NBA must go at least 35 minutes for action unless otherwise specified.</td>
+					</tr>
+					<tr>
+						<td>Pro Basketball</td>
+						<td>43 minutes of play</td>
+					</tr>
+					<tr>
+						<td>College Basketball</td>
+						<td>35 minutes of play</td>
+					</tr>
+					<tr>
+						<td>Hockey</td>
+						<td>55 minutes of play</td>
+					</tr>
+					<tr>
+						<td>Baseball Sides</td>
+						<td>5 innings (4 1/2 if the home team is winning)</td>
+					</tr>
+					<tr>
+						<td>Baseball Totals</td>
+						<td>9 innings (8 1/2 if the home team is winning)</td>
+					</tr>
+					<tr>
+						<td>Run Lines</td>
+						<td>9 innings (8 1/2 if the home team is winning)</td>
+					</tr>
+					<tr>
+						<td>Tennis</td>
+						<td>ONE ball served</td>
+					</tr>
+					<tr>
+						<td>Soccer</td>
+						<td>If a match is suspended before full time is reached, and not completed the same day, wagers on the outcome of the match are considered void and all wagers will be refunded. Includes Goal Lines, Money lines and Totals.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="accordion-container ed-grid">
+			<div class="accordion v1">
+				<div class="a-container">
+					<p class="a-btn">football<span></span></p>
+					<div class="a-panel">
+						<h3 class="">nfl</h3>
+						<ul class="">
+							<li class="">Team totals for the second half include overtime.</li>
+							<li class="">4th quarter lines do not include overtime.</li>
+							<li class="">Double result pools consist of the winner of the 1st half and the winner of the game.</li>
+							<li class="">1st scoring play and margin of victory pools include overtime. Double result pools include overtime only in REGULAR SEASON.</li>
+							<li class="">In the event that the Super Bowl date and/or venue is changed due to severe weather conditions, all existing open bets on the game and on the game's related bets (props) will be considered action and stand until the game is played.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,93 @@
+//Primary Button
+
+.primary-button__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.primary-button {
+    padding: 12px 26px;
+    border-radius: 36px;
+    display: inline;
+}
+
+.primary-button__join-first {
+    border: 2px solid $sixteenth-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline-block;
+
+    @include from(l) {
+        font-size: 24px;
+    }
+
+    &:hover {
+        background-color: $sixteenth-color;
+        transition: .1s;
+        text-decoration: none;
+    }
+
+    &::after {
+        content: '\f054';
+        display: inline-block;
+        margin-left: 24px;
+        font-family: "Font Awesome 6 Free";
+        font-size: 16px;
+        font-weight: 700;
+
+        @include from(l) {
+            font-size: 24px;
+        }
+    }
+}
+
+
+//Secondary button
+
+.secondary-button {
+    padding: 10px 22px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 3px solid $fifth-color;
+    display: inline-block;
+    color: $first-color;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    @include from(l) {
+        padding: 20px 34px;
+    }
+   
+    &:hover {
+        background-color: $fourth-color;
+        transition: .1s;
+        border: 3px solid $fourth-color;
+        text-decoration: none;
+    }
+}
+
+/* Third button */
+
+.third-button {
+    padding: 12px 42px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 3px solid $fourth-color;
+    display: inline-block;
+    color: $first-color;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: transparent;
+   
+    &:hover {
+        background-color: $fourth-color;
+        transition: .1s;
+        border: 3px solid $fourth-color;
+    }
+}
