@@ -1,66 +1,59 @@
-
-
 /* Modal CSS */
-
-/*Efecto*/
-.modalmask {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    opacity:0;
-	color: green;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-.modalmask:target {
-    opacity:1;
-    pointer-events: auto;
+.modal-container {
+	max-width: 1320px;
+	margin: 0 auto;
 }
 
-/*Formato de la ventana*/
-.modalbox{
-    width: 100%;
-    position: relative;
-    padding: 5px 20px 13px 20px;
-    border-radius:3px;
-    -webkit-transition: all 500ms ease-in;
-    -moz-transition: all 500ms ease-in;
-    transition: all 500ms ease-in; 
-	border-radius: 8px;
-	background-color: rgba(255, 255, 255, 0.3);
-	backdrop-filter: blur(21px);
-	-webkit-backdrop-filter: blur(21px);
+.modal-content__picture {
+	img {
+		display: none;
 
-	@include from(m) {
-		width: 350px;
+		@include from(l) {
+			display: block;
+			max-width: 843px;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			z-index: 1;
+		}
 	}
 }
 
-/*Movimientos*/
-.movedown {
-    margin: 0 auto;
-}
-.modalmask:target .movedown{       
-    margin:10% auto;
+.modal-sign-in {
+	background-image: url("../../assets/img/img-user-login-abc-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 18px;
+
+	@include from(l) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 100%;
+		background-position: center;
+	}
 }
 
-/*Boton de cerrar*/
-.close {
-    color: #FFFFFF;
-    position: absolute;
-    right: 8px;
-    text-align: center;
-    top: 8px;
-    text-decoration: none;
+
+.modal-dialog {
 	
-	span {
-		font-size: 30px;
+	@include from(l) {
+		height: 833px;
+		border-radius: 18px;
+	}
+}
+
+.modal-header {
+	border-bottom: none;
+	width: 100%;
+	margin-bottom: 24px;
+	padding: 15px;
+
+	@include from(l) {
+		margin-bottom: 70px;
 	}
 }
 
@@ -71,48 +64,70 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 10px;
+		background-color: rgba(141, 153, 174, 0.3);
+		font-family: $secondary-font-noto;
+		justify-content: flex-start;
+		margin: 32px 16px;
+		border-radius: 8px;
+		z-index: 2;
+		
+		@include from(l) {
+			width: 464px;
+			margin: 0;
+			border-radius: 0 18px 18px 0;
+		}
 	}
 
 	&__img {
 		width: 152px;
+		margin-bottom: 24px;
 	}
 
 	&__title {
-		color: #FFFFFF;
-		background-color: #B61827;
-		position: absolute;
+		color: #ffffff;
+		background-color: #b61827;
 		display: flex;
 		justify-content: center;
-		top: 70px;
 		height: 64px;
 		width: 100%;
 		font-size: 24px;
 		text-align: center;
 		align-items: center;
+		max-width: 100%;
+		margin-bottom: 40px;
+
+		@include from(l) {
+			height: 105px;
+		}
 	}
 
 	&__form {
-		margin-top: 120px;
 		display: flex;
 		flex-direction: column;
 		align-content: center;
 		justify-content: center;
-		color: #FFFFFF;
-	
+		color: #ffffff;
+		width: 100%;
+		max-width: 328px;
+		padding: 0 20px;
+
 		input {
-			height: 32px;
+			height: 48px;
 			border-radius: 8px;
 			border: none;
 			margin-top: 6px;
-			color: #C4C4C4;
+			color: #c4c4c4;
+		}
+
+		@include from(l) {
+			padding: 0;
 		}
 	}
 
 	&__email {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 11px;	
+		margin-bottom: 11px;
 	}
 
 	&__password {
@@ -123,24 +138,59 @@
 
 	&__btn {
 		padding: 8px 16px;
-		background-color: #739F24;
-		color: #FFFFFF;
+		background-color: #739f24;
+		color: #ffffff;
 		font-weight: 400;
 		border: none;
 		border-radius: 8px;
 		cursor: pointer;
-	
+
 		&:hover {
 			background-color: $fifth-color;
 		}
 	}
 
-	&__form-register {
-		margin-bottom: 0;
-	
-		a {
-			text-decoration: underline;
+	&__remember {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+		color: $first-color;
+		margin-bottom: 52px;
+
+		&__check {
+			display: flex;
+			align-items: center;
+
+			input {
+				margin-top: 0;
+				margin-right: 8px;
+			}
+
+			label {
+				font-size: 14px;
+			}
 		}
-		
+	}
+
+	&__forgot {
+		color: $ninth-color;
+		font-size: 14px;
+	}
+
+	&__create {
+		color: $ninth-color;
+		font-size: 14px;
+	}
+
+	&__copy {
+		padding-top: 20px;
+		color: $twenth-color;
+		font-size: 16px;
+		border-top: 1px solid $twenth-color;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
 	}
 }

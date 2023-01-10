@@ -1,7 +1,7 @@
 .hero-slider {
 	width: 100%;
 	height: 504px;
-	background-image: url(/assets/img/home-slider-bg.jpg);
+	background-image: url("../../assets/img/home-slider-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -58,12 +58,12 @@
 
 		@include from(m) {
 			margin-bottom: 10px;
+			text-align: start;
 		}
 
 		@include from(l) {
 			font-size: 96px;
 			margin-bottom: 0;
-			text-align: start;
 		}
 	}
 
