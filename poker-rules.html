@@ -41,6 +41,7 @@
     <link rel="author" type="text/plain" href="./humans.txt">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml"><script src="https://kit.fontawesome.com/de643c382f.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="https://fonts.cdnfonts.com/css/motion-control-neue-lite" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
@@ -48,8 +49,7 @@
     <title>Poker-rules | ABC Islands</title>
   </head>
   <body class="Poker-rules" itemscope itemtype="http://schema.org/WebPage">
-    <header class="main-header">
-      <nav class='top-nav'>
+    <header class="main-header"><nav class='top-nav'>
 	<div class="top-nav__container ed-grid">
 		<a href="/" lass='top-nav__link' aria-label="Betsev">
 			<img src="assets/img/Logotipo ABC.svg" alt="" class='top-nav__logo'>
@@ -73,8 +73,8 @@
 		</div>
 		<div class="top-nav-control">
 			<div class="login">
-				<a class="login-btn" id='login-icon' href='#modal1'>Login</a>
-				<a href="" class="sign-btn">Join</a>
+				<button type="button" class="login-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+				<a href="join-now.html" class="sign-btn">Join</a>
 			</div>
 			<button type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r' aria-label="Menu">
 				<span class='hamburger-box' >
@@ -95,89 +95,177 @@
 			<li class="top-nav__desktop-link"><a href="banking.html" class='top-nav__anchor'><img src="assets/img/icons/banking-icon.svg" alt="">Banking</a></li>
 		</ul>
 	</div>
-</nav>	
+</nav>
 
-      <div class="modalmask" id="modal1">
-	<div class="modalbox movedown">
-		<a href="#close" title="Close" class="close">
-			<span class="material-symbols-outlined">
-				cancel
-			</span>
-		</a>
-		<div class="sign-in__container">
-			<img class="sign-in__img" src="assets/img/Logotipo ABC.svg" alt="">
-			<h3 class="sign-in__title">User Login</h3>
-			<form action="" class="sign-in__form">
-				<div class="sign-in__email">
-					<label for="email">Username or Email</label>
-					<input type="text" name="email" id="email">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-container">
+    <div class="modal-content modal-sign-in">
+			<div class="modal-content__picture">
+				<img src="assets/img/img-player-login.png" alt="">
+			</div>
+			<div class="sign-in__container">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="sign-in__password">
-					<label for="email">Password</label>
-					<input type="text" name="email" id="email">
+				<img class="sign-in__img" src="assets/img/Logotipo ABC.svg" alt="">
+				<h3 class="sign-in__title">User Login</h3>
+				<form action="" class="sign-in__form">
+					<div class="sign-in__email">
+						<label for="email">Username or Email</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<div class="sign-in__password">
+						<label for="email">Password</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<button class="sign-in__btn" type="submit">Login</button>
+					<div class="sign-in__remember">
+						<div class="sign-in__remember__check">
+							<input type="checkbox" name="remember" id="remember">
+							<label for="remember">Remember me</label>
+						</div>
+						<a class="sign-in__forgot" href="#">Forgot your password?</a>
+						<a class="sign-in__create" href="#">Don't have an account? Click here.</a>
+					</div>
+				</form>
+				<p class="sign-in__copy">Copyright © 2022, Agent Site V2</p>
+			</div>
+    </div>
+  </div>
+</div>
+    </header>
+    <main class="main-container">
+      <section class="hero-component">
+	<div class="hero-component__first ed-grid s-grid-1 m-grid-2">
+		<picture class="hero-component__first__img m-order-2">
+			<source media="(min-width: 600px)" srcset="assets/img/home-slider-desktop-01.png">
+			<img src="assets/img/home-slider-mobile-01.png" alt="">
+		</picture>
+		<div class="hero-component__content">
+			<div class="hero-component__first-info">
+				<h1 class="hero-component__first-info--title">Sportsbook</h1>
+				<p class="hero-component__first-info--text">The Players’ Paradise | get up to $1,000 on your first deposit</p>
+			</div> 
+			<div class="hero-component__first-btn">
+				<a href="#" class="primary-button primary-button__join-first">Join now </a>
+			</div>
+		</div>
+	</div>
+</section><div class="poker-rules ed-grid">
+	<div class="poker-rules__content">
+		<h2 class="poker-rules__heading underline-title">Frequently Asked Questions</h2>
+		<div class="accordion-container ed-grid">
+			<div class="accordion v1">
+				<div class="a-container">
+					<p class="a-btn">forgot password<span></span></p>
+					<div class="a-panel">
+            <p>I forgot my password. Can I open a new account?<br />No. In order to protect the integrity of the game and the security of the players' account; you are only allowed one Poker account. Instead, follow the instructions below.</p>
+            <p>What do I do if I have forgotten my password?<br />This is very common and is not a problem at all. You won't be able to create a new account, so you'll simply need to recover your existing account. Please follow the steps below:<br /><br />1. Click the LOG IN<br />button 2. On the sign-in screen, click Forgot your password?<br />3. Enter your Username and registered email and click SEND<br /><br />Remember, if you get stuck at any time, feel free to contact us through our Support service, we will be happy to help you! To help us help you the first time, please include the following information in your email (include old/alternate addresses the more information, the better!):<br /><br />&bull; Your full<br />name &bull; Your mailing<br />address &bull; Your zip<br />code &bull; Any email address that may be registered to your account</p>
+            <p>How do I contact a customer service agent?<br />Customer service representatives are available 24/7. They can be reached by email at:<br />pokerservices@royalpoker.ag or via live chat (add link or hyperlink).</p>
+            <p>What happens to my hand and money in case of disconnection?<br />Before playing it is very important that you have a secure and continuous connection. In the event of interruptions to your service, Royal Poker will not be liable for funds lost due to poor internet connectivity.</p>
+            <p>How long do I have to reconnect in case of disconnection?<br />All players will have a time bank, if you reconnect before it expires, you will be able to take action on your hand.</p>
+            <p>Why can't a friend play with the same IP?<br />For your protection and to prevent collusion, we do not allow multiple accounts to be played from the same IP address.</p>
+            <p><span>How is my Rake calculated in ring games?<br /><br />&bull; Small bets: 3% up to $1 per hand.<br />&bull; Medium bets: 4% up to $2 per hand.<br />&bull; Big bets: 5% up to $3 per hand.</span></p>
+					</div>
 				</div>
-				<button class="sign-in__btn" type="submit">Login</button>
-				<input type="checkbox" name="remember" id="remember">
-				<label for="remember">Remember me</label>
-				<a href="#">Forgot your password?</a>
-			</form>
-			<p>Copyright © 2022, Agent Site V2</p>
+				<div class="a-container">
+					<p class="a-btn">Game integrity<span></span></p>
+					<div class="a-panel">
+            <p>How does your shuffling work? How do I know it's fair?<br />We treat letters fairly and honestly. Once the deck is mixed, it is set and you cannot change the order in which the cards are dealt. The software that shuffles and deals the cards cannot control who wins or loses; It only deals the cards and the rest depends on the players in the game. Our software produces a completely random combination, which does not favor any player over any other. The methods we use ensure complete randomization of the cards which makes it unpredictable to determine the cards to come.</p>
+            <p>We arranged for the largest software security and quality consulting firm iTech Labs Australia to review our deck. Their research found that the deck was fair and random.</p>
+            <p>If you have further questions regarding our deck or security of our software, feel free to ask our Support service any questions you may like. The integrity of our games is paramount to our success and we are happy to address any concerns you may have.</p>
+            <p>How can they ensure the integrity of your games?<br />We make the security of our games a priority and use state-of-the-art technology to protect the integrity of our games.<br /><br />Collusion or chip transfer is strictly prohibited and any player who is involved in any kind of fund exchange agreement cannot play at the same cash game table or in the same Sit &amp; Go tournament. Unfair gambling, such as collusion, abuse of multiple accounts, and use of prohibited programs may result in penalties at our discretion. These penalties may include warnings, restrictions on playing with certain players, seizure of funds, and closure of your account.<br />We maintain a list of prohibited software programs and services on our FAQ page about third-party tools and services. You cannot use any of the programs or services on the "forbidden" list while the software is running. The list is not exhaustive and we reserve the right to add or modify the list at any time. We will take steps to detect and prevent all forms of deception, which may include examining your account, hand history, and programs running concurrently with our software.<br />We do not use any house players or robots. We do not hire any individuals to play on our site.</p>
+            <p>Can your employees play on your site?<br />No. Any employee or contractor who has access to privileged information (player records, hidden card hand history, etc.) will not be able to play on our site. This is to prevent any possible abuse of that privileged information. In fact, the immediate relatives of those people are also not allowed to play on our site.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">General Questions<span></span></p>
+					<div class="a-panel">
+            <p>What are your terms of service?<br />Please read our Online Poker Site Terms of Service&nbsp;<a href="https://media.betimages.com/media/rules/Terms&amp;ConditionsPokerWebsite.docx">here.</a></p>
+            <p>I would like to play under different names. Can I have more than one account?<br />Each player is only allowed one account. It is not allowed to close your account and open another one. Once you create an account, your uasuario or nickname cannot be changed, so choose carefully.</p>
+            <p>How can I help keep my account secure?<br />Protecting your password is your responsibility. Never reveal your account information to anyone. We will never ask you to send us your password and the only place you should use it is when you log in to the software. We recommend that you change your password regularly</p>
+            <p>I don't receive emails sent to my inbox.<br />This may be the result of your email provider mislabeling our emails as spam. If so, the problem is easily corrected by adding us to the safe senders list in your email software or marking an email from us as "not spam."</p>
+            <p>Can I change the language in which the software appears?<br />Yes, you can. We offer 6 software language preferences.</p>
+            <p>Change language You can choose another language using the desktop client, through the menu select "Settings" on the right side of the main lobby and choose the language<br />from the drop-down menu.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Poker Game<span></span></p>
+					<div class="a-panel">
+						<p>What happens if I disconnect in the middle of one hand?<br />Occasionally it happens that due to reasons that are beyond the control of our players, they cannot act in time on their poker hand. A player in a cash game (non-tournament) typically has 25 seconds to act with his hand if it is a fixed limit poker game and 35 seconds in a pot-limit or no limit poker game. A warning message is displayed in the chat box with 15 seconds left to act. If there was a disconnection and a player returned before timeout, he or she is given at least 10 seconds to act. Less time is allocated to perform at designated "fast" tables.<br />If a player is unable to perform within the allotted time while connected, the system bends the hand.<br />Additional time may be allocated to perform in some games, depending on the situation. The amount of extra time may vary depending on the game, but the concept is the same at all times: when faced with a decision on a larger pot, more time is given to return due to a disconnection.</p>
+            <p>Please note that tournaments do not allocate additional time due to disconnections, in most situations.</p>
+            <p>What happens if the system crashes in the middle of a game?<br />All transactions, including jackpots won and lost, are recorded in your account at the end of each hand. In the unlikely event of a server crash preventing the completion of a hand, the hands in progress at each table (tournaments and cash games) will be restored by pushing back these hands as if they had not happened. Each player's chip count will be reset to the amount at the beginning of the hand.</p>
+            <p>The poker game I wish to join is full. What should I do?<br />If a poker game is full, you can put your name on the waiting list for that game. When an in-game seat becomes available, the first person on the waiting list will have the first right of rejection for that seat.</p>
+            <p>The other option you have is to sit at a table empty of that limit and game. Often, empty tables fill up quickly once a player takes a seat.</p>
+            <p>What is a "rake"? How much does rake cost in poker games?<br />In our poker games, you never play against the house, only against other players. We receive compensation by taking a rake, a small amount from each cash pot. This jackpot rake never exceeds $5. At the lower limits, we take a smaller rake.</p>
+            <p>There is no rake "by hand" in tournaments; There is only an initial fee to enter.</p>
+            <p>How do I know how much money is in the pot?<br />At any of our tables, the total jackpot amount, including all current bets, are always displayed numerically on the table. Also, at the end of each betting round, all bets are collected in the center of the table and converted into higher denomination chips so you can easily see the total jackpot value.</p>
+            <p>What is the difference between No Limit, Pot Limit and Fixed Limit poker?<br />The betting structure for a particular game sets the limits of how much you can bet each time you have to act and in the case of CAP games, how much you can bet in total on each hand.<br />In poker games with an unlimited betting structure, each player can bet or increase by any amount up to and including their full stack (the total number of chips they possess at any given time) in any betting round, provided it is their turn to Act. In poker games with a jackpot limit betting structure, each player can bet or increase by any amount up to the size of the total jackpot at that time. In poker games with a fixed limit betting structure, each player can choose to match, bet or increase, but only for a fixed amount.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Online Poker Chat:<span></span></p>
+					<div class="a-panel">
+            <p>What are your chat rules?<br />You can choose to use the live chat feature or voice chat where available. We do not actively monitor chat and you play at tables with chat enabled at your own risk. Certain forms and topics of chat are not allowed. Players who participate in an offensive chat will be subject to a chat warning or suspension of their chat privileges.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Profanity/Abuse<span></span></p>
+					<div class="a-panel">
+            <p>We do not allow profane, vulgar, racist or abusive/insulting chat in our chat windows. We have a characteristic whereby certain profane or otherwise unacceptable words become an asterisk; A filtered word is one that has been deemed unacceptable on our site. Players who attempt to bypass the filter may also be subject to a warning or suspension of chat privileges.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Begging / Application<span></span></p>
+					<div class="a-panel">
+            <p>We do not allow players to repeatedly ask for chips, either play money or real money. No solicitation is allowed in any poker game at any time. There are facilities to avoid many cases of solicitation.</p>
+          </div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Floods<span></span></p>
+					<div class="a-panel">
+						<p>It is forbidden to send multiple and frequent messages to the chat window to drown out legitimate chat.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Malicious behavior<span></span></p>
+					<div class="a-panel">
+						<p>It is strictly forbidden for a user to use the chat for any malicious or offensive behavior, including but not limited to collusion, fraud, spam, and/or harassment. Users shall not make statements about us that are false or reasonably considered derogatory or critical. Users should generally be aware of the feelings of other customers and our chat staff and moderators and should act respectfully.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Tournament Rules<span></span></p>
+					<div class="a-panel">
+						<ul>
+              <li>In the event that a freeroll tournament is cancelled while a late registration is made, Royal Poker will not offer any form of compensation to the player.</li>
+              <li>Royal Poker reserves the right to cancel or delay a scheduled tournament without notice.</li>
+              <li>Details of each online poker tournament will be prominently displayed in the Tournament Lobby. Royal Poker reserves the right to change these details at any time without notice.</li>
+              <li>No user can change a specific seat in any tournament.</li>
+              <li>All rewards will be awarded to each user who eliminates another user at the end of the Knockout Tournament.</li>
+              <li>Prize payouts for each tournament will be determined at the time of tournament start if it is a sit and go tournament or at the end of late entry if it is a guaranteed prize tournament.</li>
+              <li>The use of multiple accounts for one person is prohibited and will not be tolerated.</li>
+              <li>Players can unsubscribe for an online poker tournament and will receive a full refund before the start of the tournament.</li>
+              <li>Tournaments conclude once a player has accumulated all the chips in the tournament. In the event that 2 or more players are eliminated in a hand, the player with the most chips before the hand is dealt will receive the highest place.</li>
+              <li>The tournament guarantee is only fulfilled if the tournament reaches the end of the late registration period.</li>
+              <li>No player receives the button twice in a row. In circumstances where players are eliminated in blinds, the button will continue to move clockwise. As all players have the opportunity to avoid a blind one, when this occurs, it is an equal opportunity for all players.</li>
+              <li>When playing head-to-head at the final table, the small blind will be in the dealer's position.</li>
+              <li>Each tournament will have a break of 5 minutes, 5 minutes before each hour.</li>
+              <li>When a hand is in play, users can share waiting cards or hand possibilities. If such conduct is found, the accounts involved will be considered collusive and will not be tolerated.</li>
+              <li>Players caught in collusion (chip download, soft play or unethical chat) will be excluded from the tournament and their accounts will be banned from playing at Royal Poker, and their funds will be confiscated.</li>
+              <li>If a regular, turbo/hyper or rebuy and complementary multi-table tournament is in late registration and is cancelled, all players will receive the following compensation (including players who have dropped): buy-ins, buy-ins, tournament rewards, tickets and return fees. It will be as if the tournament has never been played.</li>
+              <li>If a regular, turbo/hyper multi-table tournament or buy-back and add that is in a running state is cancelled and the money has not yet been cancelled, players who have been eliminated from the tournament will not receive any compensation for the tournament.</li>
+              <li>Players who remain in the tournament will receive the following compensation: A. 1 repurchase (no re-entries, no rebuys or add-ons). B. The remaining prize pool (all guarantees are met) will be distributed as a percentage according to each player's chip stack.</li>
+            </ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-
-    </header>
-    <main class="main-container">
-      <div class="discount ed-grid">
-        <h1>Promociones</h1>
-        <div class="discount-content ed-grid m-grid-2 l-grid-3">
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>200% bono de bienvenida de casino</h2><a href="bono-casino.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>100% jugada gratis</h2><a href="bono-bienvenida.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>10% jugada gratis deporte</h2><a href="jugada-gratis-10.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>20% gratis de deporte</h2><a href="jugada-gratis-20.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>25% jugada gratis deporte</h2><a href="jugada-gratis-25.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>100% bono de casino</h2><a href="bono-casino-100.html">Lo quiero</a>
-            </div>
-          </div>
-        </div>
-        <h2>Reembolso</h2>
-        <div class="rebate-content ed-grid m-grid-2 l-grid-3">
-          <div class="rebate-content__card"><img src="assets/img/background-rebate.jpg" alt="9% reembolso diario de caballos">
-            <div class="rebate-content__card-text">
-              <p>Bono de Reembolso</p>
-              <h2>Hasta 9% reembolso diario de caballos</h2><a href="caballos.html">Obtener</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="primary-button__wrapper ed-grid">
+    <a href="#" class="primary-button primary-button__join-first">Join now</a>
+</div>
     </main>
     <footer class="main-footer">
       <nav class="bottom-nav">
@@ -254,7 +342,7 @@
 					<li class="footer__nav__list-item"><a href="casino-rules.html">casino rules</a></li>
 					<li class="footer__nav__list-item"><a href="general-terms.html">general terms</a></li>
 					<li class="footer__nav__list-item"><a href="terms-conditions.html">terms & conditions</a></li>
-					<li class="footer__nav__list-item"><a href="account-payouts-bonuses.html">Lorem ipsum</a></li>
+					<li class="footer__nav__list-item"><a href="account-payouts-bonuses.html">account, payouts and bonuses</a></li>
 				</ul>
 			</div>
 			<div class="footer__nav__section">
@@ -278,7 +366,7 @@
 		</div>
 	</div>
 </footer>
-    </footer>
+    </footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="assets/js/scripts-min.js"></script>
     <script src="assets/js/parlay-calculator.js"></script>

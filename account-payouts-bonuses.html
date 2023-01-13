@@ -41,6 +41,7 @@
     <link rel="author" type="text/plain" href="./humans.txt">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml"><script src="https://kit.fontawesome.com/de643c382f.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="https://fonts.cdnfonts.com/css/motion-control-neue-lite" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
@@ -48,8 +49,7 @@
     <title>Accounts-payouts-bonuses | ABC Islands</title>
   </head>
   <body class="Accounts-payouts-bonuses" itemscope itemtype="http://schema.org/WebPage">
-    <header class="main-header">
-      <nav class='top-nav'>
+    <header class="main-header"><nav class='top-nav'>
 	<div class="top-nav__container ed-grid">
 		<a href="/" lass='top-nav__link' aria-label="Betsev">
 			<img src="assets/img/Logotipo ABC.svg" alt="" class='top-nav__logo'>
@@ -73,8 +73,8 @@
 		</div>
 		<div class="top-nav-control">
 			<div class="login">
-				<a class="login-btn" id='login-icon' href='#modal1'>Login</a>
-				<a href="" class="sign-btn">Join</a>
+				<button type="button" class="login-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+				<a href="join-now.html" class="sign-btn">Join</a>
 			</div>
 			<button type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r' aria-label="Menu">
 				<span class='hamburger-box' >
@@ -95,89 +95,111 @@
 			<li class="top-nav__desktop-link"><a href="banking.html" class='top-nav__anchor'><img src="assets/img/icons/banking-icon.svg" alt="">Banking</a></li>
 		</ul>
 	</div>
-</nav>	
+</nav>
 
-      <div class="modalmask" id="modal1">
-	<div class="modalbox movedown">
-		<a href="#close" title="Close" class="close">
-			<span class="material-symbols-outlined">
-				cancel
-			</span>
-		</a>
-		<div class="sign-in__container">
-			<img class="sign-in__img" src="assets/img/Logotipo ABC.svg" alt="">
-			<h3 class="sign-in__title">User Login</h3>
-			<form action="" class="sign-in__form">
-				<div class="sign-in__email">
-					<label for="email">Username or Email</label>
-					<input type="text" name="email" id="email">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-container">
+    <div class="modal-content modal-sign-in">
+			<div class="modal-content__picture">
+				<img src="assets/img/img-player-login.png" alt="">
+			</div>
+			<div class="sign-in__container">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="sign-in__password">
-					<label for="email">Password</label>
-					<input type="text" name="email" id="email">
+				<img class="sign-in__img" src="assets/img/Logotipo ABC.svg" alt="">
+				<h3 class="sign-in__title">User Login</h3>
+				<form action="" class="sign-in__form">
+					<div class="sign-in__email">
+						<label for="email">Username or Email</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<div class="sign-in__password">
+						<label for="email">Password</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<button class="sign-in__btn" type="submit">Login</button>
+					<div class="sign-in__remember">
+						<div class="sign-in__remember__check">
+							<input type="checkbox" name="remember" id="remember">
+							<label for="remember">Remember me</label>
+						</div>
+						<a class="sign-in__forgot" href="#">Forgot your password?</a>
+						<a class="sign-in__create" href="#">Don't have an account? Click here.</a>
+					</div>
+				</form>
+				<p class="sign-in__copy">Copyright © 2022, Agent Site V2</p>
+			</div>
+    </div>
+  </div>
+</div>
+    </header>
+    <main class="main-container">
+      <section class="hero-component">
+	<div class="hero-component__first ed-grid s-grid-1 m-grid-2">
+		<picture class="hero-component__first__img m-order-2">
+			<source media="(min-width: 600px)" srcset="assets/img/home-slider-desktop-01.png">
+			<img src="assets/img/home-slider-mobile-01.png" alt="">
+		</picture>
+		<div class="hero-component__content">
+			<div class="hero-component__first-info">
+				<h1 class="hero-component__first-info--title">Sportsbook</h1>
+				<p class="hero-component__first-info--text">The Players’ Paradise | get up to $1,000 on your first deposit</p>
+			</div> 
+			<div class="hero-component__first-btn">
+				<a href="#" class="primary-button primary-button__join-first">Join now </a>
+			</div>
+		</div>
+	</div>
+</section><div class="acc-pay-bon-rules ed-grid">
+	<div class="acc-pay-bon-rules__content">
+		<h2 class="acc-pay-bon-rules__heading underline-title">Account, payouts and bonuses</h2>
+		<div class="accordion-container ed-grid">
+			<div class="accordion v1">
+				<div class="a-container">
+					<p class="a-btn">Account Deposits<span></span></p>
+					<div class="a-panel">
+            <ul>
+              <li>1.1. When you open an Account, we may require you to make a minimum deposit in order to participate in the Services. Once you have deposited, you can then wager up to the amount available in your Account.</li>
+              <li>1.2. You will not be able to make a deposit until your name, address and date of birth have been verified.</li>
+              <li>1.3. You can make deposits into your Account by accessing the ‘cashier’ option in the Website.</li>
+              <li>1.4. You must ensure that the payment method you use is registered in your name. We will assume that you are complying with this requirement, and we accept no liability where this is not the case.</li>
+              <li>1.5. We may use third party payment service providers (“PSPs”) to process deposits and withdrawals from your Account. You authorize us to use PSPs, as necessary, to process transactions.</li>
+              <li>1.6. We are not a bank or financial institution, and the balance held in your Account will not earn interest in your favor. We do not offer any credit facilities.</li>
+              </ul>
+					</div>
 				</div>
-				<button class="sign-in__btn" type="submit">Login</button>
-				<input type="checkbox" name="remember" id="remember">
-				<label for="remember">Remember me</label>
-				<a href="#">Forgot your password?</a>
-			</form>
-			<p>Copyright © 2022, Agent Site V2</p>
+				<div class="a-container">
+					<p class="a-btn">Payouts<span></span></p>
+					<div class="a-panel">
+            <ul>
+              <li>1.7. You may withdraw your own real money deposits and winnings held in your Account at any time, provided that:</li>
+              <li>1.7.1 all payments made into your Account have been confirmed as cleared and have not been charged-back, reversed or otherwise cancelled;</li>
+              <li>1.7.2. we have completed any verification to our reasonable satisfaction. Where we have requested information from you to carry out the verification, any delay in providing this information may cause an additional delay when withdrawing funds; and</li>
+              <li>1.7.3. there is currently no ongoing investigation:</li>
+              <li>a) into a Service defect involving a Service on which you have played/wagered and which requires a temporary freeze on withdrawal of funds; or</li>
+              <li>b) where we have reason to believe you may have engaged in an illegal or Prohibited Practice which could entitle us to withhold funds</li>
+              <li>1.8. Please note the following:</li>
+              <li>1.8.1. wherever possible, we will process your withdrawals using the same payment method you used to make your deposits. Where we are unable to do so, we may contact you to request alternative payment details from you.</li>
+              <li>1.8.2. Withdrawal payments may only be made in the name of and to the registered Account holder.</li>
+            </ul>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Bonuses<span></span></p>
+					<div class="a-panel">
+            <ul>
+              <li>Bonus Policy</li>
+            </ul>
+            <p>We may offer bonuses and special offers from time to time (including but not limited to games bonuses, Free Play, free spins) which are subject to this Bonus Policy, the User Agreement (as applicable to you), and any promotion-specific terms and conditions made available to you (“Promotion Terms”). In the event of a conflict between the terms set in the Bonus Terms and Conditions, the Terms of Service and/or the Promotion Terms (to the extent that the terms apply to a bonus or special offer), the following order of priority shall apply: (i) Promotions Terms; (ii) Bonus Terms and Conditions; (iii) Terms of Service.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-    </header>
-    <main class="main-container">
-      <div class="discount ed-grid">
-        <h1>Promociones</h1>
-        <div class="discount-content ed-grid m-grid-2 l-grid-3">
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>200% bono de bienvenida de casino</h2><a href="bono-casino.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>100% jugada gratis</h2><a href="bono-bienvenida.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>10% jugada gratis deporte</h2><a href="jugada-gratis-10.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>20% gratis de deporte</h2><a href="jugada-gratis-20.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>25% jugada gratis deporte</h2><a href="jugada-gratis-25.html">Lo quiero</a>
-            </div>
-          </div>
-          <div class="discount-content__card"><img src="assets/img/background-discounts.jpg" alt="200% bono de bienvenida">
-            <div class="discount-content__card-text">
-              <p>Bono de bienvenida</p>
-              <h2>100% bono de casino</h2><a href="bono-casino-100.html">Lo quiero</a>
-            </div>
-          </div>
-        </div>
-        <h2>Reembolso</h2>
-        <div class="rebate-content ed-grid m-grid-2 l-grid-3">
-          <div class="rebate-content__card"><img src="assets/img/background-rebate.jpg" alt="9% reembolso diario de caballos">
-            <div class="rebate-content__card-text">
-              <p>Bono de Reembolso</p>
-              <h2>Hasta 9% reembolso diario de caballos</h2><a href="caballos.html">Obtener</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
     <footer class="main-footer">
       <nav class="bottom-nav">
@@ -254,7 +276,7 @@
 					<li class="footer__nav__list-item"><a href="casino-rules.html">casino rules</a></li>
 					<li class="footer__nav__list-item"><a href="general-terms.html">general terms</a></li>
 					<li class="footer__nav__list-item"><a href="terms-conditions.html">terms & conditions</a></li>
-					<li class="footer__nav__list-item"><a href="account-payouts-bonuses.html">Lorem ipsum</a></li>
+					<li class="footer__nav__list-item"><a href="account-payouts-bonuses.html">account, payouts and bonuses</a></li>
 				</ul>
 			</div>
 			<div class="footer__nav__section">
@@ -278,7 +300,7 @@
 		</div>
 	</div>
 </footer>
-    </footer>
+    </footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="assets/js/scripts-min.js"></script>
     <script src="assets/js/parlay-calculator.js"></script>
