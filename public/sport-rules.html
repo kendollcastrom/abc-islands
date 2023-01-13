@@ -152,127 +152,75 @@
 			</div>
 		</div>
 	</div>
-</section><!-- section(class='sport-rules info-politics ed-grid l-grid-1')
-	div(class='info-politics__content')
-		//- include:markdown-it(html) ../md/responsible-games.md
-		mixin bets(td1, td2)
-			tr(class="sport-rules__table--tr") 
-				td(class="sport-rules__table--td1")= td1
-				td(class="sport-rules__table--td2")= td2
-
-		div(class='sport-rules-container')
-			h1(class='s-cols-3') Reglas de Deportes
-			h2(class='') La siguiente tabla le indica cuando un juego se considera oficial para efectos de apuestas:
-			table(class='sport-rules__table')
-				colgroup(class='sport-rules--colgroup')
-					col(class='sport-rules__table--col1')
-					col(class='sport-rules__table--col2')
-				tbody(class="sport-rules__table--tbody")
-					-for(var i = 0; i < bets.length ; i++)
-						-var bet = bets[i]
-						+bets(bet.td1, bet.td2)
-
-
-		div(class='accordion-container ed-grid')
-			//- include:markdown-it(html) ../md/sport-rules.md
-			div(class='accordion v1')
-				div(class="a-container")
-					p(class="a-btn") Futbol Americano <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/futbol-americano.md
-						div(class='accordion v1')
-				div(class="a-container")
-					p(class="a-btn") Basketball <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/basketball.md
-						div(class='accordion v1')
-				div(class="a-container")
-					p(class="a-btn") Baseball <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/baseball.md
-				div(class="a-container")
-					p(class="a-btn") Hockey <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/hockey.md
-				div(class="a-container")
-					p(class="a-btn") Fútbol Soccer <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/soccer.md
-				div(class="a-container")
-					p(class="a-btn") Golf <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/golf.md
-				div(class="a-container")
-					p(class="a-btn") Boxeo - Mixed Martial Arts (MMA) - UFC <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/boxeo.md
-				div(class="a-container")
-					p(class="a-btn") Tennis <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/tennis.md
-				div(class="a-container")
-					p(class="a-btn") Autoracing <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/autoracing.md
-				div(class="a-container")
-					p(class="a-btn") Reglas Generales de Props <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/prop-rules.md
-				div(class="a-container")
-					p(class="a-btn") Apuestas Live In-Game Lines <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/live-games.md
-				div(class="a-container")
-					p(class="a-btn") Tarjetas Parlay <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/parlay-cards.md
-				div(class="a-container")
-					p(class="a-btn") Rugby <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/rugby.md
-				div(class="a-container")
-					p(class="a-btn") Cricket <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/cricket.md
-				div(class="a-container")
-					p(class="a-btn") Esports <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/esports.md
-				div(class="a-container")
-					p(class="a-btn") Volleyball <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/volleyball.md
-				div(class="a-container")
-					p(class="a-btn") Water Polo <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/water-polo.md
-				div(class="a-container")
-					p(class="a-btn") Handball <span></span>
-					div(class='a-panel')
-						include:markdown-it(html) ../md/sports/handball.md -->
-
-<div class="sport-rules ed-grid">
+</section><div class="sport-rules ed-grid">
 	<div class="sport-rules__content">
 		<h2 class="sport-rules__heading underline-title">Sport rules</h2>
 		<div class="sport-rules__related">
-			<h3 class="sport-rules__related__heading">Related to sporting events</h3>
+			<h3 class="sport-rules__related__heading">
+				Related to sporting events
+			</h3>
 			<ul class="sport-rules__related__list">
-				<li class="sport-rules__related__list--item">All sporting events must be played on date and site scheduled unless otherwise specified. Exceptions: Auto Racing, Golf, Tennis, MMA, UFC and Boxing.</li>
-				<li class="sport-rules__related__list--item">Auto Racing, Golf,Tennis, MMA, UFC and Boxing are not subject to this rule. The wagers will remain valid subject to the Ruling Body of each sport cancelling the event.</li>
-				<li class="sport-rules__related__list--item">If any event is postponed and/or rescheduled, the event will automatically constitute "no action".</li>
-				<li class="sport-rules__related__list--item">We do not recognize suspended games, protests or overturned decisions for wagering purposes.</li>
-				<li class="sport-rules__related__list--item">Las Vegas rules apply to any wager not covered by rules and regulations in here.</li>
-				<li class="sport-rules__related__list--item">For Cycling events riders might be issued the same time but they will be issued an order of finish that is decided by photo finish. Results will be taken from the official finishing position in the events main web site.</li>
-				<li class="sport-rules__related__list--item">For all props on players or teams we will use the official website of the sporting event to declare the winner. Examples: WWW.NFL.COM, WWW.NBA.COM etc. For events that do not have an associated website we will use WWW.ESPN.COM for results.</li>
+				<li class="sport-rules__related__list--item">
+					All sporting events must be played on date and site
+					scheduled unless otherwise specified. Exceptions: Auto
+					Racing, Golf, Tennis, MMA, UFC and Boxing.
+				</li>
+				<li class="sport-rules__related__list--item">
+					Auto Racing, Golf,Tennis, MMA, UFC and Boxing are not
+					subject to this rule. The wagers will remain valid subject
+					to the Ruling Body of each sport cancelling the event.
+				</li>
+				<li class="sport-rules__related__list--item">
+					If any event is postponed and/or rescheduled, the event will
+					automatically constitute "no action".
+				</li>
+				<li class="sport-rules__related__list--item">
+					We do not recognize suspended games, protests or overturned
+					decisions for wagering purposes.
+				</li>
+				<li class="sport-rules__related__list--item">
+					Las Vegas rules apply to any wager not covered by rules and
+					regulations in here.
+				</li>
+				<li class="sport-rules__related__list--item">
+					For Cycling events riders might be issued the same time but
+					they will be issued an order of finish that is decided by
+					photo finish. Results will be taken from the official
+					finishing position in the events main web site.
+				</li>
+				<li class="sport-rules__related__list--item">
+					For all props on players or teams we will use the official
+					website of the sporting event to declare the winner.
+					Examples: WWW.NFL.COM, WWW.NBA.COM etc. For events that do
+					not have an associated website we will use WWW.ESPN.COM for
+					results.
+				</li>
 			</ul>
 		</div>
 		<div class="sport-rules__events">
-			<h3 class="sport-rules__events__heading">For all sports and events</h3>
+			<h3 class="sport-rules__events__heading">
+				For all sports and events
+			</h3>
 			<ul class="sport-rules__events__list">
-				<li class="sport-rules__events__list--item">We reserve the right to cancel any wager accepted when the line was obviously posted incorrectly. (BAD LINE RULE).</li>
-				<li class="sport-rules__events__list--item">Wagers will also be cancelled when there is proof of cheating, attempted hacking or knowledgeable deceit. (CHEATING RULE).</li>
-				<li class="sport-rules__events__list--item">We also reserve the right to cancel wagers placed after a game is final or an outcome can be deduced from the score. (BAD TIME RULE).</li>
-				<li class="sport-rules__events__list--item">Matchups that are posted incorrectly will be automatically cancelled. These include wrong participants and matchup incorrectly entered into the system. (WRONG MATCHUP RULE).</li>
+				<li class="sport-rules__events__list--item">
+					We reserve the right to cancel any wager accepted when the
+					line was obviously posted incorrectly. (BAD LINE RULE).
+				</li>
+				<li class="sport-rules__events__list--item">
+					Wagers will also be cancelled when there is proof of
+					cheating, attempted hacking or knowledgeable deceit.
+					(CHEATING RULE).
+				</li>
+				<li class="sport-rules__events__list--item">
+					We also reserve the right to cancel wagers placed after a
+					game is final or an outcome can be deduced from the score.
+					(BAD TIME RULE).
+				</li>
+				<li class="sport-rules__events__list--item">
+					Matchups that are posted incorrectly will be automatically
+					cancelled. These include wrong participants and matchup
+					incorrectly entered into the system. (WRONG MATCHUP RULE).
+				</li>
 			</ul>
 			<table class="GeneratedTable">
 				<thead>
@@ -292,7 +240,11 @@
 					</tr>
 					<tr>
 						<td>Basketball</td>
-						<td>All competitions/leagues except the NBA must go at least 35 minutes for action unless otherwise specified.</td>
+						<td>
+							All competitions/leagues except the NBA must go at
+							least 35 minutes for action unless otherwise
+							specified.
+						</td>
 					</tr>
 					<tr>
 						<td>Pro Basketball</td>
@@ -324,7 +276,13 @@
 					</tr>
 					<tr>
 						<td>Soccer</td>
-						<td>If a match is suspended before full time is reached, and not completed the same day, wagers on the outcome of the match are considered void and all wagers will be refunded. Includes Goal Lines, Money lines and Totals.</td>
+						<td>
+							If a match is suspended before full time is reached,
+							and not completed the same day, wagers on the
+							outcome of the match are considered void and all
+							wagers will be refunded. Includes Goal Lines, Money
+							lines and Totals.
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -334,152 +292,1759 @@
 				<div class="a-container">
 					<p class="a-btn">football<span></span></p>
 					<div class="a-panel">
-						<h3 class="">nfl</h3>
-						<ul class="">
-							<li class="">Team totals for the second half include overtime.</li>
-							<li class="">4th quarter lines do not include overtime.</li>
-							<li class="">Double result pools consist of the winner of the 1st half and the winner of the game.</li>
-							<li class="">1st scoring play and margin of victory pools include overtime. Double result pools include overtime only in REGULAR SEASON.</li>
-							<li class="">In the event that the Super Bowl date and/or venue is changed due to severe weather conditions, all existing open bets on the game and on the game's related bets (props) will be considered action and stand until the game is played.</li>
+						<h3>nfl</h3>
+						<ul>
+							<li>
+								Team totals for the second half include
+								overtime.
+							</li>
+							<li>4th quarter lines do not include overtime.</li>
+							<li>
+								Double result pools consist of the winner of the
+								1st half and the winner of the game.
+							</li>
+							<li>
+								1st scoring play and margin of victory pools
+								include overtime. Double result pools include
+								overtime only in REGULAR SEASON.
+							</li>
+							<li>
+								In the event that the Super Bowl date and/or
+								venue is changed due to severe weather
+								conditions, all existing open bets on the game
+								and on the game's related bets (props) will be
+								considered action and stand until the game is
+								played.
+							</li>
+						</ul>
+						<p>
+							* 2nd Half and each quarter must be completed in
+							full to be considered action.
+						</p>
+						<p>
+							Teams must play all 16 regular season games for
+							action, if a game ties it will be considered half a
+							win for each team.
+						</p>
+						<p>* 2nd half bets always include overtime.</p>
+						<h3>cfb</h3>
+						<ul>
+							<li>
+								Team totals for the second half include
+								overtime.
+							</li>
+							<li>4th quarter lines do not include overtime.</li>
+							<li>
+								Double result pools consist of the winner of the
+								1st half and the winner of the game.
+							</li>
+							<li>
+								1st scoring play and margin of victory pools
+								include overtime. Double result pools include
+								overtime only in REGULAR SEASON.
+							</li>
+						</ul>
+						<p>
+							* 2nd Half and each quarter must be completed in
+							full to be considered action.
+						</p>
+						<p>* 2nd half bets always include overtime.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Basketball<span></span></p>
+					<div class="a-panel">
+						<h3>NBA</h3>
+						<ul>
+							<li>
+								Team totals for the second half include
+								overtime.
+							</li>
+							<li>4th quarter lines do not include overtime.</li>
+							<li>
+								Double result pools consist of the winner of the
+								1st half and the winner of the game.
+							</li>
+							<li>
+								Both double result and margin of victory pools
+								include overtime.
+							</li>
+						</ul>
+						<p>* 2nd half bets always include overtime.</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Baseball<span></span></p>
+					<div class="a-panel">
+						<ul>
+							<li>
+								Games are official after 5 innings of play
+								unless the home team is winning after 4 and a
+								half innings.
+							</li>
+							<li>
+								After 5 innings of play, if the game is called
+								or suspended, the final score (for wagering
+								purposes) is determined by the last full inning
+								of play unless the home team scores to tie or
+								takes the lead in the bottom half of the inning.
+								In which case, the winner is determined by the
+								score when the game is called.
+							</li>
+							<li>
+								Regular Season Games that are suspended or
+								postponed do not carry over to the following
+								day. However, for MLB PostSeason, World Baseball
+								Classic (WBC) Final and Semi Finals games that
+								are suspended or postponed, bets will carry over
+								until the game is ruled final.
+							</li>
+							<li>
+								College World Series games that are suspended
+								are considered to be in a long rain delay and
+								will be graded when the game reaches its
+								official ending.
+							</li>
+							<li>
+								Scheduled 7 Inning MLB Games: For Runline
+								(Spread) and Total (over/under) wagers to have
+								action, the game must go 7 innings or
+								6&Acirc;&frac12; if the home team is winning.
+							</li>
+							<li>
+								On Mexican Baseball games for action on RUN
+								LINES &amp; TOTALS games must go at least 8.5
+								innings if the home team is winning.
+							</li>
+							<li>
+								Exhibition games shall be nine inning games or
+								they may be shortened to seven-inning games or
+								five-inning games upon mutual agreement of both
+								managers. Shortened games will be treated as
+								rain shortened games.
+							</li>
+						</ul>
+						<h3>Baseball lines</h3>
+						<p>
+							Baseball games can be wagered three different ways:
+							Money Line, Run Line and Totals. For the Totals and
+							Run Lines we use a 20 cent line. The favorite has
+							the negative number next to it showing the price you
+							have to lay to play that side and the underdog
+							almost always has a positive number next to it
+							showing the price you would win by playing it. Below
+							is an example of a typical baseball game.
+						</p>
+
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td>Mets - Hampton</td>
+									<td>-134 9ov -105</td>
+								</tr>
+								<tr>
+									<td>Marlins - Dempster</td>
+									<td>+124 9un -115</td>
+								</tr>
+							</tbody>
+						</table>
+						<ul>
+							<li>
+								If you want to place a $100 wager on the Mets,
+								you would be risking $134 to win $100.
+							</li>
+							<li>
+								If you want to place a $100 wager on the
+								Marlins, you would risk $100 to win $124.
+							</li>
+							<li>
+								If you want to place a $100 wager on over 9
+								runs, you would risk $105 to win $100.
+							</li>
+							<li>
+								If you want to place a $100 wager on under 9
+								runs, you would risk $115 to win $100.
+							</li>
+						</ul>
+						<p>
+							When betting Baseball Money Lines you can chose the
+							following options for your
+							wagers:&nbsp;<strong>ACTION</strong>,&nbsp;<strong
+								>LISTED PITCHERS (LP)</strong
+							>,&nbsp;<strong
+								>YOUR TEAM&apos;S PITCHER (PT)</strong
+							>
+							or&nbsp;<strong>OPPOSING PITCHER (TP)</strong>.
+						</p>
+						<p>
+							NOTE: The starting pitchers are determined after the
+							first pitch. In the event of a pitching change prior
+							to the game, the money price may be adjusted and
+							your bet may change if you play with action.
+						</p>
+						<dl>
+							<dt>Action:</dt>
+							<dd>
+								Your wager is team against team regardless of
+								who the starting pitchers are. In case of a
+								pitching change, your price will be adjusted to
+								the opening number of the actual starting
+								pitcher.
+							</dd>
+							<dt>Listed Pitchers (LP):</dt>
+							<dd>
+								Your wager is predicated on both listed pitchers
+								throwing at least one pitch for you to have
+								action. Both pitchers must start in order for
+								you to have action on your wager, otherwise the
+								bet will be declared NO ACTION after the game is
+								final.
+							</dd>
+							<dt>Your team&apos;s Pitcher (PT):</dt>
+							<dd>
+								You are only taking the listed pitcher of the
+								team you are wagering on. The pitcher selected
+								must start the game for your wager to count. Any
+								pitcher can start for the opposing team. In case
+								of a pitching change on the opposing team, the
+								price will still adjust to the opening price of
+								the actual starters.
+							</dd>
+							<dt>Opposing Pitcher (TP):</dt>
+							<dd>
+								You are listing the opposing team&apos;s
+								pitcher. Any starter can pitch for the team you
+								selected. The opposing team&apos;s pitcher has
+								to start. In the case of a pitching change on
+								your team, the price will be adjusted to the
+								opening price of the actual pitchers.
+							</dd>
+						</dl>
+						<p>
+							The other way to wager on a baseball game is to bet
+							the run-line. Every favorite will be - 1 1/2 runs
+							and could either be plus or minus money.
+						</p>
+						<p>
+							Below is an example of what a run-line looks like.
+						</p>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td>Mets - Hampton</td>
+									<td>+1 1/2 +115</td>
+								</tr>
+								<tr>
+									<td>Marlins - Dempster</td>
+									<td>-1 1/2 -135</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							If you wager $100 on the Mets, you have the Mets
+							minus 1 1/2 runs risking $100 to win $115. If you
+							wager $100 on the Marlins, you have the Marlins plus
+							1 1/2 runs risking $135 to win $100.
+						</p>
+						<p>
+							<strong
+								>When wagering on Total Runs (over/under) and
+								Run Lines (run spread)</strong
+							>
+							the game must go 9 innings (8 1/2 if the home team
+							is winning). If the game is suspended after 9
+							innings, the final score (for wagering purposes) is
+							determined by the last full inning of play unless
+							the home team scores to tie or takes the lead in the
+							bottom half of the inning. In which case, the winner
+							is determined by the score when the game is called.
+							If with this rules the game is a TIE, Run Lines and
+							Totals count. All wagers on Total Runs and Run Lines
+							are ALWAYS with Listed Pitchers (LP). If both
+							pitchers scheduled to pitch at the time of the wager
+							do not throw at least one pitch then the wager will
+							be cancelled. Wagers on Total Runs and Run Lines are
+							refunded in the event of a pitching change when the
+							game is final.
+						</p>
+						<p>
+							We do NOT accept Parlays, If Bets or Round Robins
+							with the same game&apos;s Total and Run Line. Any
+							wager of such type can be cancelled by us without
+							prior notice.
+						</p>
+						<p>
+							<strong>RAIN or SHINE Rule:</strong> Baseball Props
+							including 1st Score, Yes/No Score in 1st inning, 1st
+							5 inning line are graded as soon as that event
+							occurs. For 1st 5 inning line the game must go into
+							the 6th inning of play for action. Bets are final
+							even if the game gets rained out or suspended.
+						</p>
+						<p>
+							For any Player prop, the game must be completed
+							in-full to have action. Games that are scheduled for
+							7 Innings only and are completed (6.5 if home team
+							is winning) are considered completed.
+						</p>
+						<p>
+							<strong>2ND HALF LINES:</strong> 2nd half baseball
+							score includes from the top of the 6th inning till
+							the end of the game including extra innings. The
+							game must be completed for action (9 full innings or
+							8.5 innings if the home team is winning). All wagers
+							on the 2nd half lines are action regardless of the
+							pitcher. If Games are suspended and MORE than 9
+							innings have been played the score will revert back
+							to the last COMPLETE inning.
+						</p>
+						<p>
+							<strong
+								>For baseball props and Alternate Runlines and
+								Halves</strong
+							>, ALL listed pitchers must go. On the player to get
+							most total bases, the following scoring system is
+							used: Single = 1 base, Double = 2 bases, Triple = 3
+							bases, HR = 4 bases. Both players + starting
+							pitchers must start for action. On Pool events ALL
+							PLAYERS ARE ACTION unless otherwise specified.
+							Baseball props can be used for Straight bets,
+							Parlays, If Bets and/or Round Robins (NO TEASERS) as
+							long as the other Team in such wagers does not
+							belong to the same Family. Any wagers within the
+							same Family (OR PROPS USED IN TEASERS) will be
+							cancelled by us without prior notice.
+						</p>
+						<p>
+							<strong>Baseball Series:</strong> Baseball Series
+							are games played between two teams (Regular Season
+							Only). Neither team can play any other opponent
+							between the scheduled games in the series. The
+							following are the main rules used to grade the
+							Baseball Series:
+						</p>
+						<ul>
+							<li>
+								All games in a series count towards wager. In a
+								four game series 2-2 is a tie.
+							</li>
+							<li>
+								A series is considered action if one game has
+								been played.
+							</li>
+							<li>
+								If a game during the series is called, this game
+								will be considered good for the series as long
+								as one of the teams is officially declared the
+								winner of the game.
+							</li>
+							<li>
+								All wagers are based on ACTION in regard to the
+								pitchers in each games.
+							</li>
+							<li>
+								A suspended game from a previous series that is
+								completed is not considered part of the current
+								series.
+							</li>
+							<li>
+								These rules may differ from other sportsbooks.
+							</li>
+						</ul>
+						<p>
+							So if a series starts on Friday and ends on Monday,
+							it will be graded out on Monday, with all games
+							counting towards the result.
+						</p>
+						<p>
+							<strong>College World Series games</strong> (all
+							college baseball games) that are suspended are
+							considered to be in a long rain delay and will be
+							graded when the game reaches its official ending.
+						</p>
+						<p>
+							<strong>For the World Baseball Classic (WBC)</strong
+							>, during the first two rounds of play, both sides
+							and totals have action regardless of the Mercy Rule.
+							For the Semi Finals and Final of the WBC, the Mercy
+							Rule is not in effect therefore games will follow
+							normal playoff rules. In case of discrepancy or
+							items not covered, Las Vegas gaming rules will
+							apply.
+						</p>
+						<p>
+							<strong>Totals, Runs, Hits and Errors:</strong> A
+							game must go 8 and a half innings if home team is
+							winning, or 9 if the road team is winning for
+							action.
+						</p>
+						<p>
+							<strong>GRAND SALAMI</strong> For grand salami
+							wagers, every game on the board has to go the full 9
+							innings (81/2 if the home team is winning) otherwise
+							it will be cancelled.
+						</p>
+						<p>
+							Pitchers do not matter, meaning that if there is a
+							pitching change on any game your bet will still have
+							action.
+						</p>
+						<p>
+							For League Grand Salami, it will only take to
+							account games played on that specific league,
+							example: National League Grand Salami will only
+							include games from the National League schedule and
+							not National League teams that could be playing on
+							Interleague games.
+						</p>
+						<p>
+							<strong
+								>** Exception: Playoff baseball games do not
+								fall under the suspended game rule in accordance
+								to Major League Baseball guidelines to finish
+								all games. If a game is suspended due to weather
+								or darkness all bets will remain pending until
+								the game is declared final.</strong
+							>
+						</p>
+						<h3>Softball and Little League</h3>
+						<p>
+							Softball or little league game ending early as a
+							result of a mercy rule will have action on all
+							wagers (unless otherwise noted). If a game is
+							suspended or postponed due to weather or darkness
+							all bets will remain pending until the game is
+							final.
+						</p>
+						<p>
+							NCAA regular season Softball --- Games ending early
+							as a result of a mercy rule will have action on all
+							wagers (unless otherwise noted). If a game is
+							suspended or postponed due to weather or darkness
+							all bets will be considered NO ACTION
+						</p>
+						<p>
+							NCAA Post season --- Games ending early as a result
+							of a mercy rule will have action on all wagers
+							including TOTALS (unless otherwise noted). If a game
+							is suspended or postponed due to weather or darkness
+							all bets will remain pending until the game is
+							final.
+						</p>
+						<p>
+							Little League Baseball --- Games ending early as a
+							result of a mercy rule will have action on all
+							wagers including TOTALS (unless otherwise noted). If
+							a game is suspended or postponed due to weather or
+							darkness all bets will remain pending until the game
+							is final.
+						</p>
+					</div>
+				</div>
+				<div class="a-container">
+					<p class="a-btn">Hockey<span></span></p>
+					<div class="a-panel">
+						<h3>Hockey</h3>
+						<ul>
+							<li>
+								Games are official after 55 minutes of play.
+							</li>
+							<li>
+								Wagering will be accepted using the Goal line
+								(Puck line), Money line (3 way line) or Total
+								Goals Scored (over/under) in the game by both
+								teams.
+							</li>
+							<li>
+								We offer two types of Hockey games:
+								<ol>
+									<li>
+										<strong>COMPLETE GAME RESULT:</strong>
+										MONEY LINE, PUCK LINE &amp; TOTAL. The
+										game must be played to completion. In
+										the event of a game being decided in
+										overtime or a penalty shootout, then one
+										goal will be added to the winning
+										team&acirc;&euro;&trade;s score.
+									</li>
+									<li>
+										<strong
+											>60 MINUTE RESULT/REGULATION
+											TIME:&nbsp;</strong
+										>MONEY LINE, PUCK LINE &amp; TOTAL. This
+										wager will be graded after regulation
+										time and&nbsp;<strong
+											>DOES NOT include Overtime or
+											Shootouts goals.</strong
+										>
+										Any GOALS scored in overtime or in the
+										shootouts DO NOT count towards any wager
+										in the 60 Minute Result/Regulation Time)
+									</li>
+								</ol>
+							</li>
+							<li>
+								We differentiate the games by adding (REGULATION
+								TIME) to the leagues that are going to be handle
+								this way.
+							</li>
+						</ul>
+						<p>Below is an example of a typical Hockey game.</p>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td>Penguins</td>
+									<td>-145 5.5 -150</td>
+								</tr>
+								<tr>
+									<td>Sharks</td>
+									<td>+125 5.4 +130</td>
+								</tr>
+							</tbody>
+						</table>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td>GL Penguins</td>
+									<td>-1 1/2 +130</td>
+								</tr>
+								<tr>
+									<td>GL Sharks</td>
+									<td>+1 1/2 -150</td>
+								</tr>
+							</tbody>
+						</table>
+						<ul>
+							<li>
+								If you want to place a $100 wager on the
+								Penguins, you would be risking $145 to win $100
+							</li>
+							<li>
+								If you want to place a $100 wager on the Sharks,
+								you would risk $100 to win $125.
+							</li>
+							<li>
+								If you want to place a $100 wager on over 5.5
+								goals, you would risk $150 to win $100.
+							</li>
+							<li>
+								If you want to place a $100 wager on under 5.5
+								goals, you would risk $100 to win $130.
+							</li>
+							<li>
+								If you want to place a $100 wager on GL Penguins
+								-1 1/2 goals, you would risk $100 to win $130.
+							</li>
+							<li>
+								If you want to place a $100 wager on GL Sharks
+								+1 1/2 goals, you would risk $150 to win $100.
+							</li>
+						</ul>
+						<p>
+							<strong>Example of a Shootout game:</strong> A game
+							goes into overtime with a score of Team A 3 and Team
+							B 3 (tied 3-3) and no team scores in the Overtime
+							period. The winner of the shootouts will be awarded
+							a goal making the final score Team A 4 and Team B 3.
+							With this result the total for both teams combined
+							will be 7. Any 60 MINUTE RESULT wagers will be
+							decided with the 60 minute result of 3-3 tie.
+						</p>
+						<ul>
+							<li>
+								<strong>Hockey Props</strong> including 1st
+								Score, 1 Period line are graded as soon as that
+								event occurs. Bets are final even if the game
+								gets suspended.
+							</li>
+							<li>
+								<strong>On player props</strong>, both players
+								must play in the game for action. On Pool
+								events&nbsp;<strong
+									>ALL PLAYERS ARE ACTION</strong
+								>
+								unless otherwise specified. On Pool
+								events&nbsp;<strong
+									>ALL PLAYERS ARE ACTION</strong
+								>
+								unless otherwise specified. Hockey props can be
+								used for Straight bets, Parlays, If Bets and/or
+								Round Robins (NO TEASERS) as long as the other
+								Team in such wagers does not belong to the same
+								Family. Any wagers within the same Family (OR
+								PROPS USED IN TEASERS) will be cancelled by us
+								without prior notice.
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Soccer<span></span></p>
 					<div class="a-panel">
-
+						<h3>Soccer</h3>
+						<p>
+							For soccer games there can be four different types
+							of lines:
+						</p>
+						<dl>
+							<dt>
+								1. Spread Wagering (90 Minutes: 1st and 2nd
+								Halves plus injury time):
+							</dt>
+							<dd>
+								Only includes 1st and 2nd halves plus injury
+								time to decide the winner of the bet. Does not
+								include any shootouts if any or overtime (Extra
+								Periods). The possible results in the game
+								include a home win, an away win or a draw.
+							</dd>
+							<dt>2. To advance/to lift the cup Wagering:</dt>
+							<dd>
+								Includes the 90 minutes regulation time plus any
+								injury or extra times played. You bet on the
+								team that will advance or will be declared the
+								winner of the match, therefore any shootouts
+								help determine the winner. One team must win the
+								match.
+							</dd>
+							<dt>
+								3. Three Way Result (90 Minutes:1st and 2nd
+								Halves plus injury time):
+							</dt>
+							<dd>
+								Includes 1st and 2nd halves and any injury time,
+								does not include overtime or shootouts. You can
+								bet on Team A, Team B or a Tie.
+							</dd>
+							<dt>
+								4. Total Wagering (90 Minutes: 1st and 2nd
+								Halves plus injury time):
+							</dt>
+							<dd>
+								Includes 1st and 2nd halves plus injury time.
+								Does not include shootouts of any or overtime
+								unless specified otherwise.
+							</dd>
+							<dt>
+								5. Correct Score (90 Minutes: 1st and 2nd Halves
+								Plus Injury Time):
+							</dt>
+							<dd>
+								Includes 1st and 2nd Halves plus injury time.
+								Does not include shootouts of any or overtime
+								unless specified otherwise.
+							</dd>
+							<dt>6. Double Result (1st half + game result):</dt>
+							<dd>
+								Includes 1st and 2nd Halves plus injury time.
+								Does not include shootouts of any or overtime
+								unless specified otherwise.
+							</dd>
+							<dt>
+								7. Margin of victory (90 Minutes: 1st and 2nd
+								halves plus injury time):
+							</dt>
+							<dd>
+								Includes 1st and 2nd halves and any injury time.
+								Does not include shootouts of any or overtime
+								unless specified otherwise.
+							</dd>
+							<dt>8. Soccer Props:</dt>
+							<dd>
+								All PROPS are for the 90 minutes regulation time
+								and injury time, they DO NOT include extra times
+								or penalty shootouts unless otherwise specified.
+							</dd>
+							<dt>9. Early/Late goal:</dt>
+							<dd>
+								The grading of these props will be determined by
+								the time of the goal provided by the official
+								website not by the actual time the goal
+								occurred. In soccer if a goal is made at the
+								22:35 the official time for that goal will be
+								23:00.<br />For example, if the time of the
+								Early Goal was set at 26:00 and the goal was
+								made at 25:20 making the official time of that
+								goal 26:00, then NO GOAL BEFORE 26:00 will be
+								the winner.
+							</dd>
+						</dl>
+						<p>
+							We do not accept Parlays, If Bets, Reverses or Round
+							Robins with the same game&apos;s Three Way Line or
+							Goal Line to the Game Total. . Any such wagers will
+							be cancelled by us without prior notice.
+						</p>
+						<h4>Asian Handicap Lines</h4>
+						<h5>Handicap line -1/4 (0.25) goal.</h5>
+						<dl>
+							<dt>Team giving --1/4 (-0.25) goals:</dt>
+							<dd>
+								Win by any score: All bets are winners.<br />Draw:
+								Half the stakes are refunded. The other half of
+								the stake is declared a loser.<br />Lose by any
+								score: All bets are losers.
+							</dd>
+							<dt>Team receiving +-1/4 (+0.25) goals:</dt>
+							<dd>
+								Win by any score: All bets are winners.<br />Draw:
+								Half the stake is settled at the price of the
+								chosen selection. The other half is refunded.<br />Lose
+								by any score: All bets are losers.
+							</dd>
+						</dl>
+						<h5>Handicap line -1/2 (0.5) goal.</h5>
+						<dl>
+							<dt>Team giving -1/2 (-0.5) goals:</dt>
+							<dd>
+								Win by any score: All bets are winners.<br />Draw:
+								All bets are losers.<br />Lose by any score: All
+								bets are losers.
+							</dd>
+							<dt>Team receiving +1/2 (+0.5) goals:</dt>
+							<dd>
+								Win by any score: All bets are winners.<br />Draw:
+								All bets are winners.<br />Lose by any score:
+								All bets are losers.
+							</dd>
+						</dl>
+						<h5>Handicap line 3/4 (0.75) goal.</h5>
+						<dl>
+							<dt>Team giving -3/4 (-0.75) goals:</dt>
+							<dd>
+								Win by 2 or more: All bets are winners.<br />Win
+								by exactly 1: Half the stake is settled at the
+								price of the chosen selection. The other half is
+								refunded.<br />Draw or lose by any score: All
+								bets are losers.
+							</dd>
+							<dt>Team receiving +3/4 (+0.75) goals:</dt>
+							<dd>
+								Draw or win by any score: All bets are
+								winners.<br />Lose by exactly 1: Half the stake
+								is refunded. The other half is declared a
+								loser.<br />Lose by 2 or more: All bets are
+								losers.
+							</dd>
+						</dl>
+						<h5>Handicap line 1 goal.</h5>
+						<dl>
+							<dt>Team giving -1 goals:</dt>
+							<dd>
+								Win by 2 or more: All bets are winners.<br />Win
+								by exactly 1: All bets are void and refunded.<br />Draw
+								or lose: All bets are losers.
+							</dd>
+							<dt>Team receiving +1 goals:</dt>
+							<dd>
+								Win by any score or draw: All bets are
+								winners.<br />Lose by exactly 1: All bets are
+								void and refunded.<br />Lose by 2 or more: All
+								bets are losers.
+							</dd>
+						</dl>
+						<h5>Handicap line 1 1/4 (1.25) goals.</h5>
+						<dl>
+							<dt>Team giving -1 1/4 (-1.25) goals:</dt>
+							<dd>
+								Win by 2 or more: All bets are winners. Win by
+								exactly 1: Half the stake is refunded. The other
+								half is declared a loser. Draw or lose by any
+								score - All bets are losers.
+							</dd>
+							<dt>Team receiving +1 1/4 (+1.25) goals:</dt>
+							<dd>
+								Win by any score or draw: All bets are winners.
+								Lose by exactly 1: Half the stake is settled at
+								the price of the chosen selection. The other
+								half is refunded. Lose by 2 or more: All bets
+								are losers.
+							</dd>
+						</dl>
+						<h5>Handicap line 1 1/2 (1.5) goals.</h5>
+						<dl>
+							<dt>Team giving -1 1/2 (-1.5) goals:</dt>
+							<dd>
+								Win by 2 or more: All bets are winners.<br />Win
+								by exactly 1, draw or lose by any score: All
+								bets are losers.
+							</dd>
+							<dt>Team receiving +1 1/2 (+1.5) goals:</dt>
+							<dd>
+								Lose by exactly 1, draw or win by any score: All
+								bets are winners.<br />Lose by 2 or more: All
+								bets are losers.
+							</dd>
+						</dl>
+						<h5>Handicap line 1 3/4 (1.75) goals.</h5>
+						<dl>
+							<dt>Team giving -1 3/4 (-1.75) goals:</dt>
+							<dd>
+								Win by 3 or more: All bets are winners.<br />Win
+								by exactly 2: Half the stake is settled at the
+								price of the selection. The other half is
+								refunded.<br />Win by 1, draw or lose by any
+								score: All bets are losers.
+							</dd>
+							<dt>Team receiving +1 3/4 (+1.75) goals:</dt>
+							<dd>
+								Lose by 1, draw or win by any score: All bets
+								are winners.<br />Lose by exactly 2: Half the
+								stake is refunded. The other half is a loser.<br />Lose
+								by 3 or more: All bets are losers.
+							</dd>
+						</dl>
+						<h5>Handicap line 2 (2) goals.</h5>
+						<dl>
+							<dt>Team giving -2 goals:</dt>
+							<dd>
+								Win by 3 or more: All bets are winners.<br />Win
+								by exactly 2: All bets are void and refunded.<br />Win
+								by 1, draw or lose by any score: All bets are
+								losers.
+							</dd>
+							<dt>Team receiving +2 goals:</dt>
+							<dd>
+								Lose by 1, draw or win by any score: All bets
+								are winners. Lose by exactly 2: All bets are
+								void and refunded. Lose by 3 or more: All bets
+								are losers.
+							</dd>
+						</dl>
+						<ul>
+							<li>
+								<strong
+									>The same rules apply for any higher Asian
+									handicap lines such as -2 1/4, -3 3/4
+									etc.</strong
+								>
+							</li>
+							<li>
+								<strong
+									>Soccer totals that use Asian Handicap lines
+									also follow the same principles of 1/4 goals
+									towards grading.</strong
+								>
+							</li>
+							<li>
+								<strong
+									>In case of a parlay with an asian handicap
+									line, the pick will be eliminated and the
+									parlay reverts to the lower number of teams.
+									Example 2 Team parlays become straight
+									plays. 3 Team parlays become 2 Team
+									parlays.</strong
+								>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Golf<span></span></p>
 					<div class="a-panel">
-
+						<h3>Golf</h3>
+						<p>
+							<strong
+								>These are the ways that we offer for Golf
+								Betting:</strong
+							>
+						</p>
+						<ol>
+							<li>
+								<strong>To Win the Tournament:</strong>
+								Customers bet on one of the players to be the
+								champion of the Tournament.
+							</li>
+							<li>
+								<strong>To Finish in the Top 5:</strong> The Top
+								5 finishers and anybody who tied with the fifth
+								finisher.
+							</li>
+							<li>
+								<strong>To Finish in the Top 10:</strong> The
+								Top 10 finishers and anybody who tied with the
+								tenth finisher.
+							</li>
+							<li>
+								<strong>Match-ups:</strong> We pair up players
+								and the customer picks one of them to have a
+								better record than the other. We offer Match-ups
+								for the entire tournament and on major events we
+								also offer Round Match-ups betting.
+							</li>
+							<li>
+								<strong>3 Ball Betting:</strong> In 3 Ball
+								Betting 3 golfers are matched up and the golfer
+								with the best score wins the pool. 3 Ball
+								Betting can be offered for the entire tournament
+								or for a specific round. If two players are tied
+								for the win in the pool then prices will be
+								split between the number of winning players (2).
+								If the 3 players are all tied in their scores
+								then the 3 Ball Betting is considered NO ACTION
+								and all wagers will be refunded.
+							</li>
+							<li>
+								<strong>6 Ball Shooter:</strong> In 6 Ball
+								Shooters 6 golfers are matched up and the golfer
+								with the best score wins the pool. 6 Ball
+								Shooter can be offered for the entire tournament
+								or for the specific round. If two players are
+								tied for the win in the pool then prices will be
+								split between the number of winning players. If
+								the 6 players are all tied in their scores then
+								the 3 Ball Betting is considered NO ACTION and
+								all wagers will be refunded.
+							</li>
+							<li>
+								<strong>Top Player in a group:</strong> On major
+								tournaments we offer pools such as TOP AMERICAN
+								player in the tournament. In such pools if ties
+								for the best position occur, the prices will be
+								split between the number of winning players.
+							</li>
+							<li>
+								<strong>Round Leader:</strong> On major
+								tournaments we offer a pool for the best score
+								in a specific round of play. In such pools if
+								ties for the best score occur, the prices will
+								be split between the number of winning players.
+							</li>
+						</ol>
+						<p>
+							<strong>For Matchups</strong> the player must tee
+							off in order to be considered action. If a player
+							does not tee off, then any wager involving him would
+							be considered no action and will be cancelled.The
+							exception to this rule is when the wager is made on
+							a pool and all players have action regardless if
+							they start or not the tournament. (ex: to win
+							TOURNAMENT)
+						</p>
+						<p>
+							<strong>If a players tees off</strong>, he is in
+							action regardless of the number of holes played.
+						</p>
+						<p><strong>Example of a Tournament Matchup:</strong></p>
+						<table
+							border="0"
+							cellpadding="2"
+							cellspacing="1"
+							width="150"
+						>
+							<tbody>
+								<tr>
+									<td><strong>Fred Funk</strong></td>
+									<td><strong>- 125</strong></td>
+								</tr>
+								<tr>
+									<td><strong>Joe Durant</strong></td>
+									<td><strong>+105</strong></td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							In this tournament match-If a customer picks Fred
+							Funk, the wager is on Fred Funk to have a better
+							record than Joe Durant. Not necessarily that Funk
+							must win the championship but that he will end up in
+							a better position than Durant. Both players must Tee
+							Off in the tournament for the matchup to have
+							action. In a two-player match-up wager, the player
+							completing the most holes is declared the winner. If
+							both players complete the same number of holes then
+							the lowest score wins.
+						</p>
+						<p>
+							<strong>Specific Rounds:</strong> Aside the odds to
+							win the whole Tournament, we may also offer odds to
+							win a specific round. So a customer can bet on a
+							player to win the 3rd round only. If this is the
+							case we will specify that the bet is for the round
+							only and not for the whole tournament. Both players
+							must tee off in the specified round for action. 4th
+							round does not include playoffs
+						</p>
+						<p>
+							<strong>When a point scoring method is used</strong>
+							such as Stableford, then the highest number of point
+							wins. The only exception to this rule is when a
+							tournament is rain shortened and the final scores
+							are determined by the PGA usually by reverting back
+							to the last completed round.
+						</p>
+						<p>
+							On Top Player betting or Group betting if two or
+							more players tie for the best place in the pool, the
+							prices of the wagers will be divided by the number
+							of the winning players.
+						</p>
+						<p>
+							We ONLY accept Straight Bets when wagering on Golf
+							regardless if it is a wager on To Win Tournament,
+							Top 5, Top 10, Tournament Matchups, Round Matchups
+							or Top Player Betting. Any other type of wager that
+							is not a straight wager (Example: Parlays, If Bets,
+							Reverses and/or Round Robins) will be cancelled by
+							us without prior notice.
+						</p>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">
+						Boxing | Mixed Martial Arts (MMA) | UFC<span></span>
+					</p>
 					<div class="a-panel">
-
+						<h3>Boxing | Mixed Martial Arts (MMA) | UFC</h3>
+						<p>
+							<strong
+								>For boxing there are three types of
+								wagers:</strong
+							>
+						</p>
+						<ol>
+							<li>
+								<strong>To Win the Fight:</strong> Picking the
+								fighter that the customer thinks will win the
+								fight. Draws will cancel these wagers.
+							</li>
+							<li>
+								<strong>Total of Rounds:</strong> Customer will
+								either go over or under a number of rounds in
+								which the fight will be finished.
+							</li>
+							<li>
+								<strong>Correct Result Wagering:</strong>
+								Players can wager on which boxer will win the
+								fight and the manner in which the fight is won.
+								A KNOCKOUT includes Technical Knockouts (TKO)
+								and Disqualifications (DQ). A DECISION is
+								determined to be anytime the judge&apos;s
+								scorecards are used to determine the winner of
+								the bout regardless of the round in which this
+								occurs. DRAW is a wagering option and if a DRAW
+								occurs the other Correct Result Wagers will be
+								losers.
+							</li>
+						</ol>
+						<p>
+							Lets say the line on the rounds in a fight is 4.5 (3
+							minutes). If a player takes the over, he&apos;s
+							saying that the fight will last more than 4.5
+							rounds. That would be 4 full rounds and the first
+							1.5 minutes into the 5th round (1 minute and 30
+							seconds).
+						</p>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Tennis<span></span></p>
 					<div class="a-panel">
-
+						<h3>Tennis</h3>
+						<p>
+							<strong
+								>There are three ways that we offer for Tennis
+								Betting:</strong
+							>
+						</p>
+						<ol>
+							<li>
+								To Win the Tournament: Customers bet on one of
+								the players to be the champion of the
+								Tournament.
+							</li>
+							<li>
+								To Win the Match: Picking the player that the
+								customer thinks will win the match. The match is
+								official if a ball gets served. After that, if a
+								player withdraws he will be declared the loser
+								no matter the score at the time.
+							</li>
+							<li>
+								Props: Player to win the 1st set, Total Number
+								of games or sets, etc.
+							</li>
+						</ol>
+						<p>
+							1st set wagering (to win set, 1st set props, etc):
+							1st set must be completed for all wagers in the 1st
+							set to have action. If after the 1st set is
+							completed the match gets cancelled for any reason,
+							all 1st set wagers are still considered good.
+						</p>
+						<p>
+							Match props (games or sets spread betting, exact
+							result betting, etc): the match must be completed
+							for wagers to have action, if one of the players
+							retires or by other causes the match is not finished
+							then all wagers will be considered NO ACTION.
+						</p>
+						<p>
+							All tennis wagers are good even if the matchup date
+							and time changes due to weather or any other cause.
+						</p>
+						<p>
+							In the event of a match in progress being delayed
+							due to weather or other reasons the wager will have
+							action until a winner is decided.<br />Note: The
+							Automatic Live Wagering System has its own set of
+							rules. They are all available within the Live
+							Wagering system.
+						</p>
+						<p>
+							We ONLY accept Straight Bet Wagering on Tennis
+							matchups, props and futures. Any Other wagers such
+							as Parlays, If Bets, Reverses and/or Round Robins
+							will be cancelled by us.
+						</p>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Autorancing<span></span></p>
 					<div class="a-panel">
-
+						<h3>Autorancing</h3>
+						<p>
+							We will offer FUTURE POOLS for NASCAR, INDY and F1
+							racing. This FUTURE POOLS all wagers are considered
+							ACTION even if the driver does not qualify to the
+							main race.
+						</p>
+						<p>
+							After the qualifying rounds we will offer odds to
+							Win the Race, Finish in the Top 3, Top 5 or Top 10,
+							YES/NO on this finishing positions, Race Matchups
+							and Group Betting. For all this type of wagers the
+							driver MUST start in the main race for action.
+						</p>
+						<p>
+							On Group betting if two or more players tie for the
+							best place in the pool, the prices of the wagers
+							will be divided by the number of the winning
+							players.
+						</p>
+						<p>
+							We ONLY accept Straight Bet Wagering on Auto Racing
+							matchups, props and futures. Any Other wagers such
+							as Parlays, If Bets, Reverses and/or Round Robins
+							will be cancelled by us.
+						</p>
+						<p>
+							Post race disqualifications will not change the
+							result for wagering porpuses.
+						</p>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Rugby<span></span></p>
 					<div class="a-panel">
-
+						<h3>Rugby General Rules</h3>
+						<p>
+							Unless otherwise stated all Rugby wagers are graded
+							on 80 minutes play, which includes any stoppage
+							time, and does not include extra time unless
+							specified.
+						</p>
+						<p>
+							When a draw option is offered, the bet is graded on
+							the end of regulation, no extra time is included.
+						</p>
+						<p>
+							If a venue is changed from the one advertised then
+							all bets on that match are void.
+						</p>
+						<p>
+							In the event of a change of opponent from the one
+							advertised then all bets for that match are void.
+						</p>
+						<p>
+							<strong>Abandoned Matches</strong><br />All bets are
+							void apart from markets where the outcome is already
+							determined.
+						</p>
+						<p>
+							<strong>Postponed Matches</strong><br />Are void
+							unless re-arranged and played in the same
+							&quot;Rugby Week&quot; (Monday - Sunday inclusive UK
+							time).
+						</p>
+						<p>Top team is home</p>
+						<h3>Australian Rules</h3>
+						<p>
+							<strong>General Rules</strong><br />All match
+							markets will be graded including overtime if played
+							unless otherwise stated. Regulation time must be
+							completed for bets to stand unless otherwise stated.
+							If the duration of a match is changed by the
+							governing body prior to the commencement of play,
+							the revised game length will be regarded as the
+							official regulation time for this match, and all
+							bets will stand as long as this new regulation time
+							is completed.
+						</p>
+						<p>
+							<strong>Match Betting</strong><br />If any match
+							ends in a draw/tie, including overtime if played,
+							then stakes will be refunded unless a price is
+							offered for the draw/tie. Bets will be graded on
+							official AFL result only.
+						</p>
+						<p>
+							<strong>Matches not Played as Listed</strong
+							><br />If a match venue is changed then bets already
+							placed will stand providing the home team is still
+							designated as such. If the home and away team for a
+							listed match are reversed then bets placed based on
+							the original listing will be void.
+						</p>
+						<p>Top team is home</p>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Cricket<span></span></p>
 					<div class="a-panel">
-
+						<h3>Cricket</h3>
+						<p>
+							<strong>Including Twenty/20</strong><br /><strong
+								>General:</strong
+							>
+						</p>
+						<ol>
+							<li>
+								All wagers will be settled using the official
+								result as declared by the relevant governing
+								body of the match or competition concerned.
+							</li>
+							<li>
+								Change of Venue:<br />If a match venue is
+								changed then bets already placed will stand
+								providing the home team is still designated as
+								such. If the home and away team for a listed
+								match are reversed then bets placed based on the
+								original listing will be void.
+							</li>
+							<li>
+								If a match is abandoned due to outside
+								interference, bets on the outcome for the total
+								of the game are voided, if no winner is declared
+								from the official site all bets on the winner of
+								the match are voided.
+							</li>
+							<li>
+								If a match is affected by external factors (such
+								as bad weather), we will settle your bet based
+								on the official competition rule (this includes
+								matches affected by a mathematical calculation
+								such as the Duckworth-Lewis method (DL) or the
+								Jayadevan system (VJD)*).<br />*Duckworth Lewis
+								method / Jayadevan system<br />These are systems
+								used to adjust the scores in the event of a rain
+								delay during one-day matches, in order to leave
+								the balance of the match unaltered. The systems
+								use the number of overs each team have still to
+								receive and the number of wickets they have in
+								hand in order to reach an official result.
+							</li>
+							<li>
+								Where no price is quoted for the tie and the
+								official competition rules do not determine a
+								winner then all wagers will be graded cancelled.
+								In competitions where a bowl out or super over
+								determines a winner, then bets will be settled
+								on the official result.
+							</li>
+						</ol>
+						<p>
+							<strong>Series Betting:</strong><br />If a series is
+							drawn and no draw option was offered then all bets
+							will be considered a push and refunded.
+						</p>
+						<p><strong>Test Matches:</strong></p>
+						<ol>
+							<li>
+								In case the game did not go at least 4 innings
+								all bets on the outcome for the over/under are
+								voided.
+							</li>
+							<li>
+								In case the game did not go at least 4 innings
+								all bets on the outcome for the winner of the
+								match are settled based on the official
+								announcement
+							</li>
+							<li>
+								Tied Test Match:<br />In the event of a tied
+								test match (i.e. where all innings have been
+								completed and both teams have the same score)
+								all bets on the game will be voided
+							</li>
+							<li>
+								If a three-way money line with the draw as the
+								third betting option is offered, only those
+								bettors who wagered on the draw will be paid as
+								winners; those who wagered on either team or
+								contestant to win will lose their stake.
+							</li>
+							<li>
+								If a test match is abandoned or disrupted by
+								outside interference (riot, etc) all bets on
+								this match are void.
+							</li>
+						</ol>
+						<p><strong>One Day Internationals:</strong></p>
+						<ol>
+							<li>
+								In case the game did not go at least the
+								official number of overs, all bets on the
+								outcome for the over/under are voided.
+							</li>
+							<li>
+								In case the game did not go at least the
+								official number of overs, all bets on the
+								outcome for the winner of the match are settled
+								based on the official announcement.
+							</li>
+							<li>
+								In matches where a reserve day is used all
+								wagers will stand and carry over to the reserve
+								day.
+							</li>
+						</ol>
+						<p><strong>Twenty/20:</strong></p>
+						<ol>
+							<li>
+								In case the game did not go at least the
+								official number of overs, all bets on the
+								outcome for the over/under are voided.
+							</li>
+							<li>
+								In case the game did not go at least the
+								official number of overs, all bets on the
+								outcome for the winner of the match are settled
+								based on the official announcement.
+							</li>
+						</ol>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Olympic<span></span></p>
 					<div class="a-panel">
-
+						<h3>Olympic</h3>
+						<ol start="4" type="1">
+							<li>
+								For multi-way futures betting, all events are
+								ALL ACTION - no refunds.
+							</li>
+							<li>
+								If a particular athlete/team has a yes/no
+								(2-way) price to win the gold medal, then that
+								athlete/team must start competition for action.
+							</li>
+							<li>
+								For Match-Up betting between two athletes / 2
+								Countries in any event, both athletes /countries
+								must start event for action.
+							</li>
+							<li>
+								For over/under on a countries total medals
+								within a sport, the total is for both the
+								men&apos;s and women&apos;s competitions within
+								that area - Example: If USA wins 10 medals in
+								men&apos;s athletics and 9 in women&apos;s
+								athletics, the total medals won by the USA is 19
+								in Athletics.
+							</li>
+							<li>
+								Events are official after the original medal
+								ceremony. Any subsequent changes to those
+								results do not count.
+							</li>
+							<li>
+								For props on individual athletes, competitor
+								must start the first event they are scheduled to
+								participate for action.
+							</li>
+						</ol>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">E-sports<span></span></p>
 					<div class="a-panel">
-
+						<h3>E-sports</h3>
+						<ol>
+							<li>
+								The start dates and times displayed on our
+								website for E-Sport matches are an indication
+								only and are not guaranteed to be correct. If a
+								match is suspended or postponed, and not resumed
+								within 12 hours from the actual scheduled start
+								time, then wagers on the match will have no
+								action and be refunded.
+								<p>
+									The exception being any wager on whether a
+									team/player advances in a tournament, or
+									wins the tournament, will have action
+									regardless of a suspended or postponed
+									match.
+								</p>
+							</li>
+							<li>
+								If the name of a player/team is misspelled, all
+								bets will stand unless it is obvious it is the
+								wrong object.
+							</li>
+							<li>
+								If in an official match a player plays with the
+								wrong nickname or on a smurf-account, the result
+								is still valid unless it is evident that it is
+								not the player that was supposed to play that
+								match.
+							</li>
+							<li>
+								All wagers will be settled using the official
+								result as declared by the relevant governing
+								body of the competition concerned.
+							</li>
+							<li>
+								If a draw option has not been made available,
+								then extra time will count, if played.
+							</li>
+							<li>
+								<strong>Handicap betting:</strong> A spread in
+								E-Sports can be Rounds/Maps or other counting
+								measures dependent on the game. The spread will
+								only be referred to as the spread. (For example,
+								in Counter Strike the spread will be rounds won,
+								while in Starcraft 2 the spread would be maps).
+								<p>
+									Handicapping is a way of making a sports
+									contest more even and thus more interesting
+									as a betting object. In E-Sports betting,
+									this is done by awarding one of the
+									teams/players, the underdog, some
+									maps/rounds ahead
+								</p>
+								<table
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+									width="482"
+								>
+									<thead>
+										<tr>
+											<th colspan="3">For example:</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><br /></td>
+											<th>Handicap</th>
+											<th>Odds</th>
+										</tr>
+										<tr>
+											<td>
+												<p>Player A</p>
+											</td>
+											<td>
+												<p>-1.5</p>
+											</td>
+											<td>
+												<p>2.00</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Player B</p>
+											</td>
+											<td>
+												<p>+1.5</p>
+											</td>
+											<td>
+												<p>1.85</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									If Player A wins the match by two maps or
+									more, Player A bettors win and Player B
+									bettors lose. If Player A wins by exactly
+									one map or Player B wins, Player B bettors
+									win and Player A bettors lose.
+								</p>
+							</li>
+							<li>
+								Total Betting: A total in E-sports can be
+								Rounds/Maps or other counting measures dependent
+								on the game. The total will only be referred to
+								as the total.
+								<table
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+									width="482"
+								>
+									<thead>
+										<tr>
+											<th colspan="3">
+												Example for a best of three SC2
+												Match:
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<p>Over</p>
+											</td>
+											<td>
+												<p>2.5</p>
+											</td>
+											<td>
+												<p>1.93</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Under</p>
+											</td>
+											<td>
+												<p>2.5</p>
+											</td>
+											<td>
+												<p>1.93</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<br />If either player wins 2-0 all bets on
+									under 2.5 will win, while bets on the over
+									will lose. If either player wins 2-1 all
+									bets on the over win, while bets on the
+									under lose.
+								</p>
+							</li>
+							<li>
+								If a map is not completed because of a player
+								retirement or disqualification, all bets on the
+								outcome will have action and will be validated
+								based on the official declared winner.
+								Counter-Strike maps are exceptions to this rule,
+								for which all moneyline, spread and total bets
+								are canceled if a team retires or is
+								disqualified before all scheduled map rounds are
+								played.
+							</li>
+							<li>
+								If the announced number of maps/rounds is
+								changed all bets on the handicap or total are
+								cancelled. Bets on the moneyline (outcome of the
+								match) have action.
+							</li>
+							<li>
+								If a player or team receives a walkover or win
+								by admin decision on at least one map, all
+								wagers on the series (moneyline, spread and
+								total) will be canceled and monies refunded. In
+								CS:GO, if a team retires or is disqualified
+								before all scheduled rounds on a map are played,
+								all wagers on the series (moneylines, spread and
+								total) will be canceled and monies refunded as
+								well.
+							</li>
+						</ol>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Water polo<span></span></p>
 					<div class="a-panel">
-
+						<h3>Water polo</h3>
+						<ol>
+							<li>
+								<strong>2-Way:</strong> Unless otherwise stated,
+								all wagers are for regulation time only and do
+								not include either overtime or penalty
+								shootouts.
+							</li>
+							<li>
+								<strong
+									>Winner of 1st, 2nd 3rd 4th Quarter:</strong
+								>
+								Only the goals scored within the nominated
+								period count. Unless otherwise stated, overtime
+								does not count for the result of the 4th period.
+							</li>
+							<li>
+								In case of a &acirc;&euro;&oelig;Home and
+								Away&acirc;&euro; format bets on the Away match
+								do not include the &acirc;&euro;&oelig;Golden
+								Set&acirc;&euro;.
+							</li>
+						</ol>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Handball<span></span></p>
 					<div class="a-panel">
-
+						<h3>Handball</h3>
+						<p>
+							Unless otherwise stated all bets will be settled
+							based on the score at the end of regulation time and
+							excluding overtime if played. All match betting
+							markets are based on the result at the end of a
+							scheduled 60 minutes play unless otherwise stated.
+							If the scheduled 60 minutes is not played then bets
+							will be void, with the exception of game props where
+							the result has already been determined.
+						</p>
+						<p>
+							The following markets include overtime/shootouts for
+							settlement purposes:
+						</p>
+						<ul>
+							<li>To Qualify</li>
+							<li>To Lift Trophy</li>
+						</ul>
+						<p>
+							Specifically for any competition that uses a Mercy
+							Rule, in the event of such a Rule being called in a
+							match, all bets will stand on the score at the time.
+						</p>
+						<p>
+							If a match venue is changed then bets already placed
+							will stand providing the home team is still
+							designated as such. If the home and away team for a
+							listed match play the fixture at the away team venue
+							then bets will stand providing the home team is
+							still officially designated as such.
+						</p>
+						<p>
+							If the home and away team for a listed match play
+							the fixture at the away team venue then bets will
+							stand providing the home team is still officially
+							designated as such, otherwise bets will be void.
+						</p>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">General props rules<span></span></p>
 					<div class="a-panel">
-
+						<h3>General props rules</h3>
+						<p>
+							<strong
+								>Football, Basketball, Hockey and ALL other
+								sports team and player props:</strong
+							>
+						</p>
+						<ol>
+							<li>
+								Head to head player props both players must play
+								in the game to have action.
+							</li>
+							<li>
+								In props involving multiple players from each
+								team all player are action unless otherwise
+								specified on the wager.
+							</li>
+							<li>
+								In Pool events all players are action, if two or
+								more players tie for the best place in the pool,
+								the prices of the wagers will be divided by the
+								number of the winning players.
+							</li>
+							<li>
+								Team and Player props can be used for Straight
+								bets, Parlays, If Bets and/or Round Robins (NO
+								TEASERS) as long as the other Team in such
+								wagers does not belong to the same Family. Any
+								wagers within the same Family (OR PROPS USED IN
+								TEASERS) will be cancelled by us without prior
+								notice.
+							</li>
+							<li>
+								Defensive player props, all bets placed on TOTAL
+								TACKLES+ASSISTS BY includes the total defensive
+								stadistics the player accumulates, including the
+								ones if he plays in special teams as well,Sacks
+								not count for towards this wager.
+							</li>
+							<li>
+								For football and basketball player totals,
+								player must play in game for action.
+							</li>
+							<li>
+								For football a &quot;MUFFED PUNT&quot; recovered
+								by the kicking team will be considered a fumble.
+							</li>
+							<li>
+								For basketball 1st FG attempt props, free throws
+								are not considered a field goal attempt,
+								therefor if a player gets fouled in the 1st play
+								of the game and makes the 1st free throw the
+								prop will continue until a field goal is
+								attempt.
+							</li>
+						</ol>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">
+						Live in-game lines wagering<span></span>
+					</p>
 					<div class="a-panel">
-
+						<h3>Live in-game lines wagering</h3>
+						<p>
+							Live In-Game Lines are available for Straight Wagers
+							and internet wagering only. All bets for such wagers
+							take into consideration the score of the full match,
+							event or game (unless otherwise specified).
+						</p>
+						<p>
+							Line In-Games Lines will be offered on important
+							events and regular rules for the sport apply to such
+							lines. We reserve the right to take down the Live
+							In-Game Lines at any moment of the game.
+						</p>
+						<p>
+							In-Game Lines wagers cannot be cancelled by the
+							player.
+						</p>
+						<p>
+							We reserve the right to cancel any In-Game Line
+							wager by any reason including obvious bad lines.
+						</p>
+						<p>
+							<strong>Note:</strong> The Automatic Live Wagering
+							System has its own set of rules. They are all
+							available within the Live Wagering system.
+						</p>
+						<p>
+							For more information Please contact our wagering or
+							customer service department.
+						</p>
 					</div>
 				</div>
 				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
+					<p class="a-btn">Parlay Cards rules<span></span></p>
 					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
-					</div>
-				</div>
-				<div class="a-container">
-					<p class="a-btn">Baseball<span></span></p>
-					<div class="a-panel">
-
+						<h3>Parlay Cards Rules</h3>
+						<p>
+							In the event of a suspended or canceled game, the
+							Parlay Card will have action and the game in
+							questions will be taken out of the Card (Example: a
+							5 team Parlay Card will become a 4 team Parlay
+							Card.) In 3 team Parlay Cards if one of the games is
+							suspended or cancelled the Parlay Card will have no
+							action and the funds will be reimbursed to the
+							client.
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
     </main>
     <footer class="main-footer">
       <nav class="bottom-nav">
@@ -556,7 +2121,7 @@
 					<li class="footer__nav__list-item"><a href="casino-rules.html">casino rules</a></li>
 					<li class="footer__nav__list-item"><a href="general-terms.html">general terms</a></li>
 					<li class="footer__nav__list-item"><a href="terms-conditions.html">terms & conditions</a></li>
-					<li class="footer__nav__list-item"><a href="account-payouts-bonuses.html">Lorem ipsum</a></li>
+					<li class="footer__nav__list-item"><a href="account-payouts-bonuses.html">account, payouts and bonuses</a></li>
 				</ul>
 			</div>
 			<div class="footer__nav__section">

@@ -69,10 +69,10 @@
 			color: $ninth-color;
 			font-size: 13px;
 			text-transform: uppercase;
-		}
 
-		&-item:hover {
-			color: $fourth-color;
+			a:hover {
+				color: $fourth-color;
+			}
 		}
 	}
 }

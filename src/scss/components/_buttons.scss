@@ -28,6 +28,7 @@
         background-color: $sixteenth-color;
         transition: .1s;
         text-decoration: none;
+        color: $first-color;
     }
 
     &::after {
@@ -68,6 +69,7 @@
         transition: .1s;
         border: 3px solid $fourth-color;
         text-decoration: none;
+        color: $first-color;
     }
 }
 

@@ -29,6 +29,9 @@
 	//native box Shadow
 	--principal-box-shadow	: 0px 4px 8px rgba(0, 0, 0, 0.25);
 
+	//Background Login Component
+	--bg-login-color				: rgba(141, 153, 174, 0.3);
+
 	// Font Family
 	--primary-font-motion: 'Motion Control Neue Lite', sans-serif;
 	--secondary-font-noto: 'Noto Sans', sans-serif;
@@ -55,9 +58,10 @@
 	$nineteenth-color		: var(--nineteenth);
 	$twenth-color				: var(--twenth);
 
-  $bg-linear-one		: var(--seventh);
-  $bg-dark-color		: var(--eighth);
+  $bg-linear-one				: var(--seventh);
+  $bg-dark-color				: var(--eighth);
   $principal-box-shadow	: var(--principal-box-shadow);
+	$bg-login-color				: var(--bg-login-color);
   
   // Fonts SCSS Variables
   $primary-font-motion	: var(--primary-font-motion);

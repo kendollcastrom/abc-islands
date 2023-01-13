@@ -79,13 +79,12 @@
 	}
 	
 	&__anchor{
-
 		color: $first-color;
 		display: flex;
 		flex-direction: row;
 
-		@include from (l) {
-			color: $first-color;
+		&:hover {
+			color: $fourth-color;
 		}
 	}
 
@@ -143,7 +142,7 @@
 }
 
 .top-nav__desktop {
-	background-color:rgba(43, 45, 66, 0.93);
+	background-color: $seventh-color;
 	opacity: 93;
 	width: 100%;
 	display: none;

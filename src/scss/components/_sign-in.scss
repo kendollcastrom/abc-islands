@@ -64,7 +64,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: rgba(141, 153, 174, 0.3);
+		background-color: $bg-login-color;
 		font-family: $secondary-font-noto;
 		justify-content: flex-start;
 		margin: 32px 16px;
@@ -84,8 +84,8 @@
 	}
 
 	&__title {
-		color: #ffffff;
-		background-color: #b61827;
+		color: $first-color;
+		background-color: $fourth-color;
 		display: flex;
 		justify-content: center;
 		height: 64px;
@@ -106,7 +106,7 @@
 		flex-direction: column;
 		align-content: center;
 		justify-content: center;
-		color: #ffffff;
+		color: $first-color;
 		width: 100%;
 		max-width: 328px;
 		padding: 0 20px;
@@ -138,8 +138,8 @@
 
 	&__btn {
 		padding: 8px 16px;
-		background-color: #739f24;
-		color: #ffffff;
+		background-color: $sixteenth-color;
+		color: $first-color;
 		font-weight: 400;
 		border: none;
 		border-radius: 8px;
