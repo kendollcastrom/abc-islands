@@ -5,14 +5,17 @@ import {paymentSlider, paymentSliderCasino} from './components/payment-slider';
 import {initAcc} from './components/dropdown-sports';
 import openTable from './components/openTable';
 import {tabs, tabsHorses} from './components/tabs';
+import bankingTabs from '../js/components/banking-tabs';
 
 (()=>{
     topNav();
+		bankingTabs();
 
     if (document.body.classList.contains('Inicio')) {
 		tnsSingle();
 		tnsCarousell();
 		paymentSlider();
+		
     }else if (document.body.classList.contains('Casino')) {
 		paymentSliderCasino();
     }else if (document.body.classList.contains('Reglas de deportes')) {
