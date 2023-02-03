@@ -4,18 +4,44 @@
 	top           	: 0;
 	width         	: 100%;
 	left          	: 0;
-	display 		: flex;
-	flex-direction: column;
+	display 				: flex;
+	flex-direction	: column;
 	justify-content : center;
-	align-items		: center;
-	z-index: 5;
+	align-items			: center;
+	z-index					: 5;
+
+	@media only screen and (min-device-width: 0px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
+		display: none;
+	}
+
+	&__mobile {
+
+		//display: block;
+		position: fixed;
+		top: 15px;
+		width: 105px;
+		background-image: linear-gradient(to right bottom, #b61827, #941047, #652151, #372546, #1b1d29);
+		z-index: 5;
+		padding: 6px 16px 6px 20px;
+		border-radius: 0 6px 6px 0;
+
+		/* @media only screen and (min-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+			//display: b;
+			display: none;
+		} */
+
+		@include from(l) {
+			display: none;
+		}
+	}
+
 	&__container{
-		display 		: flex;
+		display 				: flex;
 		justify-content : space-between;
-		align-items		: center;
+		align-items			: center;
 		height        	: var(--header-height);
-		width: 100%;
-		padding: 0 16px;
+		width						: 100%;
+		padding					: 0 16px;
 	}
 	&__link{
 		align-self: center;
@@ -39,18 +65,18 @@
 		}
 	}
 	&__menu{
-		display			: flex;
+		display					: flex;
 		flex-direction  : column;
-		align-items		: center;
-		position 		: fixed;
-		padding 		: 0 10px;
-		height 			: 100vh;
-		width 			: 100%;
-		background 		: $second-color;
-		transition 		: right .5s;
-		overflow-y		: scroll;
-		top 			: var(--header-height);
-		right 			: -100%;
+		align-items			: center;
+		position 				: fixed;
+		padding 				: 0 10px;
+		height 					: 100vh;
+		width 					: 100%;
+		background 			: $second-color;
+		transition 			: right .5s;
+		overflow-y			: scroll;
+		top 						: var(--header-height);
+		right 					: -100%;
 		&.show-top-nav {
 			right 		: 0;
 		}

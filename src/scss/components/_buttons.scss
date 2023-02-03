@@ -59,6 +59,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-size: 16px;
+    text-align: center;
 
     @include from(l) {
         padding: 20px 34px;
@@ -76,7 +77,7 @@
 /* Third button */
 
 .third-button {
-    padding: 12px 42px;
+    padding: 12px 24px;
     text-transform: uppercase;
     border-radius: 30px;
     border: 3px solid $fourth-color;
@@ -91,5 +92,9 @@
         background-color: $fourth-color;
         transition: .1s;
         border: 3px solid $fourth-color;
+    }
+
+    @include from(l) {
+        padding: 20px 42px;
     }
 }

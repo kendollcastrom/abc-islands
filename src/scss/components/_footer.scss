@@ -3,7 +3,11 @@
 	align-items: center;
 	flex-direction: column;
 	background-color: $sixth-color;
-	padding-top: 8px;
+	padding-top: 64px;
+
+	@include from(l) {
+		padding-top: 48px;
+	}
 }
 
 .footer__content {
@@ -12,8 +16,8 @@
 		display: flex;
 		justify-content: space-between;
 		border-bottom: 1px solid $fourth-color;
-		padding-bottom: 8px;
-		margin-bottom: 10px;
+		padding-bottom: 32px;
+		margin-bottom: 16px;
 
 		&-logo {
 			width: 155px;
@@ -26,16 +30,17 @@
 		align-items: center;
 
 		&-curacao {
-			width: 60px;
+			width: 62px;
+			margin-right: 24px;
 
 			@include from(l) {
 				width: 100px;
-				margin-right: 40px;
+				margin-right: 60px;
 			}
 		}
 
 		&-twitter {
-			width: 33px;
+			width: 48px;
 
 			@include from(l) {
 				width: 48px;
@@ -46,7 +51,11 @@
 
 
 .footer__nav {
-	margin-bottom: 20px;
+	margin-bottom: 60px;
+
+	@include from(l) {
+		margin-bottom: 48px;
+	}
 
 	&__section {
 		margin-bottom: 7px;
@@ -67,7 +76,7 @@
 
 		&-item {
 			color: $ninth-color;
-			font-size: 13px;
+			font-size: $font-size-smaller;
 			text-transform: uppercase;
 
 			a:hover {
@@ -80,7 +89,7 @@
 .footer__rights {
 	width: 100%;
 	background-color: $seventh-color;
-	padding: 10px 34px;
+	padding: 42px 24px;
 	margin-bottom: 65px;
 
 	@include from(l) {
@@ -89,7 +98,7 @@
 
 	&__text {
 		margin: 0;
-		font-size: 13px;
+		font-size: $font-size-base;
 		font-family: $secondary-font-noto;
 		color: $fifth-color;
 		text-align: center;

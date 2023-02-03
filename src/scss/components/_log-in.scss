@@ -1,63 +1,46 @@
 /* Modal CSS */
-.modal-container {
+.log-in__wrapper {
+	display: flex;
 	max-width: 1320px;
-	margin: 0 auto;
-}
+	margin-left: auto;
+	margin-right: auto;
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
+	justify-content: space-between;
+	background-image: url("../../assets/img/img-user-login-abc-background.jpg");
 
-.modal-content__picture {
-	img {
-		display: none;
+	@media only screen and (min-device-width: 0px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
+		margin-top: -80px;
+	}
 
-		@include from(l) {
-			display: block;
-			max-width: 843px;
-			width: 100%;
-			position: absolute;
-			bottom: 0;
-			z-index: 1;
+	@include from(l) {
+		background-position: center;
+		margin-top: 75px;
+		border-radius: 20px;
+	}
+
+	&__img {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+
+		img {
+			display: none;
+	
+			@include from(l) {
+				display: block;
+				max-width: 843px;
+				width: 100%;
+				//position: absolute;
+				bottom: 0;
+				z-index: 1;
+			}
 		}
 	}
 }
 
-.modal-sign-in {
-	background-image: url("../../assets/img/img-user-login-abc-background.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 18px;
-
-	@include from(l) {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		height: 100%;
-		background-position: center;
-	}
-}
-
-
-.modal-dialog {
-	
-	@include from(l) {
-		height: 833px;
-		border-radius: 18px;
-	}
-}
-
-.modal-header {
-	border-bottom: none;
-	width: 100%;
-	margin-bottom: 24px;
-	padding: 15px;
-
-	@include from(l) {
-		margin-bottom: 70px;
-	}
-}
-
-.sign-in {
+.log-in {
 
 	&__container {
 		display: flex;
@@ -70,6 +53,7 @@
 		margin: 32px 16px;
 		border-radius: 8px;
 		z-index: 2;
+		width: 100%;
 		
 		@include from(l) {
 			width: 464px;
@@ -81,6 +65,7 @@
 	&__img {
 		width: 152px;
 		margin-bottom: 24px;
+		margin-top: 32px;
 	}
 
 	&__title {
@@ -116,7 +101,8 @@
 			border-radius: 8px;
 			border: none;
 			margin-top: 6px;
-			color: #c4c4c4;
+			color: $ninth-color;
+			padding-left: 24px;
 		}
 
 		@include from(l) {
@@ -137,13 +123,15 @@
 	}
 
 	&__btn {
-		padding: 8px 16px;
+		padding: 14px 16px;
 		background-color: $sixteenth-color;
 		color: $first-color;
-		font-weight: 400;
+		text-transform: uppercase;
+		font-weight: 600;
 		border: none;
 		border-radius: 8px;
 		cursor: pointer;
+		font-family: $secondary-font-noto;
 
 		&:hover {
 			background-color: $fifth-color;
@@ -153,34 +141,41 @@
 	&__remember {
 		display: flex;
 		align-items: center;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: space-between;
 		color: $first-color;
-		margin-bottom: 52px;
+		margin-bottom: 10px;
+		font-size: 14px;
 
-		&__check {
+		@include from(l) {
+			margin-bottom: 29px;
+		}
+
+		&__checked {
 			display: flex;
 			align-items: center;
+			color: $first-color;
+			margin: 0;
 
 			input {
 				margin-top: 0;
 				margin-right: 8px;
 			}
-
-			label {
-				font-size: 14px;
-			}
 		}
 	}
 
-	&__forgot {
+	&__forgotpass {
 		color: $ninth-color;
-		font-size: 14px;
 	}
 
 	&__create {
 		color: $ninth-color;
 		font-size: 14px;
+		margin-bottom: 16px;
+
+		@include from(l){
+			margin-bottom: 29px;
+		}
 	}
 
 	&__copy {
@@ -188,9 +183,10 @@
 		color: $twenth-color;
 		font-size: 16px;
 		border-top: 1px solid $twenth-color;
-		width: 70%;
+		width: 85%;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
+		margin-bottom: 54px;
 	}
 }

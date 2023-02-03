@@ -1,3 +1,9 @@
+<div class="top-nav__mobile">
+	<a href="#">
+		<img src="assets/img/abc-logo-mobile.svg" alt="">
+	</a>
+</div>
+
 <nav class='top-nav'>
 	<div class="top-nav__container ed-grid">
 		<a href="index.html" lass='top-nav__link' aria-label="Betsev">
@@ -7,7 +13,7 @@
 		<div class="top-nav__menu">
 			<p class="top-nav__title">The players' paradise</p>
 			<ul class='top-nav__menu-list'>
-				<li class="top-nav__menu-link"><a href="#" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
+				<li class="top-nav__menu-link"><a href="sportbook.html" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
 				<li class="top-nav__menu-link"><a href="casino.html" class='top-nav__anchor'><img src="assets/img/icons/chip-poker-icon.svg" alt="">Casino</a></li>
 				<li class="top-nav__menu-link"><a href="poker.html" class='top-nav__anchor'><img src="assets/img/icons/poker-card-icon.svg" alt="">Poker</a></li>
 				<li class="top-nav__menu-link"><a href="racebook.html" class='top-nav__anchor'><img src="assets/img/icons/horses-icon.svg" alt="">Horses</a></li>
@@ -22,7 +28,7 @@
 		</div>
 		<div class="top-nav-control">
 			<div class="login">
-				<button type="button" class="login-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+				<a href="login.html" class="login-btn btn btn-primary">Login</a>
 				<a href="join-now.html" class="sign-btn">Join</a>
 			</div>
 			<button type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r' aria-label="Menu">
@@ -35,7 +41,7 @@
 	
 	<div class="top-nav__desktop">
 		<ul class='top-nav__desktop-list'>
-			<li class="top-nav__desktop-link"><a href="#" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
+			<li class="top-nav__desktop-link"><a href="sportbook.html" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
 			<li class="top-nav__desktop-link"><a href="casino.html" class='top-nav__anchor'><img src="assets/img/icons/chip-poker-icon.svg" alt="">Casino</a></li>
 			<li class="top-nav__desktop-link"><a href="poker.html" class='top-nav__anchor'><img src="assets/img/icons/poker-card-icon.svg" alt="">Poker</a></li>
 			<li class="top-nav__desktop-link"><a href="racebook.html" class='top-nav__anchor'><img src="assets/img/icons/horses-icon.svg" alt="">Horses</a></li>
@@ -45,41 +51,3 @@
 		</ul>
 	</div>
 </nav>
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-container">
-    <div class="modal-content modal-sign-in">
-			<div class="modal-content__picture">
-				<img src="assets/img/img-player-login.png" alt="">
-			</div>
-			<div class="sign-in__container">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<img class="sign-in__img" src="assets/img/Logotipo ABC.svg" alt="">
-				<h3 class="sign-in__title">User Login</h3>
-				<form action="" class="sign-in__form">
-					<div class="sign-in__email">
-						<label for="email">Username or Email</label>
-						<input type="text" name="email" id="email">
-					</div>
-					<div class="sign-in__password">
-						<label for="email">Password</label>
-						<input type="text" name="email" id="email">
-					</div>
-					<button class="sign-in__btn" type="submit">Login</button>
-					<div class="sign-in__remember">
-						<div class="sign-in__remember__check">
-							<input type="checkbox" name="remember" id="remember">
-							<label for="remember">Remember me</label>
-						</div>
-						<a class="sign-in__forgot" href="#">Forgot your password?</a>
-						<a class="sign-in__create" href="#">Don't have an account? Click here.</a>
-					</div>
-				</form>
-				<p class="sign-in__copy">Copyright © 2022, Agent Site V2</p>
-			</div>
-    </div>
-  </div>
-</div>

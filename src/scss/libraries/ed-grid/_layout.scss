@@ -82,7 +82,7 @@ dl,
 address,
 table {
   margin-top    : 0;
-  margin-bottom : calc(var(--vertical-content-space) * 1.5);
+  margin-bottom : 0;
 
   + h2 {
     padding-top : calc(var(--vertical-content-space) * 1.5);

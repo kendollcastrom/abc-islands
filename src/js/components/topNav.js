@@ -1,4 +1,3 @@
-
 export const topNav = () => {
 	let myFunction = ()=> {
 		document.querySelector('.hamburger').addEventListener('click', function(e) {

@@ -4,44 +4,81 @@
 }
 
 .casino-banner__content {
-    position: relative;
-
-    &__img {
-        position: absolute;
-        z-index: 1;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
+    background-image: url(../../assets/img/background-banners-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .casino-banner__info {
-    gap: 1;
+    align-items: flex-end;
+    overflow: hidden;
+
+    @include from(l) {
+        padding-left: 48px;
+    }
+
+    &__paragraph {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+
+        @include from(l) {
+            margin-top: 24px;
+            justify-content: start;
+        }
+    }
 
     &__heading {
+        text-transform: uppercase;
+        color: $first-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        z-index: 2;
-        padding: 16px 0 24px 18px;
-        width: 150%;
+        @include from(l) {
+            align-items: flex-start;
+        }
 
         &--title {
-            font-size: 48px;
+            font-size: $font-banner-small;
             margin: 0;
-            text-transform: uppercase;
-            color: $first-color;
-            line-height: 45px;
+            font-family: $primary-font-motion;
+            font-weight: $font-bold;
 
             @include from(l) {
-                font-size: 64px;
-                line-height: 60px;
+                font-size: $font-banner-big;
             }
         }  
+
+        &--caption {
+            font-family: $secondary-font-noto;
+            margin: 0;
+            font-weight: $font-bold;
+            margin-right: 8px;
+            font-size: $font-size-base;
+
+            @include from(l) {
+                font-size: $font-banner-small;
+            }
+        }
+    }
+
+    &__text {
+        line-height: 18px;
+        display: flex;
+
+        @include from(l) {
+            flex-direction: column;
+            line-height: 35px;
+        }
+    }
+
+    &__text:nth-child(1) {
+        margin-bottom: 8px;
     }
 
     &__img {
-        z-index: 3;
         display: flex;
         align-items: flex-end;
         width: 100%;

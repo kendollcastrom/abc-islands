@@ -222,7 +222,8 @@ gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-d
 	server.init({
 		server: {
 			baseDir: './public'
-		}
+		},
+		online: true
 	});
 
 	watch('./src/scss/**/**', () => gulp.start('styles-dev'));
@@ -263,6 +264,7 @@ gulp.task('build', ['pug-build', 'scripts-build', 'images-build', 'cache', 'site
 	server.init({
 		server: {
 			baseDir: './public'
-		}
+		},
+		online: true
 	});
 });

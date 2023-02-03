@@ -5,11 +5,13 @@ import {paymentSlider, paymentSliderCasino} from './components/payment-slider';
 import {initAcc} from './components/dropdown-sports';
 import openTable from './components/openTable';
 import {tabs, tabsHorses} from './components/tabs';
-import bankingTabs from '../js/components/banking-tabs';
+//import bankingTabs from './components/banking-tabs';
+// import { toggleMenu } from './components/menu-mobile';
 
 (()=>{
     topNav();
-		bankingTabs();
+		//bankingTabs();
+		// toggleMenu();
 
     if (document.body.classList.contains('Inicio')) {
 		tnsSingle();

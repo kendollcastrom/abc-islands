@@ -35,6 +35,27 @@
 	// Font Family
 	--primary-font-motion: 'Motion Control Neue Lite', sans-serif;
 	--secondary-font-noto: 'Noto Sans', sans-serif;
+
+	//font sizes
+	--font-size-base			:  1rem;   		/*16px */ 
+	--font-size-sm				:  0.875rem;  /*14px*/
+	--font-size-smaller		:  0.813rem;	/*13px*/
+
+	--font-banner-tiny		:  1.5rem;		/* 24px */
+	--font-banner-small		:	 2rem;      /* 32px */
+	--font-banner-big			:	 4rem;			/* 64px */
+
+	--h1-mobile						:  2.5rem;    /*40px*/
+	--h1-desktop					:	 6rem;    	/*96px*/
+
+	--h2-mobile						:  2rem;    	/*32px*/
+	--h2-desktop					:	 2.5rem;		/*40px*/
+
+	--h3-mobile						:  1.5rem; 		/*24px*/
+	--h3-desktop					:	 2rem; 			/*32px*/
+
+	--font-weight-normal	:	 400;
+	--font-weight-bold		:	 700;
   }
   // Sass Color Vars
   $first-color 			: var(--first);
@@ -67,6 +88,33 @@
   $primary-font-motion	: var(--primary-font-motion);
   $secondary-font-noto	: var(--secondary-font-noto);  
 
+	//Font sizes
+	$font-size-base				:  var(--font-size-base);
+	$font-size-sm					:  var(--font-size-sm);
+	$font-size-smaller		:  var(--font-size-smaller);
+
+	$font-banner-tiny			:  var(--font-banner-tiny);
+	$font-banner-small		:  var(--font-banner-small);
+	$font-banner-big			:  var(--font-banner-big);
+	
+	$h1-font-size-mobile	:  var(--h1-mobile);
+	$h1-font-size-desktop	:  var(--h1-desktop);    	 
+
+	$h2-font-size-mobile	:  var(--h2-mobile);    	
+	$h2-font-size-desktop	:  var(--h2-desktop); 
+
+	$h3-font-size-mobile	:  var(--h3-mobile); 		
+	$h3-font-size-desktop	:  var(--h3-desktop);   
+	
+	$font-normal					:  var(--font-weight-normal);     
+	$font-bold						:  var(--font-weight-bold); 
+
+
+	//8
+	//16
+	//24
+	//32
+	//40
 *,
 *::before,
 *::after {

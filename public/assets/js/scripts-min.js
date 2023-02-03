@@ -1,32 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-var bankingTabs = function bankingTabs() {
-	var d = document,
-	    tabs = Array.prototype.slice.apply(d.querySelectorAll(".banking-tabs-container__tab")),
-	    panels = Array.prototype.slice.apply(d.querySelectorAll(".banking-tabs-container__panel"));
-
-	d.getElementById("tabs").addEventListener("click", function (e) {
-		if (e.target.classList.contains("banking-tabs-container__tab")) {
-			var i = tabs.indexOf(e.target);
-			tabs.map(function (tab) {
-				return tab.classList.remove("is-active");
-			});
-			tabs[i].classList.add("is-active");
-			panels.map(function (tab) {
-				return tab.classList.remove("is-active");
-			});
-			panels[i].classList.add("is-active");
-		}
-	});
-};
-
-exports.default = bankingTabs;
-
-},{}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -53,7 +25,7 @@ initAcc('.accordion.v1', true);
 initAcc('.accordion.v2', false);
 exports.default = initAcc();
 
-},{}],3:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -61,8 +33,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 var openTable = function openTable() {
 
-	var btn = document.querySelector('.caballos-layout__racebook--button');
-	var table = document.querySelector('.caballos-layout__open-table');
+	var btn = document.querySelector('.horse-layout__racebook--button');
+	var table = document.querySelector('.horse-layout__open-table');
 
 	btn.addEventListener('click', function () {
 		table.style.display = 'block';
@@ -71,7 +43,7 @@ var openTable = function openTable() {
 
 exports.default = openTable;
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -156,7 +128,7 @@ var paymentSliderCasino = function paymentSliderCasino() {
 exports.paymentSlider = paymentSlider;
 exports.paymentSliderCasino = paymentSliderCasino;
 
-},{}],5:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -205,7 +177,7 @@ var tabsHorses = function tabsHorses() {
 exports.tabs = tabs;
 exports.tabsHorses = tabsHorses;
 
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -245,7 +217,7 @@ var tnsCarousell = exports.tnsCarousell = function tnsCarousell() {
 	});
 };
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -264,7 +236,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	});
 };
 
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -285,7 +257,7 @@ var topNav = exports.topNav = function topNav() {
 	myFunction();
 };
 
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 'use strict';
 
 var _tnsSlider = require('./components/tns-slider');
@@ -304,15 +276,15 @@ var _openTable2 = _interopRequireDefault(_openTable);
 
 var _tabs = require('./components/tabs');
 
-var _bankingTabs = require('../js/components/banking-tabs');
-
-var _bankingTabs2 = _interopRequireDefault(_bankingTabs);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//import bankingTabs from './components/banking-tabs';
+// import { toggleMenu } from './components/menu-mobile';
 
 (function () {
 		(0, _topNav.topNav)();
-		(0, _bankingTabs2.default)();
+		//bankingTabs();
+		// toggleMenu();
 
 		if (document.body.classList.contains('Inicio')) {
 				(0, _tnsSlider.tnsSingle)();
@@ -329,6 +301,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		}
 })();
 
-},{"../js/components/banking-tabs":1,"./components/dropdown-sports":2,"./components/openTable":3,"./components/payment-slider":4,"./components/tabs":5,"./components/tns-carousell":6,"./components/tns-slider":7,"./components/topNav":8}]},{},[9]);
+},{"./components/dropdown-sports":1,"./components/openTable":2,"./components/payment-slider":3,"./components/tabs":4,"./components/tns-carousell":5,"./components/tns-slider":6,"./components/topNav":7}]},{},[8]);
 
 //# sourceMappingURL=scripts-min.js.map

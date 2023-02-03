@@ -4,35 +4,32 @@
 	margin-right: auto;
 
 	&-container {
-		margin-bottom: 22px;
 
 		&__title {
-			color: $first-color;
 			display: inline-block;
 			margin-bottom: 26px;
 			margin-left: auto;
 			margin-right: auto;
+			font-size: $h3-font-size-mobile;
 
 			@include from(lg) {
 				margin-left: unset;
 				margin-right: unset;
+				font-size: $h3-font-size-desktop;
 			}
 		}
 
 		&__btn {
-			display: none;
-		
-			@include from(lg) {
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-			}
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 48px;
 		}
 	}
 }
 
 .promotions-content {
-	margin-bottom: 0;
+	margin-bottom: 32px;
 
 	@include from(lg) {
 		margin-bottom: 24px;

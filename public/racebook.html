@@ -41,7 +41,6 @@
     <link rel="author" type="text/plain" href="./humans.txt">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml"><script src="https://kit.fontawesome.com/de643c382f.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="https://fonts.cdnfonts.com/css/motion-control-neue-lite" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
@@ -49,7 +48,13 @@
     <title>Caballos | Betsev</title>
   </head>
   <body class="Caballos" itemscope itemtype="http://schema.org/WebPage">
-    <header class="main-header"><nav class='top-nav'>
+    <header class="main-header"><div class="top-nav__mobile">
+	<a href="#">
+		<img src="assets/img/abc-logo-mobile.svg" alt="">
+	</a>
+</div>
+
+<nav class='top-nav'>
 	<div class="top-nav__container ed-grid">
 		<a href="index.html" lass='top-nav__link' aria-label="Betsev">
 			<img src="assets/img/Logotipo ABC.svg" alt="" class='top-nav__logo'>
@@ -58,7 +63,7 @@
 		<div class="top-nav__menu">
 			<p class="top-nav__title">The players' paradise</p>
 			<ul class='top-nav__menu-list'>
-				<li class="top-nav__menu-link"><a href="#" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
+				<li class="top-nav__menu-link"><a href="sportbook.html" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
 				<li class="top-nav__menu-link"><a href="casino.html" class='top-nav__anchor'><img src="assets/img/icons/chip-poker-icon.svg" alt="">Casino</a></li>
 				<li class="top-nav__menu-link"><a href="poker.html" class='top-nav__anchor'><img src="assets/img/icons/poker-card-icon.svg" alt="">Poker</a></li>
 				<li class="top-nav__menu-link"><a href="racebook.html" class='top-nav__anchor'><img src="assets/img/icons/horses-icon.svg" alt="">Horses</a></li>
@@ -73,7 +78,7 @@
 		</div>
 		<div class="top-nav-control">
 			<div class="login">
-				<button type="button" class="login-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+				<a href="login.html" class="login-btn btn btn-primary">Login</a>
 				<a href="join-now.html" class="sign-btn">Join</a>
 			</div>
 			<button type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r' aria-label="Menu">
@@ -86,7 +91,7 @@
 	
 	<div class="top-nav__desktop">
 		<ul class='top-nav__desktop-list'>
-			<li class="top-nav__desktop-link"><a href="#" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
+			<li class="top-nav__desktop-link"><a href="sportbook.html" class='top-nav__anchor'><img src="assets/img/icons/ball-icon.svg" alt="">Sportsbook</a></li>
 			<li class="top-nav__desktop-link"><a href="casino.html" class='top-nav__anchor'><img src="assets/img/icons/chip-poker-icon.svg" alt="">Casino</a></li>
 			<li class="top-nav__desktop-link"><a href="poker.html" class='top-nav__anchor'><img src="assets/img/icons/poker-card-icon.svg" alt="">Poker</a></li>
 			<li class="top-nav__desktop-link"><a href="racebook.html" class='top-nav__anchor'><img src="assets/img/icons/horses-icon.svg" alt="">Horses</a></li>
@@ -96,44 +101,6 @@
 		</ul>
 	</div>
 </nav>
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-container">
-    <div class="modal-content modal-sign-in">
-			<div class="modal-content__picture">
-				<img src="assets/img/img-player-login.png" alt="">
-			</div>
-			<div class="sign-in__container">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<img class="sign-in__img" src="assets/img/Logotipo ABC.svg" alt="">
-				<h3 class="sign-in__title">User Login</h3>
-				<form action="" class="sign-in__form">
-					<div class="sign-in__email">
-						<label for="email">Username or Email</label>
-						<input type="text" name="email" id="email">
-					</div>
-					<div class="sign-in__password">
-						<label for="email">Password</label>
-						<input type="text" name="email" id="email">
-					</div>
-					<button class="sign-in__btn" type="submit">Login</button>
-					<div class="sign-in__remember">
-						<div class="sign-in__remember__check">
-							<input type="checkbox" name="remember" id="remember">
-							<label for="remember">Remember me</label>
-						</div>
-						<a class="sign-in__forgot" href="#">Forgot your password?</a>
-						<a class="sign-in__create" href="#">Don't have an account? Click here.</a>
-					</div>
-				</form>
-				<p class="sign-in__copy">Copyright © 2022, Agent Site V2</p>
-			</div>
-    </div>
-  </div>
-</div>
     </header>
     <main class="main-container">
       <section class="hero-component">
@@ -237,21 +204,64 @@
             </tr>
             <tbody>
         </table>
+        <h2 class="track-pay__title underline-title">ALL TRACKS PAY FULL ODDS UP TO MAXIMUM OF $50,000</h2>
+        <p class="track-pay__subtitle">Lorem ipsum dolor sit amet.</p>
+        <table class="track-pay__table">
+            <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>lorem</th>
+                <th>lorem</th>
+                <th>lorem</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Lorem ipsum</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+            </tr>
+            <tr>
+                <td>lorem ipsum</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+            </tr>
+            <tr>
+                <td>lorem ipsum</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+                <td>%lorem</td>
+            </tr>
+            <tbody>
+        </table>
     </section>
-</div><div class="caballos-layout">
-	<div class="caballos-layout__container">
-		<div class="caballos-layout__container--content">
-			<section class="caballos-layout__racebook racebookExternal">
-				<div class="caballos-layout__racebook--warning">
-					<p>If you have any questions, please contact us: csd@abcislands.ag COVID-19 For available track list please download here.</p>
-					<button class="primary-button third-button caballos-layout__racebook--button">Ver lista completa de carreras
-					</button>
+</div><div class="horse-layout">
+	<div class="horse-layout__container">
+		<div class="horse-layout__container--content">
+			<section class="horse-layout__racebook racebookExternal">
+				<div class="horse-layout__racebook--warning">
+					<p class="ed-grid">If you have any questions, please contact us: csd@abcislands.ag COVID-19 For available track list please download here.</p>
+					<button class="primary-button third-button horse-layout__racebook--button">View full track list</button>
 				</div>
 			</section>
-			<div class="ed-container open caballos-layout__open-table">
+			<div class="ed-container open horse-layout__open-table">
 				<div class="ed-item">
-					<div class="caballos-layout-container">
-						<ul class="tabs-container__tabs caballos-layout__tabs--ul" id="tabs-horses">
+					<div class="horse-layout-container">
+						<ul class="tabs-container__tabs horse-layout__tabs--ul" id="tabs-horses">
 							<li class="tabs-container__tab is-active">Pista A</li>
 							<li class="tabs-container__tab">Pista B</li>
 							<li class="tabs-container__tab">Pista C</li>
@@ -260,69 +270,69 @@
 						</ul>
 						<div class="tabs-container__panels">
 							<div class="tabs-container__panel is-active">
-								<div class="caballos-layout__racebook--container-table">
-									<table class="caballos-layout__racebook--table caballos-layout__racebook--table2 main-table">
+								<div class="horse-layout__racebook--container-table">
+									<table class="horse-layout__racebook--table horse-layout__racebook--table2 main-table">
 										<colgroup>
-											<col class="caballos-layout__racebook-table-col">
-											<col class="caballos-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
 										</colgroup>
-										<thead class="caballos-layout__racebook-table--thead">
-											<tr class="caballos-layout__racebook-table--tr">
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">PISTA A</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">zona</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">tipo</th>
+										<thead class="horse-layout__racebook-table--thead">
+											<tr class="horse-layout__racebook-table--tr">
+												<th scope="col" class="horse-layout__racebook-table--th-bold">PISTA A</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold">zona</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold">tipo</th>
 											</tr>
 										</thead>
-										<tbody class="caballos-layout__racebook-table--body">
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">aqueduct</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+										<tbody class="horse-layout__racebook-table--body">
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">aqueduct</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Belmont Park</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Belmont Park</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Churchill Downs</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Churchill Downs</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Del Mar</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Del Mar</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Delaware Park</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Delaware Park</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Fair Grounds Thoroughbred</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Fair Grounds Thoroughbred</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Golden Gate Fields</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Golden Gate Fields</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Gulfstream Park</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Gulfstream Park</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Keeneland</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Keeneland</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Kentucky Downs</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Kentucky Downs</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
 										</tbody>
 									</table>
@@ -330,69 +340,69 @@
 							</div>
 	
 							<div class="tabs-container__panel">					
-								<div class="caballos-layout__racebook--container-table">
-									<table class="caballos-layout__racebook--table caballos-layout__racebook--table2 main-table">
+								<div class="horse-layout__racebook--container-table">
+									<table class="horse-layout__racebook--table horse-layout__racebook--table2 main-table">
 										<colgroup>
-											<col class="caballos-layout__racebook-table-col">
-											<col class="caballos-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
 										</colgroup>
-										<thead class="caballos-layout__racebook-table--thead">
-											<tr class="caballos-layout__racebook-table--tr">
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">PISTA B</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">zona</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">tipo</th>
+										<thead class="horse-layout__racebook-table--thead">
+											<tr class="horse-layout__racebook-table--tr">
+												<th scope="col" class="horse-layout__racebook-table--th-bold">PISTA B</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold">zona</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold">tipo</th>
 											</tr>
 										</thead>
-										<tbody class="caballos-layout__racebook-table--body">
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Canterbury Park</td>
-												<td class="caballos-layout__racebook-table--td">CST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+										<tbody class="horse-layout__racebook-table--body">
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Canterbury Park</td>
+												<td class="horse-layout__racebook-table--td">CST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Charles Town</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Charles Town</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Dover Downs</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Dover Downs</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Ellis Park</td>
-												<td class="caballos-layout__racebook-table--td">CST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Ellis Park</td>
+												<td class="horse-layout__racebook-table--td">CST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Freehold Raceway</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Freehold Raceway</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Harrington Raceway</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Harrington Raceway</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Laurel Park</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Laurel Park</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Lone Star Park</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Lone Star Park</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Louisiana Downs Thoroughbred</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Louisiana Downs Thoroughbred</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Los Alamitos</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Los Alamitos</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
 										</tbody>
 									</table>
@@ -400,69 +410,69 @@
 							</div>
 
 							<div class="tabs-container__panel">					
-								<div class="caballos-layout__racebook--container-table">
-									<table class="caballos-layout__racebook--table caballos-layout__racebook--table2 main-table">
+								<div class="horse-layout__racebook--container-table">
+									<table class="horse-layout__racebook--table horse-layout__racebook--table2 main-table">
 										<colgroup>
-											<col class="caballos-layout__racebook-table-col">
-											<col class="caballos-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
 										</colgroup>
-										<thead class="caballos-layout__racebook-table--thead">
-											<tr class="caballos-layout__racebook-table--tr">
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">PISTA C</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold"></th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold"></th>
+										<thead class="horse-layout__racebook-table--thead">
+											<tr class="horse-layout__racebook-table--tr">
+												<th scope="col" class="horse-layout__racebook-table--th-bold">PISTA C</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold"></th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold"></th>
 											</tr>
 										</thead>
-										<tbody class="caballos-layout__racebook-table--body">
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Arapahoe Park</td>
-												<td class="caballos-layout__racebook-table--td">MST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+										<tbody class="horse-layout__racebook-table--body">
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Arapahoe Park</td>
+												<td class="horse-layout__racebook-table--td">MST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Australia A</td>
-												<td class="caballos-layout__racebook-table--td">-</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Australia A</td>
+												<td class="horse-layout__racebook-table--td">-</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Australia B</td>
-												<td class="caballos-layout__racebook-table--td">-</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Australia B</td>
+												<td class="horse-layout__racebook-table--td">-</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Ellis Park</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Ellis Park</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Belterra</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Belterra</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Harrington Raceway</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Harrington Raceway</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Delta Downs</td>
-												<td class="caballos-layout__racebook-table--td">PST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Delta Downs</td>
+												<td class="horse-layout__racebook-table--td">PST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Fair Grounds QTR</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Fair Grounds QTR</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Fairmount Park</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Fairmount Park</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Finger Lakes</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Finger Lakes</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
 										</tbody>
 									</table>
@@ -470,57 +480,57 @@
 							</div>
 
 							<div class="tabs-container__panel">					
-								<div class="caballos-layout__racebook--container-table">
-									<table class="caballos-layout__racebook--table caballos-layout__racebook--table2 main-table">
+								<div class="horse-layout__racebook--container-table">
+									<table class="horse-layout__racebook--table horse-layout__racebook--table2 main-table">
 										<colgroup>
-											<col class="caballos-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
 										</colgroup>
-										<thead class="caballos-layout__racebook-table--thead">
-											<tr class="caballos-layout__racebook-table--tr">
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">Hipodromo</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">zona</th>
+										<thead class="horse-layout__racebook-table--thead">
+											<tr class="horse-layout__racebook-table--tr">
+												<th scope="col" class="horse-layout__racebook-table--th-bold">Hipodromo</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold">zona</th>
 											</tr>
 										</thead>
-										<tbody class="caballos-layout__racebook-table--body">
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Derby Lane Evening</td>
-												<td class="caballos-layout__racebook-table--td">CST</td>
+										<tbody class="horse-layout__racebook-table--body">
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Derby Lane Evening</td>
+												<td class="horse-layout__racebook-table--td">CST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Derby Lane Matinee</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Derby Lane Matinee</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Jacksonville Park Evening</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Jacksonville Park Evening</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Jacksonville Park Matinee</td>
-												<td class="caballos-layout__racebook-table--td">CST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Jacksonville Park Matinee</td>
+												<td class="horse-layout__racebook-table--td">CST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Palm Beach Evening</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Palm Beach Evening</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Palm Beach Matinee</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Palm Beach Matinee</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Southland Evening</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Southland Evening</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Southland Matinee</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Southland Matinee</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Wheeling Downs Evening</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Wheeling Downs Evening</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Wheeling Downs Matinee</td>
-												<td class="caballos-layout__racebook-table--td">EST</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Wheeling Downs Matinee</td>
+												<td class="horse-layout__racebook-table--td">EST</td>
 											</tr>
 										</tbody>
 									</table>
@@ -528,69 +538,69 @@
 							</div>
 
 							<div class="tabs-container__panel">					
-								<div class="caballos-layout__racebook--container-table">
-									<table class="caballos-layout__racebook--table caballos-layout__racebook--table2 main-table">
+								<div class="horse-layout__racebook--container-table">
+									<table class="horse-layout__racebook--table horse-layout__racebook--table2 main-table">
 										<colgroup>
-											<col class="caballos-layout__racebook-table-col">
-											<col class="caballos-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
+											<col class="horse-layout__racebook-table-col">
 										</colgroup>
-										<thead class="caballos-layout__racebook-table--thead">
-											<tr class="caballos-layout__racebook-table--tr">
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">Internacional</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">zona</th>
-												<th scope="col" class="caballos-layout__racebook-table--th-bold">tipo</th>
+										<thead class="horse-layout__racebook-table--thead">
+											<tr class="horse-layout__racebook-table--tr">
+												<th scope="col" class="horse-layout__racebook-table--th-bold">Internacional</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold">zona</th>
+												<th scope="col" class="horse-layout__racebook-table--th-bold">tipo</th>
 											</tr>
 										</thead>
-										<tbody class="caballos-layout__racebook-table--body">
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Ascot Racecourse</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+										<tbody class="horse-layout__racebook-table--body">
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Ascot Racecourse</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Ayr</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Ayr</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Ballinrobe</td>
-												<td class="caballos-layout__racebook-table--td">ireland</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Ballinrobe</td>
+												<td class="horse-layout__racebook-table--td">ireland</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Bangor-on-Dee</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Bangor-on-Dee</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Bath</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Bath</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Bellewstown</td>
-												<td class="caballos-layout__racebook-table--td">ireland</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Bellewstown</td>
+												<td class="horse-layout__racebook-table--td">ireland</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Beverley</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Harness</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Beverley</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Harness</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Brighton</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Brighton</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Carlisle</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Carlisle</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
-											<tr class="caballos-layout__racebook-table--tr">
-												<td class="caballos-layout__racebook-table--td">Cartmel</td>
-												<td class="caballos-layout__racebook-table--td">UK</td>
-												<td class="caballos-layout__racebook-table--td">Thoroughbred</td>
+											<tr class="horse-layout__racebook-table--tr">
+												<td class="horse-layout__racebook-table--td">Cartmel</td>
+												<td class="horse-layout__racebook-table--td">UK</td>
+												<td class="horse-layout__racebook-table--td">Thoroughbred</td>
 											</tr>
 										</tbody>
 									</table>
@@ -637,43 +647,47 @@
     <div class="bottom-nav__container">
         <ul class="bottom-nav__bar">
             <li class="bottom-nav__li">
-                <a href="about-us.html" class="bottom-nav__anchor">
-                    <img class="bottom-nav__anchor__img" src="assets/img/icons/abc-short-logo.png" alt="">
-                    <span class="bottom-nav__anchor__text">why abc islands</span>
+                <a href="login.html" class="bottom-nav__anchor">
+                    <img class="bottom-nav__anchor__img" src="assets/img/icons/user-login-icon.svg" alt="">
+                    <span class="bottom-nav__anchor__text">Login</span>
                 </a>
             </li>
             <li class="bottom-nav__li">
                 <a href="#" class="bottom-nav__anchor">
-                    <img class="bottom-nav__anchor__img" src="assets/img/icons/promo-icon.png" alt="">
-                    <span class="bottom-nav__anchor__text">Promo</span>
+                    <img class="bottom-nav__anchor__img" src="assets/img/icons/user-register-icon.svg" alt="">
+                    <span class="bottom-nav__anchor__text">Register</span>
                 </a>
             </li>
             <li class="bottom-nav__li">
-                <a href="#" class="bottom-nav__anchor bottom-nav__anchor--button">
-                    <span class="bottom-nav__anchor__text">Join now</span>
-                </a>
-            </li>
-            <li class="bottom-nav__li">
-                <a href="#" class="bottom-nav__anchor">
-                    <img class="bottom-nav__anchor__img" src="assets/img/icons/refer-friend.png" alt="">
-                    <span class="bottom-nav__anchor__text">Refer a friend</span>
-                </a> 
-            </li>
-            <li class="bottom-nav__li">
-                <a href="#" class="bottom-nav__anchor">
-                    <img class="bottom-nav__anchor__img" src="assets/img/icons/live-support.png" alt="">
-                    <span class="bottom-nav__anchor__text">live support</span>
-                </a> 
+                <button type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r' aria-label="Menu">
+                    <span class='hamburger-box' >
+                        <span class='hamburger-inner'></span>
+                    </span>
+                </button>
+                <span class="bottom-nav__anchor__text">Promo</span>
             </li>
         </ul>
     </div>
-</nav><footer class="footer">
+    <div class="main_menu active">
+        <button class="main_menu-close"><i class="fa-solid fa-x"></i></button>
+        <div class="cont_menu">
+            <span>menu</menu>
+        </div>
+    </div>
+</nav>
+
+
+  
+
+  <footer class="footer">
 	<div class="footer__content ed-grid">
 		<div class="footer__content__header">
 			<img class="footer__content__header-logo" src="assets/img/Logotipo ABC.svg" alt="">
 			<div class="footer__content__social">
 				<img class="footer__content__social-curacao" src="assets/img/logo-curacao.png" alt="">
-				<img class="footer__content__social-twitter" src="assets/img/social-twitter-icon.png" alt="">
+				<a href="https://twitter.com/betabcislands" target="_blank">
+					<img class="footer__content__social-twitter" src="assets/img/social-twitter-icon.png" alt="">
+				</a>
 			</div>
 		</div>
 		<div class="footer__nav ed-grid s-grid-2 l-grid-4">
