@@ -202,7 +202,7 @@ a {
     text-decoration : none;
 
     &:hover {
-      text-decoration : underline;
+      text-decoration : none;
     }
   }
 }
@@ -220,10 +220,13 @@ a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-family: $secondary-font-noto;
+  font-size: $h3-font-size-mobile;
 
   @include from(l) {
     margin-left: 0;
     margin-right: 0;
+    font-family: $h3-font-size-desktop;
   }
 }
 
@@ -234,11 +237,10 @@ a {
   width: fit-content;
   padding: 16px 16px;
   height: fit-content;
-  //margin-top: 24px;
-  //margin-bottom: 24px;
+  color: $first-color;
 
   @include from(l) {
-    //margin-top: 24px;
+    
   }
 }
 
