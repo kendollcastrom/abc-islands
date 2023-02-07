@@ -1,0 +1,38 @@
+.contest-banner {
+  background-size: cover;
+  background-image: url('../../assets/img/contest-banner-bg.jpg');
+  background-position: center;
+}
+
+.contest-banner__content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 80px 0;
+
+  @include from(l) {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  &_heading {
+    font-size: $h1-font-size-mobile;
+    color: $first-color;
+    font-family: $primary-font-motion;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+
+    @include from(l) {
+      font-size: $h1-font-size-desktop;
+      width: 100%;
+    }
+  }
+
+  &_img {
+
+    @include from(l) {
+      width: 50%;
+    }
+  }
+}
