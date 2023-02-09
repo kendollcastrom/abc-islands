@@ -1,13 +1,13 @@
 extends ../config/template
 append config
-	-currentPage		= "Poker-rules"
-	-siteName			= 'ABC Islands'
-	-content			= 'content'
+	-currentPage			= "Poker-rules"
+	-siteName					= 'ABC Islands'
+	-content					= 'content'
 	-pageDescription	= 'This website contains a collection of projects developed by Enrique Estrada using a Gulp boilerplate developed by him'
 block main-header
 block main-container
 	include ../components/hero-component.html
-	include ../components/poker-rules-component.html
-	include ../components/primary-button.html
+	//- include ../components/poker-rules-component.html
+	include ../components/accordion-component.html
 block main-footer
 block scripts

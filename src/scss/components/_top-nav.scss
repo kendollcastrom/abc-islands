@@ -15,8 +15,6 @@
 	}
 
 	&__mobile {
-
-		//display: block;
 		position: fixed;
 		top: 15px;
 		width: 105px;
@@ -172,6 +170,7 @@
 	opacity: 93;
 	width: 100%;
 	display: none;
+	height: 56px;
 
 	@include from(l) {
 		display: block;
@@ -183,9 +182,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	max-width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 1320px;
 	padding: 0;
 	margin-bottom: 0;
 	justify-content: space-between;
@@ -198,14 +195,67 @@
 	padding-bottom: 18px;
 	padding-top: 14px;
 	box-sizing: border-box;
+	position: relative;
 
-	&:hover {
+/* 	&:hover {
 		border-bottom: 1px solid $fourth-color;
 		box-sizing: border-box;
+	} */
+
+	.rotate-center {
+		margin-right: 8px;
+	}
+}
+
+@-webkit-keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+  }
+	100% {
+		-webkit-transform: rotate(360deg);
+						transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate-center {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+  }
+	100% {
+		-webkit-transform: rotate(360deg);
+						transform: rotate(360deg);
+	}
+}
+
+.top-nav__desktop-link::after {
+	background-color: $fourth-color;
+	content: '';
+	display: block;
+	height: 0.125rem;
+	transition: width .3s;
+	width: 0;
+	position: absolute;
+	top: 53px;
+}
+
+.top-nav__desktop-link:hover::after {
+	transition: width .3s;
+	width: 100%;
+}
+
+.top-nav__desktop-link:hover {
+
+	.rotate-center {
+		-webkit-animation: rotate-center 0.6s ease-out both;
+	        animation: rotate-center 0.6s ease-out both;	
+
+		// fill: $fourth-color;
 	}
 
-	img {
-		margin-right: 8px;
+	.rotate-center svg > g {
+		fill: $fourth-color;
 	}
 }
 

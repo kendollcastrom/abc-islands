@@ -222,6 +222,7 @@ a {
   margin-right: auto;
   font-family: $secondary-font-noto;
   font-size: $h3-font-size-mobile;
+  margin-bottom: 32px;
 
   @include from(l) {
     margin-left: 0;

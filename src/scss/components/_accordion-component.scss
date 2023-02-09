@@ -1,3 +1,15 @@
+.accordion-component {
+	padding-top: 64px;
+	align-items: flex-start;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 48px;
+
+	@include from(l) {
+		padding-top: 32px;
+	}
+}
+
 .accordion-container {
 	align-items: flex-start;
 	width: 100%;
