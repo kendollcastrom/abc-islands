@@ -106,10 +106,8 @@
 		color: $first-color;
 		display: flex;
 		flex-direction: row;
-
-		&:hover {
-			color: $fourth-color;
-		}
+		font-weight: 600;
+		align-items: center;
 	}
 
 	&__mb-iconMenu {
@@ -186,6 +184,8 @@
 	padding: 0;
 	margin-bottom: 0;
 	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .top-nav__desktop-link {
@@ -204,7 +204,15 @@
 
 	.rotate-center {
 		margin-right: 8px;
+
+		/* svg {
+			background-color: red;
+		} */
 	}
+
+	/* 	svg {
+			background-color: green;
+		} */
 }
 
 @-webkit-keyframes rotate-center {
@@ -247,15 +255,13 @@
 
 .top-nav__desktop-link:hover {
 
+	a.top-nav__anchor {
+		color: $ninth-color
+	}
+
 	.rotate-center {
 		-webkit-animation: rotate-center 0.6s ease-out both;
 	        animation: rotate-center 0.6s ease-out both;	
-
-		// fill: $fourth-color;
-	}
-
-	.rotate-center svg > g {
-		fill: $fourth-color;
 	}
 }
 
