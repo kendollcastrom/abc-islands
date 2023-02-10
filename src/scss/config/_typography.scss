@@ -227,7 +227,7 @@ a {
   @include from(l) {
     margin-left: 0;
     margin-right: 0;
-    font-family: $h3-font-size-desktop;
+    font-size: $h3-font-size-desktop;
   }
 }
 
