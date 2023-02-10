@@ -58,13 +58,21 @@
 }
 
 .class-casino__content__hover {
-    border: 1px solid red;
+    //border: 1px solid red;
     position: relative;
 	width: 100%;
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
+
+    &_img {
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 
@@ -85,6 +93,8 @@
 	padding: 8px 24px;
 	text-align: center;
     color: $first-color;
+
+
     
 	&_heading {
 		font-size: $font-banner-big;
