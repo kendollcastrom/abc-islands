@@ -1,16 +1,5 @@
 .class-casino {
 
-    &__title {
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 32px;
-
-        @include from(l) {
-            margin-right: unset;
-            margin-left: unset;
-        }
-    }
-
     &__text {
         margin-left: auto;
         margin-right: auto;
@@ -29,8 +18,9 @@
 
 .class-casino__content {
 
-    &__img {
-        margin-bottom: 16px;
+    &-info {
+        display: flex;
+        flex-direction: column;
     }
 
     &__item {
@@ -40,6 +30,7 @@
         padding: 11px 20px;
         margin-bottom: 24px;
         border-radius: 13px;
+        flex: 1;
 
         img {
             max-width: 100%;
@@ -64,4 +55,59 @@
         font-size: 13px;
         color: $first-color;
     }
+}
+
+.class-casino__content__hover {
+    border: 1px solid red;
+    position: relative;
+	width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+
+.class-casino__content__hover__info {
+	position: absolute;
+	top: 50%;
+	border-radius: 8px;
+	background-color: $fourth-color;
+	left: 0%;
+	width: 100%;
+	height: 0px;
+	opacity: 0;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    justify-content: center;
+	padding: 8px 24px;
+	text-align: center;
+    color: $first-color;
+    
+	&_heading {
+		font-size: $font-banner-big;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+        max-width: 400px;
+        font-family: $primary-font-motion;
+	}
+
+	&_text {
+		font-size: $font-banner-small;
+		max-width: 245px;
+		line-height: 24px;
+        font-family: $primary-font-motion;
+	}
+}
+
+.class-casino__content__hover:hover .class-casino__content__hover__info {
+	@include from(l) {
+		opacity: 1;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
 }

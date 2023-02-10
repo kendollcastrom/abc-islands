@@ -4,7 +4,6 @@
 	background-repeat: no-repeat;
 	width: 100%;
 	padding-top: 40px;
-	//padding-bottom: 24px;
 	margin-bottom: 40px;
 }
 
@@ -14,21 +13,6 @@
 	margin-right: auto;
 	overflow: hidden;
 	font-size: 2.5rem;
-
-	/*     &__title {
-        //padding-top: 14px;
-        margin-right: auto;
-        margin-left: auto;
-        font-size: $h3-font-size-mobile;
-        margin-bottom: 32px;
-
-        @include from(l) {
-            margin-bottom: 24px;
-            margin-left: unset;
-            margin-right: unset;
-            font-size: $h3-font-size-desktop;
-        }
-    } */
 
 	&__text {
 		font-size: 16px;
@@ -52,164 +36,96 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 26px;
-
-	// 	&__card {
-	//         position: relative;
-	//         width: 400px;
-	//         height: 400px;
-	//         border-radius: 8px;
-	//         border: 1px solid fuchsia;
-
-	// 		/* @include from(l) {
-	// 			width: 300px;
-	// 			height: 300px;
-	// 		} */
-
-	//         /* &--title {
-	//             font-size: 24px;
-	//             position: absolute;
-	//             font-family: $primary-font-motion;
-	//             margin: 0;
-	//             bottom: 0;
-	//             color: $first-color;
-	//             font-size: 32px;
-	//             font-weight: bold;
-	//             text-transform: uppercase;
-	//             text-align: center;
-	//             width: 100%;
-
-	//             @include from(l) {
-	//                 font-size: 64px;
-	//             }
-	//         } */
-	// /*
-	//         &--img-container {
-	//             width: 100%;
-	//             height: 400px;
-	//             border-radius: 8px;
-	//         }
-
-	// 		&--img {
-	// 			max-width: 100%;
-	// 			width: 100%;
-	// 		} */
-
-	//         // &--info-hover {
-	//         //     position: absolute;
-	//         //     top: 50%;
-	//         //     background-color: $fourth-color;
-	//         //     border-radius: 8px;
-	//         //     width: 0;
-	//         //     height: 0px;
-	//         //     opacity: 0;
-	//         //     transition: background-color, opacity, width, height .3s, .3s, .3s, .3s;
-	//         //     border: 1px solid greenyellow;
-
-	//         //     /* h2 {
-	//         //         font-weight: $font-banner-small;
-	//         //     } */
-	//         // }
-	// 	}
 }
-
-// .sports-cards__card:hover .sports-cards__card--info-hover {
-// 	opacity: 1;
-// 	top: 0px;
-// 	width: 100%;
-// 	height: 300px;
-// }
 
 .sports-cards__card {
 	position: relative;
 	width: 135px;
 	height: 135px;
-    margin-right: 10px;
+	margin-right: 10px;
 
-    @include from(l) {
-        width: 295px;
-        height: 295px;
-        margin-right: 16px;
-    }
-
+	@include from(l) {
+		width: 295px;
+		height: 295px;
+		margin-right: 16px;
+	}
 }
 
 .sports-cards__card__info {
 	width: 100%;
 	height: 295px;
-   
 
-    &_img {
-        position: absolute;
-    }
+	&_img {
+		position: absolute;
+	}
 
-    &_title {
-       position: absolute;
-       bottom: 8px;
-       left: 0;
-       right: 0;
-       text-align: center;
-       margin-bottom: 0;
-       font-size: $font-banner-small;
-       font-family: $primary-font-motion;
-       text-transform: uppercase;
-       line-height: 40px;
+	&_title {
+		position: absolute;
+		bottom: 8px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin-bottom: 0;
+		font-size: $font-banner-small;
+		font-family: $primary-font-motion;
+		text-transform: uppercase;
+		line-height: 40px;
 
-       @include from(l) {
-        font-size: $font-banner-big;
-        bottom: 16px;
-       }
-    }
+		@include from(l) {
+			font-size: $font-banner-big;
+			bottom: 16px;
+		}
+	}
 }
 
 .sports-cards__card__hover {
 	position: absolute;
 	top: 50%;
-    border-radius: 8px;
+	border-radius: 8px;
 	background-color: $fourth-color;
 	left: 0%;
 	width: 100%;
 	height: 0px;
 	opacity: 0;
-	transition: all .3s;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 8px 24px;
-    text-align: center;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 8px 24px;
+	text-align: center;
 
-    &_heading {
-        font-family: $primary-font-motion;
-        font-size: $font-banner-big;
-        margin-bottom: 8px;
-        text-transform: uppercase;
-    }
+	&_heading {
+		font-family: $primary-font-motion;
+		font-size: $font-banner-big;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+	}
 
-    &_text {
-        font-size: $font-size-base;
-        font-family: $secondary-font-noto;
-        max-width: 245px;
-        line-height: 24px;
-    }
+	&_text {
+		font-size: $font-size-base;
+		font-family: $secondary-font-noto;
+		max-width: 245px;
+		line-height: 24px;
+	}
 
-    &_anchor {
-        position: absolute;
-        bottom: 24px;
-        padding: 9px 32px;
-        font-family: $secondary-font-noto;
-        font-size: $font-size-base;
-        text-transform: uppercase;
-        background-color: $seventh-color;
-        border-radius: 19px;
-    }
+	&_anchor {
+		position: absolute;
+		bottom: 24px;
+		padding: 9px 32px;
+		font-family: $secondary-font-noto;
+		font-size: $font-size-base;
+		text-transform: uppercase;
+		background-color: $seventh-color;
+		border-radius: 19px;
+	}
 }
 
 .sports-cards__card:hover .sports-cards__card__hover {
-
-    @include from(l) {
-        opacity: 1;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 295px;
-    }
+	@include from(l) {
+		opacity: 1;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 295px;
+	}
 }
