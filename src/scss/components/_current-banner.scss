@@ -1,0 +1,50 @@
+.current-banner {
+  background-image: url('../../assets/img/sport-markets-background.jpg');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    @include from(l) {
+      flex-direction: row;
+    }
+  }
+}
+
+.current-banner__content__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include from(l) {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  &_heading {
+    color: $first-color;
+    font-family: $primary-font-motion;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-bottom: 18px;
+    max-width: 208px;
+    line-height: 30px;
+
+
+    @include from(l) {
+      font-size: $h1-font-size-desktop;
+      line-height: 60px;
+      max-width: 648px;
+    }
+  }
+
+  &_anchor {
+    margin-bottom: 18px;
+  }
+}

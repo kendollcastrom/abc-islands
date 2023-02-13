@@ -2,12 +2,6 @@
     font-family: $secondary-font-noto;
     margin-bottom: 14px;
 
-    &__title {
-        text-transform: uppercase;
-        font-size: $h3-font-size-mobile;
-        margin-bottom: 24px;
-    }
-
     &__table {
         border: 1px solid $ninth-color;
         border-collapse: collapse;
@@ -59,18 +53,15 @@
 .track-pay {
     font-family: $secondary-font-noto;
     margin-bottom: 14px;
-    
-
-    &__title {
-        text-transform: uppercase;
-        font-size: $h3-font-size-mobile;
-        margin-bottom: 24px;
-    }
 
     &__subtitle {
         margin-bottom: 16px;
         text-align: center;
         color: $first-color;
+
+        @include from(l) {
+            text-align: left;
+        }
     }
 
     &__table {

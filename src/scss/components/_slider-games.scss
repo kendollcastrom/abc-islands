@@ -4,18 +4,6 @@
 }
 
 .slider-games {
-    overflow: hidden;
-
-    &__title {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 32px;
-
-        @include from(l) {
-            margin-left: unset;
-            margin-right: unset;
-        }
-    }
 
     &__content {
         display: flex;
@@ -41,26 +29,39 @@
         height: 100%;
         object-fit: cover;
     }
+}
 
-    &__title {
-        position: absolute;
-        color: $first-color;
+.slider-games__card__info {
+    position: absolute;
+    bottom: 8px;
+    padding: 0 8px;
+    color: $first-color;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+
+    @include from(l) {
+        text-align: start;
+        top: 70px;
+        line-height: 30px;
+        margin-left: 24px;
+    }
+
+    &_title{
         margin-bottom: 0;
-        font-size: 24px;
+        font-size: $font-banner-small;
         font-family: $primary-font-motion;
-        font-weight: bold;
-        text-align: center;
-        bottom: 0;
-        width: 100%;
-        padding: 0 8px;
         line-height: 25px;
-        text-transform: uppercase;
-
+        
         @include from(l) {
-            font-size: 64px;
-            line-height: 60px;
-            bottom: 60px;
-            text-align: start;
+            font-size: $font-banner-big;
         }
+    }
+
+    &_subtitle {
+        font-size: $font-size-base;
+        font-family: $secondary-font-noto;
     }
 }

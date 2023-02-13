@@ -13,6 +13,7 @@ html(lang='es' prefix='og: http://ogp.me/ns#', class='no-js')
 		link(rel="stylesheet" href="assets/css/styles.css")
 		title= currentPage.slice(0,1).toUpperCase() + currentPage.slice(1) + " | " + siteName
 	body(class=currentPage, itemscope itemtype="http://schema.org/WebPage")
+		
 		//-here start the Main Header
 		header(class='main-header')
 			include ../components/top-nav.html
@@ -21,8 +22,9 @@ html(lang='es' prefix='og: http://ogp.me/ns#', class='no-js')
 		//-here start the Main Container
 		main(class='main-container')
 			block main-container
+			//- div(class="menu__wrapper")
 		//-here ends the Main Container
-		//-here start the Main Footer
+		//-here start the Main Footer//
 		footer(class='main-footer')
 			include ../components/menu-fixed.html
 			include ../components/footer.html

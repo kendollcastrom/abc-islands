@@ -17,10 +17,23 @@
 }
 
 .class-casino__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    @include from(l) {
+        flex-direction: row;
+        column-gap: 1rem;
+    }
 
     &-info {
         display: flex;
         flex-direction: column;
+        width: 100%;
+
+        @include from(l) {
+            width: 50%;
+        }
     }
 
     &__item {
@@ -52,25 +65,38 @@
     }
 
     &__paragraph {
-        font-size: 13px;
-        color: $first-color;
+        font-size: $font-size-base;
+        color: $ninth-color;
+    }
+}
+
+@include from (l) {
+
+    .class-casino__content__item:hover {
+        background-color: $fourth-color;
+    
+        .class-casino__content__paragraph {
+            color: $first-color;
+        }
     }
 }
 
 .class-casino__content__hover {
-    //border: 1px solid red;
     position: relative;
 	width: 100%;
-    max-width: 640px;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 32px;
+    max-width: 648px;
+
+    @include from(l) {
+        width: 648px;
+    }
 
     &_img {
 
         img {
             height: 100%;
-            object-fit: cover;
         }
     }
 }

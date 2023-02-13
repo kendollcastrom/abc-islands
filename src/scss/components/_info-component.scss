@@ -1,13 +1,9 @@
 .info-component {
     padding: 36px 0;
 
-    &__title {
-        margin-bottom: 30px;
-    }
-
     &__paragraph {
         color: $first-color;
-        font-size: 16px;
+        font-size: $font-size-base;
         font-family: $secondary-font-noto;
         margin-bottom: 24px;
     }

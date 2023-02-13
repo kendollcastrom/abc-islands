@@ -62,12 +62,12 @@
 
 		@include from(m) {
 			margin-bottom: 10px;
+			text-align: left;
 		}
 
 		@include from(l) {
 			font-size: 96px;
 			margin-bottom: 0;
-			text-align: start;
 		}
 	}
 

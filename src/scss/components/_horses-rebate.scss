@@ -1,11 +1,6 @@
 .horses-rebate {
     color: $first-color;
-
-    &__heading {
-        text-transform  : uppercase;
-        margin-bottom: 24px;
-    }
-
+    
     &__text {
         font-size: $font-size-base;
         font-family: $secondary-font-noto;

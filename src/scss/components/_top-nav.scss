@@ -19,14 +19,9 @@
 		top: 15px;
 		width: 105px;
 		background-image: linear-gradient(to right bottom, #b61827, #941047, #652151, #372546, #1b1d29);
-		z-index: 5;
+		z-index: 4;
 		padding: 6px 16px 6px 20px;
 		border-radius: 0 6px 6px 0;
-
-		/* @media only screen and (min-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
-			//display: b;
-			display: none;
-		} */
 
 		@include from(l) {
 			display: none;
