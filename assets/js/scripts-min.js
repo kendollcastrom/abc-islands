@@ -29,6 +29,31 @@ exports.default = initAcc();
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.initMenu = initMenu;
+function initMenu() {
+
+  var toggleButton = document.querySelector('.menu__toggle');
+  var menuContent = document.querySelector('.menu__content');
+  var closeButton = document.querySelector('.menu__content__close');
+  var wrapperOverlay = document.querySelector('.menu__wrapper');
+
+  toggleButton.addEventListener('click', function () {
+    menuContent.classList.toggle('is-open');
+    wrapperOverlay.classList.toggle('open-overlay');
+  });
+
+  closeButton.addEventListener('click', function () {
+    menuContent.classList.remove('is-open');
+    wrapperOverlay.classList.remove('open-overlay');
+  });
+}
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 var openTable = function openTable() {
@@ -43,7 +68,7 @@ var openTable = function openTable() {
 
 exports.default = openTable;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -128,7 +153,7 @@ var paymentSliderCasino = function paymentSliderCasino() {
 exports.paymentSlider = paymentSlider;
 exports.paymentSliderCasino = paymentSliderCasino;
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -177,7 +202,7 @@ var tabsHorses = function tabsHorses() {
 exports.tabs = tabs;
 exports.tabsHorses = tabsHorses;
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -217,7 +242,7 @@ var tnsCarousell = exports.tnsCarousell = function tnsCarousell() {
 	});
 };
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -236,7 +261,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	});
 };
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -257,7 +282,7 @@ var topNav = exports.topNav = function topNav() {
 	myFunction();
 };
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 'use strict';
 
 var _tnsSlider = require('./components/tns-slider');
@@ -276,15 +301,14 @@ var _openTable2 = _interopRequireDefault(_openTable);
 
 var _tabs = require('./components/tabs');
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _menuFixed = require('./components/menu-fixed');
 
-//import bankingTabs from './components/banking-tabs';
-// import { toggleMenu } from './components/menu-mobile';
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (function () {
 		(0, _topNav.topNav)();
 		//bankingTabs();
-		// toggleMenu();
+		(0, _menuFixed.initMenu)();
 
 		if (document.body.classList.contains('Inicio')) {
 				(0, _tnsSlider.tnsSingle)();
@@ -300,7 +324,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 				(0, _tabs.tabs)();
 		}
 })();
+//import bankingTabs from './components/banking-tabs';
 
-},{"./components/dropdown-sports":1,"./components/openTable":2,"./components/payment-slider":3,"./components/tabs":4,"./components/tns-carousell":5,"./components/tns-slider":6,"./components/topNav":7}]},{},[8]);
+},{"./components/dropdown-sports":1,"./components/menu-fixed":2,"./components/openTable":3,"./components/payment-slider":4,"./components/tabs":5,"./components/tns-carousell":6,"./components/tns-slider":7,"./components/topNav":8}]},{},[9]);
 
 //# sourceMappingURL=scripts-min.js.map
