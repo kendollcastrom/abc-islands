@@ -1,6 +1,5 @@
 import {tnsSingle} from './components/tns-slider';
 import {topNav} from './components/topNav';
-import {tnsCarousell} from './components/tns-carousell';
 import {paymentSlider, paymentSliderCasino} from './components/payment-slider';
 import {initAcc} from './components/dropdown-sports';
 import openTable from './components/openTable';
@@ -15,7 +14,6 @@ import { initMenu } from './components/menu-fixed';
 
     if (document.body.classList.contains('Inicio')) {
 		tnsSingle();
-		tnsCarousell();
 		paymentSlider();
 		
     }else if (document.body.classList.contains('Casino')) {

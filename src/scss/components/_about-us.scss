@@ -1,10 +1,7 @@
 .about-us {
-    margin-bottom: 0;
+    margin: 32px auto;
 
     &__heading {
-        padding-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 60px;
     }
 }
@@ -13,14 +10,26 @@
     margin-bottom: 0;
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @include from(l) {
-            display: flex;
-            align-items: center;
+            flex-direction: row;
             justify-content: space-between;
     
             &:nth-child(2) {
                 flex-direction: row-reverse;
+            }
+        }
+
+        &__mobileButton {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+
+            @include from(l) {
+                display: none;
             }
         }
     }
@@ -28,9 +37,18 @@
 
 .about-us__content__section {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @include from(l) {
+        align-items: flex-start;
+    }
+
     &--text {
         color: $first-color;
-        font-size: 18px;
+        font-size: $font-size-base;
         font-weight: medium;
         font-family: $secondary-font-noto;
         max-width: 650px;
@@ -40,10 +58,19 @@
     &--img {
         width: 300px;
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
 
         @include from(l) {
             width: 400px;
         }
     }
 
+    &--anchor {
+        display: none;
+
+        @include from(l) {
+            display: flex;
+        }
+    }
 }

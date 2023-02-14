@@ -47,4 +47,12 @@
   &_anchor {
     margin-bottom: 18px;
   }
+
+  &_img {
+    margin-bottom: 8px;
+
+    @include from(l) {
+      margin-bottom: 0;
+    }
+  }
 }

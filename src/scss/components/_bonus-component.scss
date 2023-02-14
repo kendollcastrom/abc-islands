@@ -1,0 +1,33 @@
+.bonus-component {
+  padding: 20px 16px;
+  margin: 48px auto;
+  background-color: $seventh-color;
+  color: $first-color;
+  font-family: $secondary-font-noto;
+  border-radius: 8px;
+
+  &__steps {
+    display: none;
+    list-style: none;
+    font-size: $font-size-base;
+    padding: 0;
+    margin-bottom: 24px;
+    font-weight: bolder;
+
+    @include from(l) {
+      display: flex;
+    }
+
+    &__item {
+      margin-right: 8px;
+
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__list {
+    padding-left: 16px;
+  }
+}

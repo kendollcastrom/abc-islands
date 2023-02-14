@@ -1,0 +1,45 @@
+.refer-friend {
+  padding: 32px 16px;
+  margin: 48px auto;
+  background-color: $seventh-color;
+  color: $first-color;
+  font-family: $secondary-font-noto;
+  border-radius: 8px;
+
+  &__heading {
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include from(l) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__info {
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    @include from(l) {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__list {
+    padding-left: 16px;
+    text-align: center;
+
+    @include from(l) {
+      text-align: left;
+    }
+  }
+}

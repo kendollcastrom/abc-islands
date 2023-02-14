@@ -208,46 +208,6 @@ exports.tabsHorses = tabsHorses;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-var tnsCarousell = exports.tnsCarousell = function tnsCarousell() {
-	var slider = tns({
-		container: "#tnsCarousell",
-		items: 1,
-		slideBy: 1,
-		swipeAngle: false,
-		speed: 400,
-		edgePadding: 40,
-		nav: false,
-		mouseDrag: true,
-		controlsText: ['<i class="tns-carousell__prev fas fa-chevron-left"></i>', '<i class="tns-carousell__next fas fa-chevron-right"></i>'],
-		responsive: {
-			480: {
-				items: 2
-			},
-			640: {
-				items: 2
-			},
-			800: {
-				items: 4
-			},
-			960: {
-				items: 4
-			},
-			1120: {
-				items: 4
-			},
-			1280: {
-				items: 4
-			}
-		}
-	});
-};
-
-},{}],7:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
 var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	var slider = tns({
 		container: '#tnsSingle',
@@ -261,7 +221,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	});
 };
 
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -282,14 +242,12 @@ var topNav = exports.topNav = function topNav() {
 	myFunction();
 };
 
-},{}],9:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 'use strict';
 
 var _tnsSlider = require('./components/tns-slider');
 
 var _topNav = require('./components/topNav');
-
-var _tnsCarousell = require('./components/tns-carousell');
 
 var _paymentSlider = require('./components/payment-slider');
 
@@ -312,7 +270,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 		if (document.body.classList.contains('Inicio')) {
 				(0, _tnsSlider.tnsSingle)();
-				(0, _tnsCarousell.tnsCarousell)();
 				(0, _paymentSlider.paymentSlider)();
 		} else if (document.body.classList.contains('Casino')) {
 				(0, _paymentSlider.paymentSliderCasino)();
@@ -326,6 +283,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 })();
 //import bankingTabs from './components/banking-tabs';
 
-},{"./components/dropdown-sports":1,"./components/menu-fixed":2,"./components/openTable":3,"./components/payment-slider":4,"./components/tabs":5,"./components/tns-carousell":6,"./components/tns-slider":7,"./components/topNav":8}]},{},[9]);
+},{"./components/dropdown-sports":1,"./components/menu-fixed":2,"./components/openTable":3,"./components/payment-slider":4,"./components/tabs":5,"./components/tns-slider":6,"./components/topNav":7}]},{},[8]);
 
 //# sourceMappingURL=scripts-min.js.map
