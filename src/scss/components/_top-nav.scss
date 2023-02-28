@@ -34,6 +34,16 @@
 		align-items			: center;
 		height        	: var(--header-height);
 		width						: 100%;
+		padding					: 0 1rem;
+
+		@include from(l) {
+			padding				: 0 1rem;
+		}
+
+		@include from(xl) {
+			padding				: 0;
+		}
+
 	}
 	&__link{
 		align-self: center;
@@ -79,6 +89,7 @@
 		flex-direction	: column;
 		align-items		: center;
 		padding: 0;
+		margin-bottom: 32px;
 	}
 
 	&__menu-link {
@@ -191,22 +202,9 @@
 	box-sizing: border-box;
 	position: relative;
 
-/* 	&:hover {
-		border-bottom: 1px solid $fourth-color;
-		box-sizing: border-box;
-	} */
-
 	.rotate-center {
 		margin-right: 8px;
-
-		/* svg {
-			background-color: red;
-		} */
 	}
-
-	/* 	svg {
-			background-color: green;
-		} */
 }
 
 @-webkit-keyframes rotate-center {

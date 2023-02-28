@@ -78,6 +78,12 @@
 			color: $ninth-color;
 			font-size: $font-size-smaller;
 			text-transform: uppercase;
+			padding: 16px 0;
+			font-size: 16px;
+
+			@include from(l) {
+				padding: 8px 0;
+			}
 
 			a:hover {
 				color: $fourth-color;
@@ -100,7 +106,7 @@
 		margin: 0;
 		font-size: $font-size-base;
 		font-family: $secondary-font-noto;
-		color: $fifth-color;
+		color: $third-color;
 		text-align: center;
 	}
 }
