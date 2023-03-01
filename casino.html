@@ -48,16 +48,14 @@
   </head>
   <body class="Casino" itemscope itemtype="http://schema.org/WebPage">
     <header class="main-header"><nav class="top-nav__mobile">
-	<a href="#">
+	<a href="index.html">
 		<img src="assets/img/abc-logo-mobile.svg" alt="abc logo">
 	</a>
 </nav>
 
 <nav class='top-nav'>
 	<div class="top-nav__container ed-grid">
-		<a href="index.html" lass='top-nav__link' aria-label="abc islands">
-			<img src="assets/img/Logotipo ABC.svg" alt="abc logo" class='top-nav__logo'>
-		</a>
+		<a href="index.html" lass='top-nav__link' aria-label="abc islands"><img src="assets/img/Logotipo ABC.svg" alt="abc logo" class='top-nav__logo'></a>
 		<h2 class="top-nav__title">The players' paradise</h2>
 		<div class="top-nav__menu">
 			<p class="top-nav__title">The players' paradise</p>
@@ -101,41 +99,71 @@
 </nav>
     </header>
     <main class="main-container">
-      <section class="hero-component">
-	<div class="hero-component__first ed-grid s-grid-1 m-grid-2">
-		<picture class="hero-component__first__img m-order-2">
+      <section class="hero-slider">
+	<div class="hero-slider__first ed-grid s-grid-1 m-grid-2">
+		<picture class="hero-slider__first__img m-order-2">
 			<source media="(min-width: 600px)" srcset="assets/img/home-slider-desktop-01.png">
 			<img src="assets/img/home-slider-mobile-01.png" alt="">
 		</picture>
-		<div class="hero-component__content">
-			<div class="hero-component__first-info">
-				<h1 class="hero-component__first-info--title">Sportsbook</h1>
-				<p class="hero-component__first-info--text">The Players’ Paradise | get up to $1,000 on your first deposit</p>
+		<div class="hero-slider__content">
+			<div class="hero-slider__first-info">
+				<h1 class="hero-slider__first-info--title">Sportsbook</h1>
+				<p class="hero-slider__first-info--text">The Players’ Paradise | get up to $1,000 on your first deposit</p>
 			</div> 
-			<div class="hero-component__first-btn">
+			<div class="hero-slider__first-btn">
+				<a href="login.html" class="primary-button primary-button__join-first">Join now </a>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="hero-slider__first ed-grid s-grid-1 m-grid-2">
+		<picture class="hero-slider__first__img m-order-2">
+			<source media="(min-width: 600px)" srcset="assets/img/home-slider-desktop-01.png">
+			<img src="assets/img/home-slider-mobile-01.png" alt="">
+		</picture>
+		<div class="hero-slider__content">
+			<div class="hero-slider__first-info">
+				<h1 class="hero-slider__first-info--title">Sportsbook</h1>
+				<p class="hero-slider__first-info--text">The Players’ Paradise | get up to $1,000 on your first deposit</p>
+			</div> 
+			<div class="hero-slider__first-btn">
 				<a href="#" class="primary-button primary-button__join-first">Join now </a>
 			</div>
 		</div>
 	</div>
-</section><div class="casino-games ed-grid">
+	<div class="hero-slider__first ed-grid s-grid-1 m-grid-2">
+		<picture class="hero-slider__first__img m-order-2">
+			<source media="(min-width: 600px)" srcset="assets/img/home-slider-desktop-01.png">
+			<img src="assets/img/home-slider-mobile-01.png" alt="">
+		</picture>
+		<div class="hero-slider__content">
+			<div class="hero-slider__first-info">
+				<h1 class="hero-slider__first-info--title">Sportsbook</h1>
+				<p class="hero-slider__first-info--text">The Players’ Paradise | get up to $1,000 on your first deposit</p>
+			</div> 
+			<div class="hero-slider__first-btn">
+				<a href="#" class="primary-button primary-button__join-first">Join now </a>
+			</div>
+		</div>
+	</div> -->
+</section><section class="casino-games ed-grid">
     <div class="casino-games__cards">
-        <div class="casino-games__cards__card">
-            <img class="casino-games__cards__card--img" src="assets/img/casino-games-slider.png" alt="">
+        <article class="casino-games__cards__card">
+            <img class="casino-games__cards__card--img" src="assets/img/casino-games-slider.png" alt="Image of a casino game">
             <p class="casino-games__cards__card--title">Lorem ipsum</p>
-        </div>
-        <!-- <div class="casino-games__cards__card">
-            <img class="casino-games__cards__card--img" src="assets/img/casino-games-slider.png" alt="">
+        </article>
+        <!-- <article class="casino-games__cards__card">
+            <img class="casino-games__cards__card--img" src="assets/img/casino-games-slider.png" alt="Image of a casino game">
             <p class="casino-games__cards__card--title">Lorem ipsum</p>
-        </div>
-        <div class="casino-games__cards__card">
-            <img class="casino-games__cards__card--img" src="assets/img/casino-games-slider.png" alt="">
+        </article>
+        <article class="casino-games__cards__card">
+            <img class="casino-games__cards__card--img" src="assets/img/casino-games-slider.png" alt="Image of a casino game">
             <p class="casino-games__cards__card--title">Lorem ipsum</p>
-        </div> -->
+        </article> -->
     </div>
     <div class="casino-games__button">
-        <a href="#" class="secondary-button">view all casino games</a>
+        <a href="#" class="primary-button primary-button__join-first">join now</a>
     </div>
-</div><div class="casino-banner">
+</section><section class="casino-banner">
     <div class="casino-banner__container ed-grid">
         <div class="casino-banner__content">
             <div class="casino-banner__info ed-grid s-grid-1 l-grid-2" >
@@ -152,12 +180,12 @@
                     </div>
                 </div>
                 <picture class="s-order-1 m-order-1 l-order-2 lg-order-2 casino-banner__info__img">
-                    <img src="assets/img/casino-banner-img.png" alt="">
+                    <img src="assets/img/casino-banner-img.png" alt="Lorem ipsum">
                 </picture>
             </div>
         </div>
     </div>
-</div>
+</section>
       <section class="info-component ed-grid">
     <div class="info-component__heading">
         <h2 class="info-component__title underline-title">Lorem, ipsum dolor.</h2>
@@ -195,6 +223,18 @@
 </div>
     </main>
     <footer class="main-footer">
+      <div class="cookie-banner">
+  <div class="cookie-banner__content ed-grid">
+    <p class="cookie-banner__message">This website uses cookies to improve your user experience.</p>
+    <div class="cookie-banner__buttons">
+      <button class="cookie-banner__button cookie-banner__button--accept" aria-label="Accept cookies">Accept</button>
+      <button class="cookie-banner__button cookie-banner__button--reject" aria-label="Decline cookies">Decline</button>
+    </div>
+  </div>
+</div>
+      <button class="button--scroll-top" aria-label="Scroll to top">
+  <i class="fas fa-angle-up"></i>
+</button>
       
 <nav class="bottom-nav">
     <div class="bottom-nav__container">
