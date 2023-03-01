@@ -1,0 +1,53 @@
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $eleventh-color;
+  color: $first-color;
+  padding: 24px 16px;
+  text-align: center;
+  z-index: 10;
+  font-family: $secondary-font-noto;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  &__message {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  &__button {
+    color: $first-color;
+    background-color: $fourth-color;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 16px;
+    
+    &:hover {
+      background-color: $fourth-hover-color
+    }
+    
+    &--reject {
+      margin-left: 10px;
+      background-color: $seventh-color;
+      
+      &:hover {
+        background-color: $sixth-color;
+      }
+    }
+  }
+}

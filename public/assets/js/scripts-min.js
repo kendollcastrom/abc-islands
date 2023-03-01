@@ -30,6 +30,30 @@ exports.default = bankingTabs;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var cookiesComponent = function cookiesComponent() {
+  var cookieBanner = document.querySelector('.cookie-banner');
+  var acceptButton = document.querySelector('.cookie-banner__button--accept');
+  var rejectButton = document.querySelector('.cookie-banner__button--reject');
+
+  acceptButton.addEventListener('click', function () {
+    cookieBanner.style.display = 'none';
+    // aquí iría el código para aceptar las cookies
+  });
+
+  rejectButton.addEventListener('click', function () {
+    cookieBanner.style.display = 'none';
+    // aquí iría el código para rechazar las cookies
+  });
+};
+
+exports.default = cookiesComponent;
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 function initAcc(elem, option) {
@@ -53,7 +77,7 @@ initAcc('.accordion.v1', true);
 initAcc('.accordion.v2', false);
 exports.default = initAcc();
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -81,7 +105,7 @@ var tabsHorses = function tabsHorses() {
 
 exports.default = tabsHorses;
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -106,7 +130,7 @@ function initMenu() {
   });
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -124,7 +148,26 @@ var openTable = function openTable() {
 
 exports.default = openTable;
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var scrollButton = function scrollButton() {
+  var btnScrollTop = document.querySelector('.button--scroll-top');
+
+  btnScrollTop.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+};
+
+exports.default = scrollButton;
+
+},{}],8:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -145,7 +188,7 @@ var topNav = exports.topNav = function topNav() {
 	myFunction();
 };
 
-},{}],7:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 'use strict';
 
 var _topNav = require('./components/topNav');
@@ -166,12 +209,22 @@ var _horsesTabs = require('./components/horsesTabs');
 
 var _horsesTabs2 = _interopRequireDefault(_horsesTabs);
 
+var _scrollButton = require('./components/scrollButton');
+
+var _scrollButton2 = _interopRequireDefault(_scrollButton);
+
+var _cookiesComponent = require('./components/cookiesComponent');
+
+var _cookiesComponent2 = _interopRequireDefault(_cookiesComponent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (function () {
 		(0, _topNav.topNav)();
 		//bankingTabs();
 		(0, _menuFixed.initMenu)();
+		(0, _scrollButton2.default)();
+		(0, _cookiesComponent2.default)();
 
 		if (document.body.classList.contains('Home')) {} else if (document.body.classList.contains('Casino')) {} else if (document.body.classList.contains('Sport-rules')) {
 				(0, _dropdownSports.initAcc)();
@@ -185,6 +238,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 })();
 // import {tabs, tabsHorses} from './components/tabs';
 
-},{"./components/banking-tabs":1,"./components/dropdown-sports":2,"./components/horsesTabs":3,"./components/menu-fixed":4,"./components/openTable":5,"./components/topNav":6}]},{},[7]);
+},{"./components/banking-tabs":1,"./components/cookiesComponent":2,"./components/dropdown-sports":3,"./components/horsesTabs":4,"./components/menu-fixed":5,"./components/openTable":6,"./components/scrollButton":7,"./components/topNav":8}]},{},[9]);
 
 //# sourceMappingURL=scripts-min.js.map
