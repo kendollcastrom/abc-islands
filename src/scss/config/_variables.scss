@@ -26,7 +26,9 @@
 	--nineteenth	: #515666;
 	--twenth			: #939393;
 
-	--button-fourt-hover	: #B61827;
+	//Hover colors
+	--button-sixteenth-hover	: #668c1f;
+	--button-fourt-hover			: #8f1420;
 
 	//native box Shadow
 	--principal-box-shadow	: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -88,6 +90,7 @@
 
 	//Button Foruth hovver
 	$fourth-hover-color		: var(--button-fourt-hover);
+	$sixteenth-hover-color: var(--button-sixteenth-hover);
   
   // Fonts SCSS Variables
   $primary-font-motion	: var(--primary-font-motion);
