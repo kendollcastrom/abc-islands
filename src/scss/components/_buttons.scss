@@ -45,7 +45,6 @@
     }
 }
 
-
 //Secondary button
 
 .secondary-button {
@@ -62,7 +61,7 @@
     text-align: center;
 
     @include from(l) {
-        padding: 20px 34px;
+        padding: 16px 34px;
     }
    
     &:hover {
@@ -95,6 +94,6 @@
     }
 
     @include from(l) {
-        padding: 20px 42px;
+        padding: 16px 42px;
     }
 }

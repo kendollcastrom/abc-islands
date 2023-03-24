@@ -7,6 +7,7 @@ import { initMenu } from './components/menu-fixed';
 import tabsHorses from './components/horsesTabs';
 import scrollButton from './components/scrollButton';
 import cookiesComponent from './components/cookiesComponent';
+import chatbot from './components/chatbot';
 
 (()=>{
     topNav();
@@ -14,6 +15,7 @@ import cookiesComponent from './components/cookiesComponent';
 		initMenu();
 		scrollButton();
 		cookiesComponent();
+		chatbot();
 
     if (document.body.classList.contains('Home')) {
 		

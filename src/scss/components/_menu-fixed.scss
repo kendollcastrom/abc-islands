@@ -40,7 +40,7 @@
 
 		&__img {
 			// margin-bottom: 4px;
-			margin-right: 8px;
+			//margin-right: 8px;
 		}
 
 		&__text {
@@ -77,13 +77,19 @@
 		align-items: center;
 		text-align: center;
 		flex: 1 1 0;
+		height: 55px;
 	}
 
 	&__anchor {
 		align-items: center;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		gap: 4px;
+
+		img {
+			width: 30px;
+			height: 30px;
+		}
 	}
 
 	@media only screen and (min-device-width: 0px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -100,12 +106,15 @@
 		width: fit-content;
 		border: none;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
+		justify-content: space-between;
     cursor: pointer;
 		color: $first-color;
+		row-gap: 4px;
 
 		i {
-			margin-right: 8px;
+			font-size: 30px;
 		}
   }
 
@@ -201,6 +210,5 @@
     z-index: 10;
     height: 120vh;
 		overflow: hidden;
-
 	}
 }

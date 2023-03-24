@@ -5,6 +5,7 @@
   color: $first-color;
   font-family: $secondary-font-noto;
   border-radius: 8px;
+  box-shadow: $principal-box-shadow;
 
   &__steps {
     display: none;
@@ -13,17 +14,31 @@
     padding: 0;
     margin-bottom: 24px;
     font-weight: bolder;
+    position: relative;
 
     @include from(l) {
       display: flex;
     }
 
     &__item {
-      margin-right: 8px;
+      margin-right: 32px;
+      position: relative;
+      text-transform: uppercase;
+    }
 
-      span {
-        margin-left: 8px;
-      }
+    &__item::after {
+      position: absolute;
+      left: 65px;
+      top: -7px;
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: '\f105';
+      color: $first-color;
+      font-size: 24px;
+    }
+
+    &__item:last-child::after {
+      content: "";
     }
   }
 

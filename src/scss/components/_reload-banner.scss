@@ -16,14 +16,11 @@
   background-size: cover;
   width: 100%;
   border-radius: 8px;
-  
-  
 
   @include from(m) {
     padding: 0 48px;
     background-position: center;
     height: 265px;
-    //max-width: 320px;
   }
 
   &__content {

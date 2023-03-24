@@ -1,7 +1,7 @@
 .button {
   &--scroll-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 15px;
     background-color: $sixth-color;
     border: 2px solid $fourth-color;
@@ -13,7 +13,7 @@
     font-size: $font-banner-tiny;
 
     @media only screen and (min-device-width: 0px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
-      bottom: 75px;
+      bottom: 100px;
     }
   }
 }
